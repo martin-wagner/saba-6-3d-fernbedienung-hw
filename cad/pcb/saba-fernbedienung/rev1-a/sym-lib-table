@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name microcontroller)(type Legacy)(uri ${KIPRJMOD}/microcontroller.lib)(options "")(descr ""))
+)
