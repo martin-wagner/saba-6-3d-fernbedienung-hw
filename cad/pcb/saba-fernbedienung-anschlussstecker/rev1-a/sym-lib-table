@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name stecker)(type Legacy)(uri ${KIPRJMOD}/stecker.lib)(options "")(descr ""))
+)

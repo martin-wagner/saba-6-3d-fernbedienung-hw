@@ -1,0 +1,10 @@
+Fertigungsdatensatz generieren in KiCad
+
+- plot scm in eeschema (scm)
+- export BOM in pcbnew - file -> fab output -> BOM file (place)
+- Gerber photoplot - file -> plot -> "Gerber", disable "plot footprint values", Lagenauswahl nach belegten Lagen
+    - Button "Plot"
+    - Button "Generate Drill Files..."
+    -> Ergebnis: Gerbers + Excellon Bohrdaten mit und ohne Durchkontaktierung
+- Bestückungsplan PDF - file -> print -> "PDF" Lagen Front/Back Silkscreen + Edge Cuts + Fab (place)
+- Kontrollieren im Gerber Viewer

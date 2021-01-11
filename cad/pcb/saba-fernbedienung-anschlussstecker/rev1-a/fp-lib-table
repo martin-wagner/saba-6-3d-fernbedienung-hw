@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name stecker)(type KiCad)(uri ${KIPRJMOD}/stecker.pretty)(options "")(descr ""))
+)
