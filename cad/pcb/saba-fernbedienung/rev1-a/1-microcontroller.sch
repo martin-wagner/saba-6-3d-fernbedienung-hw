@@ -246,7 +246,7 @@ U 1 1 60006D51
 P 5750 5200
 F 0 "J201" H 5307 5246 50  0000 R CNN
 F 1 "Conn_ARM_JTAG_SWD_10" H 5700 5750 50  0000 R CNN
-F 2 "" H 5750 5200 50  0001 C CNN
+F 2 "Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical" H 5750 5200 50  0001 C CNN
 F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 5400 3950 50  0001 C CNN
 F 4 "NP" H 5500 5850 50  0000 C CNN "Placement"
 	1    5750 5200

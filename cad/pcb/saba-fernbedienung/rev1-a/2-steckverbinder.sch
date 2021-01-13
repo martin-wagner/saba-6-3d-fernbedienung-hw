@@ -19,7 +19,7 @@ U 1 1 6002F5C9
 P 1650 2500
 F 0 "J306" H 2000 2500 50  0000 C CNN
 F 1 "Conn_01x02" H 2000 2400 50  0000 C CNN
-F 2 "" H 1650 2500 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1650 2500 50  0001 C CNN
 F 3 "~" H 1650 2500 50  0001 C CNN
 	1    1650 2500
 	-1   0    0    -1  
@@ -30,7 +30,7 @@ U 1 1 6003008E
 P 1650 1250
 F 0 "J301" H 2000 1300 50  0000 C CNN
 F 1 "Conn_01x04" H 2000 1200 50  0000 C CNN
-F 2 "" H 1650 1250 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1650 1250 50  0001 C CNN
 F 3 "~" H 1650 1250 50  0001 C CNN
 	1    1650 1250
 	-1   0    0    -1  
@@ -41,7 +41,7 @@ U 1 1 60030868
 P 1650 1700
 F 0 "J302" H 2000 1750 50  0000 C CNN
 F 1 "Conn_01x04" H 2000 1650 50  0000 C CNN
-F 2 "" H 1650 1700 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1650 1700 50  0001 C CNN
 F 3 "~" H 1650 1700 50  0001 C CNN
 	1    1650 1700
 	-1   0    0    -1  
@@ -52,7 +52,7 @@ U 1 1 60030B02
 P 1650 2150
 F 0 "J304" H 2000 2150 50  0000 C CNN
 F 1 "Conn_01x04" H 2000 2050 50  0000 C CNN
-F 2 "" H 1650 2150 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1650 2150 50  0001 C CNN
 F 3 "~" H 1650 2150 50  0001 C CNN
 	1    1650 2150
 	-1   0    0    -1  
@@ -63,7 +63,7 @@ U 1 1 60030DAE
 P 1650 2850
 F 0 "J307" H 2000 2850 50  0000 C CNN
 F 1 "Conn_01x04" H 2000 2750 50  0000 C CNN
-F 2 "" H 1650 2850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1650 2850 50  0001 C CNN
 F 3 "~" H 1650 2850 50  0001 C CNN
 	1    1650 2850
 	-1   0    0    -1  
@@ -74,7 +74,7 @@ U 1 1 600314E9
 P 1650 3300
 F 0 "J311" H 2000 3300 50  0000 C CNN
 F 1 "Conn_01x04" H 2000 3200 50  0000 C CNN
-F 2 "" H 1650 3300 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 1650 3300 50  0001 C CNN
 F 3 "~" H 1650 3300 50  0001 C CNN
 	1    1650 3300
 	-1   0    0    -1  
@@ -198,7 +198,7 @@ U 1 1 6005055F
 P 1850 5250
 F 0 "J313" H 1957 6207 50  0000 C CNN
 F 1 "USB_C_Receptacle_USB2.0" H 1957 6116 50  0000 C CNN
-F 2 "" H 2000 5250 50  0001 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 2000 5250 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2000 5250 50  0001 C CNN
 F 4 "NP" H 1957 6025 50  0000 C CNN "Placement"
 	1    1850 5250
@@ -374,7 +374,7 @@ U 1 1 5FFDCC37
 P 7500 2100
 F 0 "J303" H 7450 2817 50  0000 C CNN
 F 1 "Micro_SD_Card" H 7450 2726 50  0000 C CNN
-F 2 "" H 8650 2400 50  0001 C CNN
+F 2 "Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5" H 8650 2400 50  0001 C CNN
 F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 7500 2100 50  0001 C CNN
 	1    7500 2100
 	-1   0    0    -1  
@@ -560,28 +560,10 @@ Wire Notes Line
 	7400 5900 7400 4150
 Text Notes 7450 4100 0    79   ~ 0
 Infrarot Fernbedienung (optional)
-$Comp
-L Connector:AudioJack3_Ground J305
-U 1 1 6003F711
-P 4150 2250
-F 0 "J305" H 4132 2575 50  0000 C CNN
-F 1 "AudioJack3_Ground" H 4132 2484 50  0000 C CNN
-F 2 "" H 4150 2250 50  0001 C CNN
-F 3 "~" H 4150 2250 50  0001 C CNN
-	1    4150 2250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	4150 2550 4150 2600
 Wire Wire Line
 	4350 2350 4450 2350
 Wire Wire Line
 	4450 2350 4450 2600
-Wire Wire Line
-	4450 2600 4150 2600
-Connection ~ 4150 2600
-Wire Wire Line
-	4150 2600 4150 2650
 Text GLabel 6000 1550 1    50   Input ~ 0
 Audio_Links
 Text GLabel 6000 1750 3    50   Input ~ 0
@@ -668,7 +650,7 @@ U 1 1 6006BC03
 P 5250 2850
 F 0 "J308" H 5350 2850 50  0000 L CNN
 F 1 "Conn_01x01" H 5600 2850 50  0000 L CNN
-F 2 "" H 5250 2850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5250 2850 50  0001 C CNN
 F 3 "~" H 5250 2850 50  0001 C CNN
 	1    5250 2850
 	0    1    1    0   
@@ -679,7 +661,7 @@ U 1 1 6006CD13
 P 5400 2850
 F 0 "J309" H 5500 2850 50  0000 L CNN
 F 1 "Conn_01x01" H 5750 2850 50  0000 L CNN
-F 2 "" H 5400 2850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5400 2850 50  0001 C CNN
 F 3 "~" H 5400 2850 50  0001 C CNN
 	1    5400 2850
 	0    1    1    0   
@@ -690,7 +672,7 @@ U 1 1 6006D1FB
 P 5550 2850
 F 0 "J310" H 5650 2850 50  0000 L CNN
 F 1 "Conn_01x01" H 5900 2850 50  0000 L CNN
-F 2 "" H 5550 2850 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5550 2850 50  0001 C CNN
 F 3 "~" H 5550 2850 50  0001 C CNN
 	1    5550 2850
 	0    1    1    0   
@@ -806,17 +788,6 @@ F 3 "~" H 2250 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:Earth #PWR0306
-U 1 1 600ACF99
-P 4150 2650
-F 0 "#PWR0306" H 4150 2400 50  0001 C CNN
-F 1 "Earth" H 4150 2500 50  0001 C CNN
-F 2 "" H 4150 2650 50  0001 C CNN
-F 3 "~" H 4150 2650 50  0001 C CNN
-	1    4150 2650
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:Earth #PWR0307
 U 1 1 600ADE98
 P 6600 3250
@@ -848,7 +819,7 @@ U 1 1 609A1EE5
 P 4600 3100
 F 0 "D301" V 4554 3180 50  0000 L CNN
 F 1 "D_TVS_x2_D5V0L2B3W" V 4750 2200 50  0000 L CNN
-F 2 "" H 4450 3100 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 4450 3100 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/D5V0L2B3W.pdf" H 4450 3100 50  0001 C CNN
 	1    4600 3100
 	0    1    1    0   
@@ -880,7 +851,7 @@ U 1 1 60A4DF30
 P 6600 4900
 F 0 "J312" H 6680 4937 50  0000 L CNN
 F 1 "Conn_01x08" H 6680 4846 50  0000 L CNN
-F 2 "" H 6600 4900 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 6600 4900 50  0001 C CNN
 F 3 "~" H 6600 4900 50  0001 C CNN
 F 4 "NP" H 6680 4755 50  0000 L CNN "Placement"
 	1    6600 4900
@@ -956,4 +927,30 @@ NoConn ~ 2450 5350
 NoConn ~ 2450 5450
 NoConn ~ 2450 5750
 NoConn ~ 2450 5850
+$Comp
+L power:Earth #PWR0306
+U 1 1 600ACF99
+P 4350 2650
+F 0 "#PWR0306" H 4350 2400 50  0001 C CNN
+F 1 "Earth" H 4350 2500 50  0001 C CNN
+F 2 "" H 4350 2650 50  0001 C CNN
+F 3 "~" H 4350 2650 50  0001 C CNN
+	1    4350 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4350 2600 4350 2650
+Wire Wire Line
+	4450 2600 4350 2600
+$Comp
+L Connector:AudioJack3 J305
+U 1 1 60BB0BE0
+P 4150 2250
+F 0 "J305" H 4132 2575 50  0000 C CNN
+F 1 "AudioJack3" H 4132 2484 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ-3523-SMT_Horizontal" H 4150 2250 50  0001 C CNN
+F 3 "~" H 4150 2250 50  0001 C CNN
+	1    4150 2250
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
