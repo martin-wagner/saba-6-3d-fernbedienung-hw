@@ -3,13 +3,13 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 7
 Title "Fernbedienung SABA 6-3D"
-Date "2021-01-11"
+Date "2021-01-13"
 Rev "1-A"
 Comp "Martin Wagner DL2WAG"
 Comment1 "Lizenz: CERN-OHL-W (OHL v2)"
-Comment2 ""
+Comment2 "Microcontroller + Umgebung"
 Comment3 "(Meersburg/Freiburg 6-3D, weitere?)"
 Comment4 "Fernbedienung für SABA \"Automatic\" Radios"
 $EndDescr
@@ -31,9 +31,33 @@ F 3 "~" H 10800 6850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Sheet
-S 2850 950  950  1000
+S 2400 950  900  1000
 U 6002EA57
 F0 "Steckverbinder" 50
 F1 "2-steckverbinder.sch" 50
+$EndSheet
+$Sheet
+S 3800 950  850  1000
+U 6008B538
+F0 "Spannungsversorgung" 50
+F1 "3-spannungsversorgung.sch" 50
+$EndSheet
+$Sheet
+S 5200 950  900  1000
+U 60135668
+F0 "Suchlauf Messung" 50
+F1 "4-suchlauf-in.sch" 50
+$EndSheet
+$Sheet
+S 6650 950  900  1000
+U 6044FE50
+F0 "Fernbedienung" 50
+F1 "5-fernbedienung.sch" 50
+$EndSheet
+$Sheet
+S 7950 950  950  1000
+U 6041BFCD
+F0 "Audio" 50
+F1 "6-audio.sch" 50
 $EndSheet
 $EndSCHEMATC

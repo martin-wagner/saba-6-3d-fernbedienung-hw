@@ -3,9 +3,9 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 7
 Title "Fernbedienung SABA 6-3D"
-Date "2021-01-11"
+Date "2021-01-13"
 Rev "1-A"
 Comp "Martin Wagner DL2WAG"
 Comment1 "Lizenz: CERN-OHL-W (OHL v2)"
@@ -13,17 +13,6 @@ Comment2 "Microcontroller + Umgebung"
 Comment3 "(Meersburg/Freiburg 6-3D, weitere?)"
 Comment4 "Fernbedienung für SABA \"Automatic\" Radios"
 $EndDescr
-$Comp
-L microcontroller:DOIT-DEVKITV1-ESP32-WROOM-32 U201
-U 1 1 5FFCAB8A
-P 2700 2900
-F 0 "U201" H 2400 4300 50  0000 C CNN
-F 1 "DOIT-DEVKITV1-ESP32-WROOM-32" H 3450 4300 50  0000 C CNN
-F 2 "RF_Module:ESP32-WROOM-32" H 2900 650 50  0001 C CNN
-F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf" H 2400 2950 50  0001 C CNN
-	1    2700 2900
-	1    0    0    -1  
-$EndComp
 Text GLabel 1700 1900 0    50   BiDi ~ 0
 ~RESET
 Wire Wire Line
@@ -106,9 +95,9 @@ Wire Wire Line
 Wire Wire Line
 	3300 3000 5550 3000
 Text GLabel 5550 3700 2    50   Output ~ 0
-VS1053_XDCS
+SPI_DCS_VS1053
 Text GLabel 5550 2200 2    50   Output ~ 0
-VS1053_XCS
+SPI_CS_VS1053
 Text GLabel 5550 2100 2    50   Input ~ 0
 VS1053_DREQ
 Wire Wire Line
@@ -120,9 +109,9 @@ Wire Wire Line
 Text GLabel 5550 1900 2    50   BiDi ~ 0
 LCD_A0
 Text GLabel 5550 2600 2    50   Output ~ 0
-LCD_CS
+SPI_CS_LCD
 Text GLabel 5550 3200 2    50   Output ~ 0
-SDCARD_CS
+SPI_CS_SDCARD
 NoConn ~ 3300 1800
 NoConn ~ 3300 2000
 Wire Wire Line
@@ -139,28 +128,16 @@ $Comp
 L Device:R R201
 U 1 1 5FFDB025
 P 6650 2800
-F 0 "R201" V 6353 2800 50  0000 C CNN
-F 1 "10k" V 6444 2800 50  0000 C CNN
+F 0 "R201" V 6450 2800 50  0000 C CNN
+F 1 "10k" V 6550 2800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6580 2800 50  0001 C CNN
 F 3 "~" H 6650 2800 50  0001 C CNN
-F 4 "No Place" V 6535 2800 50  0000 C CNN "Placement"
+F 4 "NP" V 6650 2800 50  0000 C CNN "Placement"
 	1    6650 2800
 	0    1    1    0   
 $EndComp
 Wire Wire Line
 	6500 2800 3300 2800
-$Comp
-L Transistor_BJT:BC856 Q201
-U 1 1 5FFDE545
-P 7100 2800
-F 0 "Q201" H 7291 2709 50  0000 L CNN
-F 1 "BC856" H 7291 2800 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 7300 2725 50  0001 L CIN
-F 3 "https://www.onsemi.com/pub/Collateral/BC860-D.pdf" H 7100 2800 50  0001 L CNN
-F 4 "No Place" H 7291 2891 50  0000 L CNN "Placement"
-	1    7100 2800
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	6900 2800 6800 2800
 Wire Wire Line
@@ -188,16 +165,12 @@ Wire Wire Line
 	5550 3900 3300 3900
 Text GLabel 5550 2400 2    50   Output ~ 0
 SABA_Suchlauf_R
-Text GLabel 5550 2500 2    50   Output ~ 0
-SABA_Suchlauf_schnell
 Text GLabel 5550 2300 2    50   Output ~ 0
 SABA_Suchlauf_L
 Wire Wire Line
 	3300 2300 3950 2300
 Wire Wire Line
 	3300 2400 4850 2400
-Wire Wire Line
-	5550 2400 5550 2500
 Text GLabel 5550 2700 2    50   Output ~ 0
 SABA_Mute
 Wire Wire Line
@@ -276,7 +249,7 @@ F 0 "J201" H 5307 5246 50  0000 R CNN
 F 1 "Conn_ARM_JTAG_SWD_10" H 5700 5750 50  0000 R CNN
 F 2 "" H 5750 5200 50  0001 C CNN
 F 3 "http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf" V 5400 3950 50  0001 C CNN
-F 4 "No Place" H 5500 5850 50  0000 C CNN "Placement"
+F 4 "NP" H 5500 5850 50  0000 C CNN "Placement"
 	1    5750 5200
 	-1   0    0    -1  
 $EndComp
@@ -312,7 +285,7 @@ F 0 "R203" H 3900 4300 50  0000 R CNN
 F 1 "100" H 3880 4450 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3880 4450 50  0001 C CNN
 F 3 "~" H 3950 4450 50  0001 C CNN
-F 4 "No Place" V 3900 4900 50  0000 R CNN "Placement"
+F 4 "NP" V 3950 4500 50  0000 R CNN "Placement"
 	1    3950 4450
 	-1   0    0    1   
 $EndComp
@@ -324,7 +297,7 @@ F 0 "R204" H 4200 4300 50  0000 R CNN
 F 1 "100" H 4180 4450 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4180 4450 50  0001 C CNN
 F 3 "~" H 4250 4450 50  0001 C CNN
-F 4 "No Place" V 4200 4900 50  0000 R CNN "Placement"
+F 4 "NP" V 4250 4500 50  0000 R CNN "Placement"
 	1    4250 4450
 	-1   0    0    1   
 $EndComp
@@ -336,7 +309,7 @@ F 0 "R206" H 4800 4300 50  0000 R CNN
 F 1 "100" H 4780 4450 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4780 4450 50  0001 C CNN
 F 3 "~" H 4850 4450 50  0001 C CNN
-F 4 "No Place" V 4800 4900 50  0000 R CNN "Placement"
+F 4 "NP" V 4850 4500 50  0000 R CNN "Placement"
 	1    4850 4450
 	-1   0    0    1   
 $EndComp
@@ -348,7 +321,7 @@ F 0 "R205" H 4500 4300 50  0000 R CNN
 F 1 "100" H 4480 4450 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4480 4450 50  0001 C CNN
 F 3 "~" H 4550 4450 50  0001 C CNN
-F 4 "No Place" V 4500 4900 50  0000 R CNN "Placement"
+F 4 "NP" V 4550 4500 50  0000 R CNN "Placement"
 	1    4550 4450
 	-1   0    0    1   
 $EndComp
@@ -397,24 +370,37 @@ Wire Wire Line
 	4250 2600 3300 2600
 Wire Wire Line
 	4550 4300 4550 2500
-Connection ~ 4550 2500
-Wire Wire Line
-	4550 2500 5550 2500
 Wire Wire Line
 	4850 4300 4850 2400
 Connection ~ 4850 2400
 Wire Wire Line
 	4850 2400 5550 2400
 $Comp
-L Device:R R207
-U 1 1 60054E7A
-P 2800 1750
-F 0 "R207" H 2750 1600 50  0000 R CNN
-F 1 "100" H 2730 1750 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 2730 1750 50  0001 C CNN
-F 3 "~" H 2800 1750 50  0001 C CNN
-F 4 "No Place" V 2750 2200 50  0000 R CNN "Placement"
-	1    2800 1750
-	-1   0    0    1   
+L local:DOIT-DEVKITV1-ESP32-WROOM-32 U201
+U 1 1 6045D6AE
+P 2700 2900
+F 0 "U201" H 2300 4300 50  0000 C CNN
+F 1 "DOIT-DEVKITV1-ESP32-WROOM-32" H 3400 4300 50  0000 C CNN
+F 2 "RF_Module:ESP32-WROOM-32" H 2900 650 50  0001 C CNN
+F 3 "" H 2400 2950 50  0001 C CNN
+	1    2700 2900
+	1    0    0    -1  
+$EndComp
+Text GLabel 5550 2500 2    50   Output ~ 0
+SABA_Schnelllauf
+Wire Wire Line
+	4550 2500 5550 2500
+Connection ~ 4550 2500
+$Comp
+L Transistor_BJT:BC856 Q201
+U 1 1 5FFDE545
+P 7100 2800
+F 0 "Q201" H 7291 2709 50  0000 L CNN
+F 1 "BC856" H 7291 2800 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 7300 2725 50  0001 L CIN
+F 3 "https://www.onsemi.com/pub/Collateral/BC860-D.pdf" H 7100 2800 50  0001 L CNN
+F 4 "NP" H 7291 2891 50  0000 L CNN "Placement"
+	1    7100 2800
+	1    0    0    1   
 $EndComp
 $EndSCHEMATC
