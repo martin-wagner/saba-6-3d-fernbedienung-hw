@@ -162,8 +162,8 @@ AR Path="/6002EA57/604F8AD6" Ref="C?"  Part="1"
 AR Path="/6008B538/604F8AD6" Ref="C?"  Part="1" 
 AR Path="/60135668/604F8AD6" Ref="C?"  Part="1" 
 AR Path="/6044FE50/604F8AD6" Ref="C?"  Part="1" 
-AR Path="/6041BFCD/604F8AD6" Ref="C712"  Part="1" 
-F 0 "C712" H 5865 2341 50  0000 L CNN
+AR Path="/6041BFCD/604F8AD6" Ref="C713"  Part="1" 
+F 0 "C713" H 5865 2341 50  0000 L CNN
 F 1 "100n" H 5865 2250 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5788 2100 50  0001 C CNN
 F 3 "~" H 5750 2250 50  0001 C CNN
@@ -179,8 +179,8 @@ AR Path="/6002EA57/604F8ADD" Ref="C?"  Part="1"
 AR Path="/6008B538/604F8ADD" Ref="C?"  Part="1" 
 AR Path="/60135668/604F8ADD" Ref="C?"  Part="1" 
 AR Path="/6044FE50/604F8ADD" Ref="C?"  Part="1" 
-AR Path="/6041BFCD/604F8ADD" Ref="C711"  Part="1" 
-F 0 "C711" H 5415 2341 50  0000 L CNN
+AR Path="/6041BFCD/604F8ADD" Ref="C712"  Part="1" 
+F 0 "C712" H 5415 2341 50  0000 L CNN
 F 1 "100n" H 5415 2250 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5338 2100 50  0001 C CNN
 F 3 "~" H 5300 2250 50  0001 C CNN
@@ -196,8 +196,8 @@ AR Path="/6002EA57/604F8AE4" Ref="C?"  Part="1"
 AR Path="/6008B538/604F8AE4" Ref="C?"  Part="1" 
 AR Path="/60135668/604F8AE4" Ref="C?"  Part="1" 
 AR Path="/6044FE50/604F8AE4" Ref="C?"  Part="1" 
-AR Path="/6041BFCD/604F8AE4" Ref="C710"  Part="1" 
-F 0 "C710" H 4965 2341 50  0000 L CNN
+AR Path="/6041BFCD/604F8AE4" Ref="C711"  Part="1" 
+F 0 "C711" H 4965 2341 50  0000 L CNN
 F 1 "100n" H 4965 2250 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4888 2100 50  0001 C CNN
 F 3 "~" H 4850 2250 50  0001 C CNN
@@ -794,7 +794,7 @@ Wire Wire Line
 Connection ~ 1200 4100
 Wire Wire Line
 	1200 4100 1200 4400
-Text GLabel 1750 2950 0    50   Input ~ 0
+Text GLabel 1750 2950 0    50   Output ~ 0
 SPI_MISO
 Text GLabel 1750 3050 0    50   Input ~ 0
 SPI_MOSI
@@ -804,7 +804,7 @@ Text GLabel 1750 3250 0    50   Input ~ 0
 SPI_CS_VS1053
 Text GLabel 1750 3350 0    50   Input ~ 0
 SPI_DCS_VS1053
-Text GLabel 1750 3450 0    50   Input ~ 0
+Text GLabel 1750 3450 0    50   Output ~ 0
 VS1053_DREQ
 Text GLabel 1750 3600 0    50   Input ~ 0
 ~RESET
@@ -1349,8 +1349,8 @@ AR Path="/6002EA57/607C4A6B" Ref="C?"  Part="1"
 AR Path="/6008B538/607C4A6B" Ref="C?"  Part="1" 
 AR Path="/60135668/607C4A6B" Ref="C?"  Part="1" 
 AR Path="/6044FE50/607C4A6B" Ref="C?"  Part="1" 
-AR Path="/6041BFCD/607C4A6B" Ref="C713"  Part="1" 
-F 0 "C713" H 8565 2291 50  0000 L CNN
+AR Path="/6041BFCD/607C4A6B" Ref="C710"  Part="1" 
+F 0 "C710" H 8565 2291 50  0000 L CNN
 F 1 "100n" H 8565 2200 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 8488 2050 50  0001 C CNN
 F 3 "~" H 8450 2200 50  0001 C CNN
@@ -1566,7 +1566,7 @@ Connection ~ 9350 1700
 Wire Wire Line
 	9200 2100 9200 1700
 Connection ~ 9200 1700
-Text GLabel 10650 1700 1    50   Input ~ 0
+Text GLabel 10650 1700 1    50   Output ~ 0
 Audio_Links
 Wire Wire Line
 	10650 1700 10650 1800
@@ -1836,7 +1836,7 @@ Wire Wire Line
 Connection ~ 10650 3650
 Text Label 9000 4100 1    50   ~ 0
 rechts
-Text GLabel 10650 3550 1    50   Input ~ 0
+Text GLabel 10650 3550 1    50   Output ~ 0
 Audio_Rechts
 Wire Notes Line
 	7900 850  10950 850 
@@ -1853,4 +1853,6 @@ Wire Wire Line
 NoConn ~ 4400 4350
 NoConn ~ 4400 4450
 NoConn ~ 4400 4550
+NoConn ~ 2050 3750
+NoConn ~ 4400 3950
 $EndSCHEMATC

@@ -1474,4 +1474,10 @@ Wire Notes Line
 	4100 7650 4100 5200
 Text Notes 4100 5150 0    79   ~ 0
 Netzschalter
+NoConn ~ 7650 2800
+NoConn ~ 7850 2800
+NoConn ~ 7650 4200
+NoConn ~ 7850 4200
+NoConn ~ 7650 1200
+NoConn ~ 7850 1200
 $EndSCHEMATC

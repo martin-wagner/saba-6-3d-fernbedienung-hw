@@ -816,7 +816,7 @@ Wire Wire Line
 Wire Wire Line
 	2600 6850 2500 6850
 Wire Wire Line
-	2200 6850 1700 6850
+	2200 6850 2000 6850
 Connection ~ 1700 6850
 Wire Wire Line
 	1700 6850 1700 6950
@@ -853,7 +853,7 @@ Wire Wire Line
 	3050 6350 3150 6350
 Connection ~ 3050 6350
 Wire Wire Line
-	3150 7350 1700 7350
+	3150 7350 2000 7350
 Connection ~ 1700 7350
 $Comp
 L power:+3.3V #PWR0516
@@ -1615,4 +1615,11 @@ Wire Wire Line
 Connection ~ 7250 4950
 Wire Wire Line
 	7250 4950 6950 4950
+Connection ~ 2000 6850
+Wire Wire Line
+	2000 6850 1700 6850
+Connection ~ 2000 7350
+Wire Wire Line
+	2000 7350 1700 7350
+NoConn ~ 8100 5950
 $EndSCHEMATC
