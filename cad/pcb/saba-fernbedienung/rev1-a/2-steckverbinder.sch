@@ -201,6 +201,7 @@ F 1 "USB_C_Receptacle_USB2.0" H 1957 6116 50  0000 C CNN
 F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 2000 5250 50  0001 C CNN
 F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 2000 5250 50  0001 C CNN
 F 4 "NP" H 1957 6025 50  0000 C CNN "Placement"
+F 5 "GCT USB4125-GF-A" H 1850 5250 50  0001 C CNN "Bauteil"
 	1    1850 5250
 	1    0    0    -1  
 $EndComp
@@ -292,6 +293,7 @@ F 1 "100n" H 3665 4900 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3588 4750 50  0001 C CNN
 F 3 "~" H 3550 4900 50  0001 C CNN
 F 4 "NP" H 3665 4809 50  0000 L CNN "Placement"
+F 5 "WE 885382206004" H 3550 4900 50  0001 C CNN "Bauteil"
 	1    3550 4900
 	1    0    0    -1  
 $EndComp
@@ -326,6 +328,7 @@ F 1 "B140-E3" H 4650 4434 50  0000 C CNN
 F 2 "Diode_SMD:D_SMA" H 4650 4475 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/88946/b120.pdf" H 4650 4650 50  0001 C CNN
 F 4 "NP" H 4650 4525 50  0000 C CNN "Placement"
+F 5 "Vishay B140-E3/61T" H 4650 4650 50  0001 C CNN "Bauteil"
 	1    4650 4650
 	-1   0    0    1   
 $EndComp
@@ -376,6 +379,7 @@ F 0 "J303" H 7450 2817 50  0000 C CNN
 F 1 "Micro_SD_Card" H 7450 2726 50  0000 C CNN
 F 2 "Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5" H 8650 2400 50  0001 C CNN
 F 3 "http://katalog.we-online.de/em/datasheet/693072010801.pdf" H 7500 2100 50  0001 C CNN
+F 4 "Hirose DM3AT-SF-PEJM5" H 7500 2100 50  0001 C CNN "Bauteil"
 	1    7500 2100
 	-1   0    0    -1  
 $EndComp
@@ -435,6 +439,7 @@ F 1 "100n" H 9765 2350 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9688 2200 50  0001 C CNN
 F 3 "~" H 9650 2350 50  0001 C CNN
 F 4 "" H 9765 2259 50  0000 L CNN "Placement"
+F 5 "WE 885382206004" H 9650 2350 50  0001 C CNN "Bauteil"
 	1    9650 2350
 	1    0    0    -1  
 $EndComp
@@ -447,6 +452,7 @@ F 1 "10u" H 10265 2350 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 10188 2200 50  0001 C CNN
 F 3 "~" H 10150 2350 50  0001 C CNN
 F 4 "" H 10265 2259 50  0000 L CNN "Placement"
+F 5 "WE 885012208069" H 10150 2350 50  0001 C CNN "Bauteil"
 	1    10150 2350
 	1    0    0    -1  
 $EndComp
@@ -528,6 +534,7 @@ F 0 "U301" H 8038 5275 50  0000 C CNN
 F 1 "TSOP31238" H 8038 5184 50  0000 C CNN
 F 2 "OptoDevice:Vishay_CAST-3Pin" H 8000 4475 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/82492/tsop312.pdf" H 8700 5150 50  0001 C CNN
+F 4 "Vishay TSOP31238" H 8050 4850 50  0001 C CNN "Bauteil"
 	1    8050 4850
 	1    0    0    -1  
 $EndComp
@@ -736,6 +743,7 @@ F 1 "100n" H 9315 4900 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9238 4750 50  0001 C CNN
 F 3 "~" H 9200 4900 50  0001 C CNN
 F 4 "" H 9315 4809 50  0000 L CNN "Placement"
+F 5 "WE 885382206004" H 9200 4900 50  0001 C CNN "Bauteil"
 	1    9200 4900
 	1    0    0    -1  
 $EndComp
@@ -762,6 +770,7 @@ F 1 "SMAJ5.0A" V 4100 4980 50  0000 L CNN
 F 2 "Diode_SMD:D_SMA" H 4100 4700 50  0001 C CNN
 F 3 "" H 4050 4900 50  0001 C CNN
 F 4 "NP" V 4191 4980 50  0000 L CNN "Placement"
+F 5 "SMAJ5.0A-13-F" V 4100 4900 50  0001 C CNN "Bauteil"
 	1    4100 4900
 	0    1    1    0   
 $EndComp
@@ -817,10 +826,11 @@ $Comp
 L Device:D_TVS_x2_AAC D301
 U 1 1 609A1EE5
 P 4600 3100
-F 0 "D301" V 4554 3180 50  0000 L CNN
-F 1 "D_TVS_x2_D5V0L2B3W" V 4750 2200 50  0000 L CNN
+F 0 "D301" V 4700 2750 50  0000 L CNN
+F 1 "5V" V 4800 2800 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 4450 3100 50  0001 C CNN
 F 3 "https://www.diodes.com/assets/Datasheets/D5V0L2B3W.pdf" H 4450 3100 50  0001 C CNN
+F 4 "Diodes D5V0L2B3W" V 4600 3100 50  0001 C CNN "Bauteil"
 	1    4600 3100
 	0    1    1    0   
 $EndComp
@@ -950,6 +960,7 @@ F 0 "J305" H 4132 2575 50  0000 C CNN
 F 1 "AudioJack3" H 4132 2484 50  0000 C CNN
 F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ-3523-SMT_Horizontal" H 4150 2250 50  0001 C CNN
 F 3 "~" H 4150 2250 50  0001 C CNN
+F 4 "CUI SJ-3523-SMT-TR" H 4150 2250 50  0001 C CNN "Bauteil"
 	1    4150 2250
 	1    0    0    -1  
 $EndComp

@@ -55,57 +55,6 @@ F 3 "" H 900 2200 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1350 1800 1350 1700
-$Comp
-L Device:C C?
-U 1 1 604D786B
-P 1350 1950
-AR Path="/6002EA57/604D786B" Ref="C?"  Part="1" 
-AR Path="/6008B538/604D786B" Ref="C?"  Part="1" 
-AR Path="/60135668/604D786B" Ref="C?"  Part="1" 
-AR Path="/6044FE50/604D786B" Ref="C?"  Part="1" 
-AR Path="/6041BFCD/604D786B" Ref="C707"  Part="1" 
-F 0 "C707" H 1465 2041 50  0000 L CNN
-F 1 "100n" H 1465 1950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1388 1800 50  0001 C CNN
-F 3 "~" H 1350 1950 50  0001 C CNN
-F 4 "" H 1465 1859 50  0000 L CNN "Placement"
-	1    1350 1950
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 604D78FB
-P 1800 1950
-AR Path="/6002EA57/604D78FB" Ref="C?"  Part="1" 
-AR Path="/6008B538/604D78FB" Ref="C?"  Part="1" 
-AR Path="/60135668/604D78FB" Ref="C?"  Part="1" 
-AR Path="/6044FE50/604D78FB" Ref="C?"  Part="1" 
-AR Path="/6041BFCD/604D78FB" Ref="C708"  Part="1" 
-F 0 "C708" H 1915 2041 50  0000 L CNN
-F 1 "100n" H 1915 1950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1838 1800 50  0001 C CNN
-F 3 "~" H 1800 1950 50  0001 C CNN
-F 4 "" H 1915 1859 50  0000 L CNN "Placement"
-	1    1800 1950
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 604D7C88
-P 2250 1950
-AR Path="/6002EA57/604D7C88" Ref="C?"  Part="1" 
-AR Path="/6008B538/604D7C88" Ref="C?"  Part="1" 
-AR Path="/60135668/604D7C88" Ref="C?"  Part="1" 
-AR Path="/6044FE50/604D7C88" Ref="C?"  Part="1" 
-AR Path="/6041BFCD/604D7C88" Ref="C709"  Part="1" 
-F 0 "C709" H 2365 2041 50  0000 L CNN
-F 1 "100n" H 2365 1950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 2288 1800 50  0001 C CNN
-F 3 "~" H 2250 1950 50  0001 C CNN
-F 4 "" H 2365 1859 50  0000 L CNN "Placement"
-	1    2250 1950
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	1800 2150 1800 2100
 Wire Wire Line
@@ -154,57 +103,6 @@ Wire Wire Line
 	5750 2500 5750 2450
 Wire Wire Line
 	5750 2100 5750 2000
-$Comp
-L Device:C C?
-U 1 1 604F8AD6
-P 5750 2250
-AR Path="/6002EA57/604F8AD6" Ref="C?"  Part="1" 
-AR Path="/6008B538/604F8AD6" Ref="C?"  Part="1" 
-AR Path="/60135668/604F8AD6" Ref="C?"  Part="1" 
-AR Path="/6044FE50/604F8AD6" Ref="C?"  Part="1" 
-AR Path="/6041BFCD/604F8AD6" Ref="C713"  Part="1" 
-F 0 "C713" H 5865 2341 50  0000 L CNN
-F 1 "100n" H 5865 2250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5788 2100 50  0001 C CNN
-F 3 "~" H 5750 2250 50  0001 C CNN
-F 4 "" H 5865 2159 50  0000 L CNN "Placement"
-	1    5750 2250
-	1    0    0    1   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 604F8ADD
-P 5300 2250
-AR Path="/6002EA57/604F8ADD" Ref="C?"  Part="1" 
-AR Path="/6008B538/604F8ADD" Ref="C?"  Part="1" 
-AR Path="/60135668/604F8ADD" Ref="C?"  Part="1" 
-AR Path="/6044FE50/604F8ADD" Ref="C?"  Part="1" 
-AR Path="/6041BFCD/604F8ADD" Ref="C712"  Part="1" 
-F 0 "C712" H 5415 2341 50  0000 L CNN
-F 1 "100n" H 5415 2250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 5338 2100 50  0001 C CNN
-F 3 "~" H 5300 2250 50  0001 C CNN
-F 4 "" H 5415 2159 50  0000 L CNN "Placement"
-	1    5300 2250
-	1    0    0    1   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 604F8AE4
-P 4850 2250
-AR Path="/6002EA57/604F8AE4" Ref="C?"  Part="1" 
-AR Path="/6008B538/604F8AE4" Ref="C?"  Part="1" 
-AR Path="/60135668/604F8AE4" Ref="C?"  Part="1" 
-AR Path="/6044FE50/604F8AE4" Ref="C?"  Part="1" 
-AR Path="/6041BFCD/604F8AE4" Ref="C711"  Part="1" 
-F 0 "C711" H 4965 2341 50  0000 L CNN
-F 1 "100n" H 4965 2250 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4888 2100 50  0001 C CNN
-F 3 "~" H 4850 2250 50  0001 C CNN
-F 4 "" H 4965 2159 50  0000 L CNN "Placement"
-	1    4850 2250
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	5750 2450 5300 2450
 Wire Wire Line
@@ -248,57 +146,6 @@ F 3 "" H 4400 1700 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	4400 1300 4400 1200
-$Comp
-L Device:C C?
-U 1 1 605075FC
-P 4400 1450
-AR Path="/6002EA57/605075FC" Ref="C?"  Part="1" 
-AR Path="/6008B538/605075FC" Ref="C?"  Part="1" 
-AR Path="/60135668/605075FC" Ref="C?"  Part="1" 
-AR Path="/6044FE50/605075FC" Ref="C?"  Part="1" 
-AR Path="/6041BFCD/605075FC" Ref="C704"  Part="1" 
-F 0 "C704" H 4515 1541 50  0000 L CNN
-F 1 "100n" H 4515 1450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4438 1300 50  0001 C CNN
-F 3 "~" H 4400 1450 50  0001 C CNN
-F 4 "" H 4515 1359 50  0000 L CNN "Placement"
-	1    4400 1450
-	1    0    0    1   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60507603
-P 3950 1450
-AR Path="/6002EA57/60507603" Ref="C?"  Part="1" 
-AR Path="/6008B538/60507603" Ref="C?"  Part="1" 
-AR Path="/60135668/60507603" Ref="C?"  Part="1" 
-AR Path="/6044FE50/60507603" Ref="C?"  Part="1" 
-AR Path="/6041BFCD/60507603" Ref="C703"  Part="1" 
-F 0 "C703" H 4065 1541 50  0000 L CNN
-F 1 "100n" H 4065 1450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3988 1300 50  0001 C CNN
-F 3 "~" H 3950 1450 50  0001 C CNN
-F 4 "" H 4065 1359 50  0000 L CNN "Placement"
-	1    3950 1450
-	1    0    0    1   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 6050760A
-P 3500 1450
-AR Path="/6002EA57/6050760A" Ref="C?"  Part="1" 
-AR Path="/6008B538/6050760A" Ref="C?"  Part="1" 
-AR Path="/60135668/6050760A" Ref="C?"  Part="1" 
-AR Path="/6044FE50/6050760A" Ref="C?"  Part="1" 
-AR Path="/6041BFCD/6050760A" Ref="C702"  Part="1" 
-F 0 "C702" H 3615 1541 50  0000 L CNN
-F 1 "100n" H 3615 1450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3538 1300 50  0001 C CNN
-F 3 "~" H 3500 1450 50  0001 C CNN
-F 4 "" H 3615 1359 50  0000 L CNN "Placement"
-	1    3500 1450
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	4400 1650 3950 1650
 Wire Wire Line
@@ -324,23 +171,6 @@ Connection ~ 3500 1200
 Wire Wire Line
 	4400 1100 4400 1200
 Connection ~ 4400 1200
-$Comp
-L Device:C C?
-U 1 1 6051DD4A
-P 3050 1450
-AR Path="/6002EA57/6051DD4A" Ref="C?"  Part="1" 
-AR Path="/6008B538/6051DD4A" Ref="C?"  Part="1" 
-AR Path="/60135668/6051DD4A" Ref="C?"  Part="1" 
-AR Path="/6044FE50/6051DD4A" Ref="C?"  Part="1" 
-AR Path="/6041BFCD/6051DD4A" Ref="C701"  Part="1" 
-F 0 "C701" H 3165 1541 50  0000 L CNN
-F 1 "100n" H 3165 1450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3088 1300 50  0001 C CNN
-F 3 "~" H 3050 1450 50  0001 C CNN
-F 4 "" H 3165 1359 50  0000 L CNN "Placement"
-	1    3050 1450
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	3050 1200 3050 1300
 Wire Wire Line
@@ -422,6 +252,7 @@ F 1 "10u" H 1015 1950 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 938 1800 50  0001 C CNN
 F 3 "~" H 900 1950 50  0001 C CNN
 F 4 "" H 1015 1859 50  0000 L CNN "Placement"
+F 5 "WE 885012208069" H 900 1950 50  0001 C CNN "Bauteil"
 	1    900  1950
 	-1   0    0    1   
 $EndComp
@@ -582,6 +413,7 @@ F 0 "Y701" V 5254 3231 50  0000 L CNN
 F 1 "12,288MHz" V 5345 3231 50  0000 L CNN
 F 2 "Crystal:Crystal_SMD_HC49-SD" H 5300 3100 50  0001 C CNN
 F 3 "~" H 5300 3100 50  0001 C CNN
+F 4 "FC4SDCBMF12.288-T1" V 5300 3100 50  0001 C CNN "Bauteil"
 	1    5300 3100
 	0    1    1    0   
 $EndComp
@@ -611,11 +443,12 @@ AR Path="/6008B538/60594A01" Ref="C?"  Part="1"
 AR Path="/60135668/60594A01" Ref="C?"  Part="1" 
 AR Path="/6044FE50/60594A01" Ref="C?"  Part="1" 
 AR Path="/6041BFCD/60594A01" Ref="C714"  Part="1" 
-F 0 "C714" H 5965 2941 50  0000 L CNN
-F 1 "22p" H 5965 2850 50  0000 L CNN
+F 0 "C714" H 5600 2750 50  0000 L CNN
+F 1 "22p" H 5650 2650 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5888 2700 50  0001 C CNN
 F 3 "~" H 5850 2850 50  0001 C CNN
 F 4 "" H 5965 2759 50  0000 L CNN "Placement"
+F 5 "WE 885012206079" H 5850 2850 50  0001 C CNN "Bauteil"
 	1    5850 2850
 	0    -1   1    0   
 $EndComp
@@ -633,6 +466,7 @@ F 1 "22p" H 5965 3350 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5888 3200 50  0001 C CNN
 F 3 "~" H 5850 3350 50  0001 C CNN
 F 4 "" H 5965 3259 50  0000 L CNN "Placement"
+F 5 "WE 885012206079" H 5850 3350 50  0001 C CNN "Bauteil"
 	1    5850 3350
 	0    -1   1    0   
 $EndComp
@@ -878,6 +712,7 @@ F 1 "1u" H 4765 4950 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 4688 4800 50  0001 C CNN
 F 3 "~" H 4650 4950 50  0001 C CNN
 F 4 "" H 4765 4859 50  0000 L CNN "Placement"
+F 5 "WE 885012207078" H 4650 4950 50  0001 C CNN "Bauteil"
 	1    4650 4950
 	-1   0    0    -1  
 $EndComp
@@ -908,6 +743,7 @@ F 1 "47n" H 5165 4950 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5088 4800 50  0001 C CNN
 F 3 "~" H 5050 4950 50  0001 C CNN
 F 4 "" H 5165 4859 50  0000 L CNN "Placement"
+F 5 "WE 885012206093" H 5050 4950 50  0001 C CNN "Bauteil"
 	1    5050 4950
 	-1   0    0    -1  
 $EndComp
@@ -925,6 +761,7 @@ F 1 "10n" H 5565 4950 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5488 4800 50  0001 C CNN
 F 3 "~" H 5450 4950 50  0001 C CNN
 F 4 "" H 5565 4859 50  0000 L CNN "Placement"
+F 5 "WE 885012206089" H 5450 4950 50  0001 C CNN "Bauteil"
 	1    5450 4950
 	-1   0    0    -1  
 $EndComp
@@ -942,6 +779,7 @@ F 1 "10n" H 5965 4950 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 5888 4800 50  0001 C CNN
 F 3 "~" H 5850 4950 50  0001 C CNN
 F 4 "" H 5965 4859 50  0000 L CNN "Placement"
+F 5 "WE 885012206089" H 5850 4950 50  0001 C CNN "Bauteil"
 	1    5850 4950
 	-1   0    0    -1  
 $EndComp
@@ -1113,6 +951,7 @@ F 1 "1u" H 6715 3950 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 6638 3800 50  0001 C CNN
 F 3 "~" H 6600 3950 50  0001 C CNN
 F 4 "" H 6715 3859 50  0000 L CNN "Placement"
+F 5 "WE 885012207078" H 6600 3950 50  0001 C CNN "Bauteil"
 	1    6600 3950
 	0    1    -1   0   
 $EndComp
@@ -1130,6 +969,7 @@ F 1 "1u" H 6715 4250 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 6638 4100 50  0001 C CNN
 F 3 "~" H 6600 4250 50  0001 C CNN
 F 4 "" H 6715 4159 50  0000 L CNN "Placement"
+F 5 "WE 885012207078" H 6600 4250 50  0001 C CNN "Bauteil"
 	1    6600 4250
 	0    -1   1    0   
 $EndComp
@@ -1155,6 +995,7 @@ F 0 "U701" H 9700 1433 50  0000 C CNN
 F 1 "AD8656" H 9700 1524 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9700 1800 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8655_8656.pdf" H 9700 1800 50  0001 C CNN
+F 4 "AD8656ARZ" H 9700 1800 50  0001 C CNN "Bauteil"
 	1    9700 1800
 	1    0    0    1   
 $EndComp
@@ -1166,6 +1007,7 @@ F 0 "U701" H 9700 3283 50  0000 C CNN
 F 1 "AD8656" H 9700 3374 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 9700 3650 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8655_8656.pdf" H 9700 3650 50  0001 C CNN
+F 4 "AD8656ARZ" H 9700 3650 50  0001 C CNN "Bauteil"
 	2    9700 3650
 	1    0    0    1   
 $EndComp
@@ -1177,6 +1019,7 @@ F 0 "U701" H 2108 6796 50  0000 L CNN
 F 1 "AD8656" H 2108 6705 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2150 6750 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/AD8655_8656.pdf" H 2150 6750 50  0001 C CNN
+F 4 "AD8656ARZ" H 2150 6750 50  0001 C CNN "Bauteil"
 	3    2150 6750
 	1    0    0    -1  
 $EndComp
@@ -1200,6 +1043,7 @@ F 1 "10u" H 1415 6750 50  0000 L CNN
 F 2 "Capacitor_SMD:C_1206_3216Metric" H 1338 6600 50  0001 C CNN
 F 3 "~" H 1300 6750 50  0001 C CNN
 F 4 "" H 1415 6659 50  0000 L CNN "Placement"
+F 5 "WE 885012208069" H 1300 6750 50  0001 C CNN "Bauteil"
 	1    1300 6750
 	1    0    0    -1  
 $EndComp
@@ -1234,30 +1078,13 @@ F 0 "L701" V 1290 6400 50  0000 C CNN
 F 1 "4,7u" V 1199 6400 50  0000 C CNN
 F 2 "local:WE-LQ" H 1100 6400 50  0001 C CNN
 F 3 "~" H 1100 6400 50  0001 C CNN
-F 4 "WE 744045004" V 1100 6400 50  0001 C CNN "Type"
+F 4 "WE 744045004" V 1100 6400 50  0001 C CNN "Bauteil"
 	1    1100 6400
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
 	1250 6400 1300 6400
 Connection ~ 1300 6400
-$Comp
-L Device:C C?
-U 1 1 6076D9F2
-P 1700 6750
-AR Path="/6002EA57/6076D9F2" Ref="C?"  Part="1" 
-AR Path="/6008B538/6076D9F2" Ref="C?"  Part="1" 
-AR Path="/60135668/6076D9F2" Ref="C?"  Part="1" 
-AR Path="/6044FE50/6076D9F2" Ref="C?"  Part="1" 
-AR Path="/6041BFCD/6076D9F2" Ref="C725"  Part="1" 
-F 0 "C725" H 1815 6841 50  0000 L CNN
-F 1 "100n" H 1815 6750 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 1738 6600 50  0001 C CNN
-F 3 "~" H 1700 6750 50  0001 C CNN
-F 4 "" H 1815 6659 50  0000 L CNN "Placement"
-	1    1700 6750
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	1700 6400 1700 6600
 Wire Wire Line
@@ -1338,25 +1165,9 @@ F 1 "1u" H 10515 1800 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 10438 1650 50  0001 C CNN
 F 3 "~" H 10400 1800 50  0001 C CNN
 F 4 "" H 10515 1709 50  0000 L CNN "Placement"
+F 5 "WE 885012207078" H 10400 1800 50  0001 C CNN "Bauteil"
 	1    10400 1800
 	0    1    -1   0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 607C4A6B
-P 8450 2200
-AR Path="/6002EA57/607C4A6B" Ref="C?"  Part="1" 
-AR Path="/6008B538/607C4A6B" Ref="C?"  Part="1" 
-AR Path="/60135668/607C4A6B" Ref="C?"  Part="1" 
-AR Path="/6044FE50/607C4A6B" Ref="C?"  Part="1" 
-AR Path="/6041BFCD/607C4A6B" Ref="C710"  Part="1" 
-F 0 "C710" H 8565 2291 50  0000 L CNN
-F 1 "100n" H 8565 2200 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 8488 2050 50  0001 C CNN
-F 3 "~" H 8450 2200 50  0001 C CNN
-F 4 "" H 8565 2109 50  0000 L CNN "Placement"
-	1    8450 2200
-	1    0    0    1   
 $EndComp
 $Comp
 L Device:R R?
@@ -1440,9 +1251,10 @@ L Device:R_POT RV701
 U 1 1 607C7DE9
 P 9200 1450
 F 0 "RV701" H 9131 1496 50  0000 R CNN
-F 1 "22k lin" H 9131 1405 50  0000 R CNN
-F 2 "Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical" H 9200 1450 50  0001 C CNN
+F 1 "20k lin" H 9131 1405 50  0000 R CNN
+F 2 "Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertica" H 9200 1450 50  0001 C CNN
 F 3 "~" H 9200 1450 50  0001 C CNN
+F 4 "Vishay TS53YL203MR10" H 9200 1450 50  0001 C CNN "Bauteil"
 	1    9200 1450
 	1    0    0    -1  
 $EndComp
@@ -1619,25 +1431,9 @@ F 1 "1u" H 10515 3650 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 10438 3500 50  0001 C CNN
 F 3 "~" H 10400 3650 50  0001 C CNN
 F 4 "" H 10515 3559 50  0000 L CNN "Placement"
+F 5 "WE 885012207078" H 10400 3650 50  0001 C CNN "Bauteil"
 	1    10400 3650
 	0    1    -1   0   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60904B46
-P 8450 4050
-AR Path="/6002EA57/60904B46" Ref="C?"  Part="1" 
-AR Path="/6008B538/60904B46" Ref="C?"  Part="1" 
-AR Path="/60135668/60904B46" Ref="C?"  Part="1" 
-AR Path="/6044FE50/60904B46" Ref="C?"  Part="1" 
-AR Path="/6041BFCD/60904B46" Ref="C718"  Part="1" 
-F 0 "C718" H 8565 4141 50  0000 L CNN
-F 1 "100n" H 8565 4050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 8488 3900 50  0001 C CNN
-F 3 "~" H 8450 4050 50  0001 C CNN
-F 4 "" H 8565 3959 50  0000 L CNN "Placement"
-	1    8450 4050
-	1    0    0    1   
 $EndComp
 $Comp
 L Device:R R?
@@ -1705,9 +1501,10 @@ L Device:R_POT RV702
 U 1 1 60904B6B
 P 9200 3300
 F 0 "RV702" H 9131 3346 50  0000 R CNN
-F 1 "22k lin" H 9131 3255 50  0000 R CNN
+F 1 "20k lin" H 9131 3255 50  0000 R CNN
 F 2 "Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical" H 9200 3300 50  0001 C CNN
 F 3 "~" H 9200 3300 50  0001 C CNN
+F 4 "Vishay TS53YL203MR10" H 9200 3300 50  0001 C CNN "Bauteil"
 	1    9200 3300
 	1    0    0    -1  
 $EndComp
@@ -1855,4 +1652,238 @@ NoConn ~ 4400 4450
 NoConn ~ 4400 4550
 NoConn ~ 2050 3750
 NoConn ~ 4400 3950
+$Comp
+L Device:C C?
+U 1 1 604D786B
+P 1350 1950
+AR Path="/6002EA57/604D786B" Ref="C?"  Part="1" 
+AR Path="/6008B538/604D786B" Ref="C?"  Part="1" 
+AR Path="/60135668/604D786B" Ref="C?"  Part="1" 
+AR Path="/6044FE50/604D786B" Ref="C?"  Part="1" 
+AR Path="/6041BFCD/604D786B" Ref="C707"  Part="1" 
+F 0 "C707" H 1465 2041 50  0000 L CNN
+F 1 "100n" H 1465 1950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1388 1800 50  0001 C CNN
+F 3 "~" H 1350 1950 50  0001 C CNN
+F 4 "" H 1465 1859 50  0000 L CNN "Placement"
+F 5 "WE 885382206004" H 1350 1950 50  0001 C CNN "Bauteil"
+	1    1350 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6002CA3C
+P 1800 1950
+AR Path="/6002EA57/6002CA3C" Ref="C?"  Part="1" 
+AR Path="/6008B538/6002CA3C" Ref="C?"  Part="1" 
+AR Path="/60135668/6002CA3C" Ref="C?"  Part="1" 
+AR Path="/6044FE50/6002CA3C" Ref="C?"  Part="1" 
+AR Path="/6041BFCD/6002CA3C" Ref="C708"  Part="1" 
+F 0 "C708" H 1915 2041 50  0000 L CNN
+F 1 "100n" H 1915 1950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1838 1800 50  0001 C CNN
+F 3 "~" H 1800 1950 50  0001 C CNN
+F 4 "" H 1915 1859 50  0000 L CNN "Placement"
+F 5 "WE 885382206004" H 1800 1950 50  0001 C CNN "Bauteil"
+	1    1800 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6002CFCA
+P 2250 1950
+AR Path="/6002EA57/6002CFCA" Ref="C?"  Part="1" 
+AR Path="/6008B538/6002CFCA" Ref="C?"  Part="1" 
+AR Path="/60135668/6002CFCA" Ref="C?"  Part="1" 
+AR Path="/6044FE50/6002CFCA" Ref="C?"  Part="1" 
+AR Path="/6041BFCD/6002CFCA" Ref="C709"  Part="1" 
+F 0 "C709" H 2365 2041 50  0000 L CNN
+F 1 "100n" H 2365 1950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 2288 1800 50  0001 C CNN
+F 3 "~" H 2250 1950 50  0001 C CNN
+F 4 "" H 2365 1859 50  0000 L CNN "Placement"
+F 5 "WE 885382206004" H 2250 1950 50  0001 C CNN "Bauteil"
+	1    2250 1950
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6002D6E5
+P 3050 1450
+AR Path="/6002EA57/6002D6E5" Ref="C?"  Part="1" 
+AR Path="/6008B538/6002D6E5" Ref="C?"  Part="1" 
+AR Path="/60135668/6002D6E5" Ref="C?"  Part="1" 
+AR Path="/6044FE50/6002D6E5" Ref="C?"  Part="1" 
+AR Path="/6041BFCD/6002D6E5" Ref="C701"  Part="1" 
+F 0 "C701" H 3165 1541 50  0000 L CNN
+F 1 "100n" H 3165 1450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3088 1300 50  0001 C CNN
+F 3 "~" H 3050 1450 50  0001 C CNN
+F 4 "" H 3165 1359 50  0000 L CNN "Placement"
+F 5 "WE 885382206004" H 3050 1450 50  0001 C CNN "Bauteil"
+	1    3050 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6002DB4B
+P 3500 1450
+AR Path="/6002EA57/6002DB4B" Ref="C?"  Part="1" 
+AR Path="/6008B538/6002DB4B" Ref="C?"  Part="1" 
+AR Path="/60135668/6002DB4B" Ref="C?"  Part="1" 
+AR Path="/6044FE50/6002DB4B" Ref="C?"  Part="1" 
+AR Path="/6041BFCD/6002DB4B" Ref="C702"  Part="1" 
+F 0 "C702" H 3615 1541 50  0000 L CNN
+F 1 "100n" H 3615 1450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3538 1300 50  0001 C CNN
+F 3 "~" H 3500 1450 50  0001 C CNN
+F 4 "" H 3615 1359 50  0000 L CNN "Placement"
+F 5 "WE 885382206004" H 3500 1450 50  0001 C CNN "Bauteil"
+	1    3500 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6002E13C
+P 3950 1450
+AR Path="/6002EA57/6002E13C" Ref="C?"  Part="1" 
+AR Path="/6008B538/6002E13C" Ref="C?"  Part="1" 
+AR Path="/60135668/6002E13C" Ref="C?"  Part="1" 
+AR Path="/6044FE50/6002E13C" Ref="C?"  Part="1" 
+AR Path="/6041BFCD/6002E13C" Ref="C703"  Part="1" 
+F 0 "C703" H 4065 1541 50  0000 L CNN
+F 1 "100n" H 4065 1450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 3988 1300 50  0001 C CNN
+F 3 "~" H 3950 1450 50  0001 C CNN
+F 4 "" H 4065 1359 50  0000 L CNN "Placement"
+F 5 "WE 885382206004" H 3950 1450 50  0001 C CNN "Bauteil"
+	1    3950 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6002E822
+P 4400 1450
+AR Path="/6002EA57/6002E822" Ref="C?"  Part="1" 
+AR Path="/6008B538/6002E822" Ref="C?"  Part="1" 
+AR Path="/60135668/6002E822" Ref="C?"  Part="1" 
+AR Path="/6044FE50/6002E822" Ref="C?"  Part="1" 
+AR Path="/6041BFCD/6002E822" Ref="C704"  Part="1" 
+F 0 "C704" H 4515 1541 50  0000 L CNN
+F 1 "100n" H 4515 1450 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4438 1300 50  0001 C CNN
+F 3 "~" H 4400 1450 50  0001 C CNN
+F 4 "" H 4515 1359 50  0000 L CNN "Placement"
+F 5 "WE 885382206004" H 4400 1450 50  0001 C CNN "Bauteil"
+	1    4400 1450
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6002EFDB
+P 4850 2250
+AR Path="/6002EA57/6002EFDB" Ref="C?"  Part="1" 
+AR Path="/6008B538/6002EFDB" Ref="C?"  Part="1" 
+AR Path="/60135668/6002EFDB" Ref="C?"  Part="1" 
+AR Path="/6044FE50/6002EFDB" Ref="C?"  Part="1" 
+AR Path="/6041BFCD/6002EFDB" Ref="C711"  Part="1" 
+F 0 "C711" H 4965 2341 50  0000 L CNN
+F 1 "100n" H 4965 2250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 4888 2100 50  0001 C CNN
+F 3 "~" H 4850 2250 50  0001 C CNN
+F 4 "" H 4965 2159 50  0000 L CNN "Placement"
+F 5 "WE 885382206004" H 4850 2250 50  0001 C CNN "Bauteil"
+	1    4850 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6002F626
+P 5300 2250
+AR Path="/6002EA57/6002F626" Ref="C?"  Part="1" 
+AR Path="/6008B538/6002F626" Ref="C?"  Part="1" 
+AR Path="/60135668/6002F626" Ref="C?"  Part="1" 
+AR Path="/6044FE50/6002F626" Ref="C?"  Part="1" 
+AR Path="/6041BFCD/6002F626" Ref="C712"  Part="1" 
+F 0 "C712" H 5415 2341 50  0000 L CNN
+F 1 "100n" H 5415 2250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5338 2100 50  0001 C CNN
+F 3 "~" H 5300 2250 50  0001 C CNN
+F 4 "" H 5415 2159 50  0000 L CNN "Placement"
+F 5 "WE 885382206004" H 5300 2250 50  0001 C CNN "Bauteil"
+	1    5300 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6002F98C
+P 5750 2250
+AR Path="/6002EA57/6002F98C" Ref="C?"  Part="1" 
+AR Path="/6008B538/6002F98C" Ref="C?"  Part="1" 
+AR Path="/60135668/6002F98C" Ref="C?"  Part="1" 
+AR Path="/6044FE50/6002F98C" Ref="C?"  Part="1" 
+AR Path="/6041BFCD/6002F98C" Ref="C713"  Part="1" 
+F 0 "C713" H 5865 2341 50  0000 L CNN
+F 1 "100n" H 5865 2250 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 5788 2100 50  0001 C CNN
+F 3 "~" H 5750 2250 50  0001 C CNN
+F 4 "" H 5865 2159 50  0000 L CNN "Placement"
+F 5 "WE 885382206004" H 5750 2250 50  0001 C CNN "Bauteil"
+	1    5750 2250
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6002FF81
+P 8450 2200
+AR Path="/6002EA57/6002FF81" Ref="C?"  Part="1" 
+AR Path="/6008B538/6002FF81" Ref="C?"  Part="1" 
+AR Path="/60135668/6002FF81" Ref="C?"  Part="1" 
+AR Path="/6044FE50/6002FF81" Ref="C?"  Part="1" 
+AR Path="/6041BFCD/6002FF81" Ref="C710"  Part="1" 
+F 0 "C710" H 8200 2300 50  0000 L CNN
+F 1 "100n" H 8200 2400 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8488 2050 50  0001 C CNN
+F 3 "~" H 8450 2200 50  0001 C CNN
+F 4 "" H 8565 2109 50  0000 L CNN "Placement"
+F 5 "WE 885382206004" H 8450 2200 50  0001 C CNN "Bauteil"
+	1    8450 2200
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 60030873
+P 8450 4050
+AR Path="/6002EA57/60030873" Ref="C?"  Part="1" 
+AR Path="/6008B538/60030873" Ref="C?"  Part="1" 
+AR Path="/60135668/60030873" Ref="C?"  Part="1" 
+AR Path="/6044FE50/60030873" Ref="C?"  Part="1" 
+AR Path="/6041BFCD/60030873" Ref="C718"  Part="1" 
+F 0 "C718" H 8550 3950 50  0000 L CNN
+F 1 "100n" H 8565 4050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8488 3900 50  0001 C CNN
+F 3 "~" H 8450 4050 50  0001 C CNN
+F 4 "" H 8565 3959 50  0000 L CNN "Placement"
+F 5 "WE 885382206004" H 8450 4050 50  0001 C CNN "Bauteil"
+	1    8450 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6003110A
+P 1700 6750
+AR Path="/6002EA57/6003110A" Ref="C?"  Part="1" 
+AR Path="/6008B538/6003110A" Ref="C?"  Part="1" 
+AR Path="/60135668/6003110A" Ref="C?"  Part="1" 
+AR Path="/6044FE50/6003110A" Ref="C?"  Part="1" 
+AR Path="/6041BFCD/6003110A" Ref="C725"  Part="1" 
+F 0 "C725" H 1815 6841 50  0000 L CNN
+F 1 "100n" H 1815 6750 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 1738 6600 50  0001 C CNN
+F 3 "~" H 1700 6750 50  0001 C CNN
+F 4 "" H 1815 6659 50  0000 L CNN "Placement"
+F 5 "WE 885382206004" H 1700 6750 50  0001 C CNN "Bauteil"
+	1    1700 6750
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

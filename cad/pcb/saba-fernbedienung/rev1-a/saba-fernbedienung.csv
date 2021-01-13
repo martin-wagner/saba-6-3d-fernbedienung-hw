@@ -1,310 +1,151 @@
-"Source:","/home/martin/elektronik/radios/saba fernbedienung/cad/pcb/saba-fernbedienung/rev1-a/saba-fernbedienung.sch"
-"Date:","Wed 13 Jan 2021 21:03:33 CET"
-"Tool:","Eeschema 5.1.9-73d0e3b20d~88~ubuntu18.04.1"
-"Generator:","/usr/share/kicad/plugins/bom_csv_grouped_by_value.py"
-"Component Count:","230"
-
-"Individual Components:"
-
-"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","Placement","Type","Voltage"
-"","","C301","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C302","10u","Device:C","Capacitor_SMD:C_1206_3216Metric","~","","",""
-"","","C303","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","NP","",""
-"","","C304","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C401","150p","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C402","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C403","1000u","Device:CP","Capacitor_THT:CP_Radial_D10.0mm_P5.00mm","~","","","16V"
-"","","C404","10u","Device:C","Capacitor_SMD:C_1206_3216Metric","~","","",""
-"","","C405","10u","Device:C","Capacitor_SMD:C_1206_3216Metric","~","","",""
-"","","C406","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C407","220u","Device:CP","Capacitor_THT:CP_Radial_D10.0mm_P5.00mm","~","","","10V"
-"","","C408","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C409","220p","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C410","220u","Device:CP","Capacitor_THT:CP_Radial_D10.0mm_P5.00mm","~","","","50V"
-"","","C411","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C412","10u","Device:C","Capacitor_SMD:C_1206_3216Metric","~","","",""
-"","","C413","10u","Device:C","Capacitor_SMD:C_1206_3216Metric","~","","",""
-"","","C414","10u","Device:C","Capacitor_SMD:C_1206_3216Metric","~","","",""
-"","","C415","10u","Device:C","Capacitor_SMD:C_1206_3216Metric","~","","",""
-"","","C416","10u","Device:C","Capacitor_SMD:C_1206_3216Metric","~","","",""
-"","","C417","10u","Device:C","Capacitor_SMD:C_1206_3216Metric","~","","",""
-"","","C418","220u","Device:CP","Capacitor_THT:CP_Radial_D10.0mm_P5.00mm","~","","","50V"
-"","","C419","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C501","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C502","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C503","470n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C504","470n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C505","470n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C506","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C507","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C508","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C601","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C701","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C702","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C703","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C704","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C705","1u","Device:C","Capacitor_SMD:C_0805_2012Metric","~","","",""
-"","","C706","10u","Device:C","Capacitor_SMD:C_1206_3216Metric","~","","",""
-"","","C707","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C708","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C709","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C710","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C711","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C712","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C713","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C714","22p","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C715","22p","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C716","1u","Device:C","Capacitor_SMD:C_0805_2012Metric","~","","",""
-"","","C717","1u","Device:C","Capacitor_SMD:C_0805_2012Metric","~","","",""
-"","","C718","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C719","1u","Device:C","Capacitor_SMD:C_0805_2012Metric","~","","",""
-"","","C720","1u","Device:C","Capacitor_SMD:C_0805_2012Metric","~","","",""
-"","","C721","47n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C722","10n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C723","10n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","C724","10u","Device:C","Capacitor_SMD:C_1206_3216Metric","~","","",""
-"","","C725","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"","","D201","LED","Device:LED","LED_SMD:LED_0805_2012Metric","~","","",""
-"","","D301","D_TVS_x2_D5V0L2B3W","Device:D_TVS_x2_AAC","Package_TO_SOT_SMD:SOT-323_SC-70","https://www.diodes.com/assets/Datasheets/D5V0L2B3W.pdf","","",""
-"","","D302","B140-E3","Diode:B140-E3","Diode_SMD:D_SMA","http://www.vishay.com/docs/88946/b120.pdf","NP","",""
-"","","D303","SMAJ5.0A","Diode:SM6T6V8A","Diode_SMD:D_SMA","","NP","",""
-"","","D401","B140-E3","Diode:B140-E3","Diode_SMD:D_SMA","http://www.vishay.com/docs/88946/b120.pdf","","",""
-"","","D402","B140-E3","Diode:B140-E3","Diode_SMD:D_SMA","http://www.vishay.com/docs/88946/b120.pdf","","",""
-"","","D403","B140-E3","Diode:B140-E3","Diode_SMD:D_SMA","http://www.vishay.com/docs/88946/b120.pdf","","",""
-"","","D404","B140-E3","Diode:B140-E3","Diode_SMD:D_SMA","http://www.vishay.com/docs/88946/b120.pdf","","",""
-"","","D405","1N4007","Device:D","Diode_SMD:D_SMA","~","","",""
-"","","D406","1N4007","Device:D","Diode_SMD:D_SMA","~","","",""
-"","","D501","1N4148","Device:D","Diode_SMD:D_SOD-323F","~","","",""
-"","","D502","1N4148","Device:D","Diode_SMD:D_SOD-323F","~","","",""
-"","","D503","SMAJ33CA","Device:D_TVS","Diode_SMD:D_SMA","~","","",""
-"","","D504","SMAJ33CA","Device:D_TVS","Diode_SMD:D_SMA","~","","",""
-"","","D505","LED","Device:LED","LED_SMD:LED_0805_2012Metric","~","","",""
-"","","D506","LED","Device:LED","LED_SMD:LED_0805_2012Metric","~","","",""
-"","","D507","LED","Device:LED","LED_SMD:LED_0805_2012Metric","~","","",""
-"","","D601","1N4148","Device:D","Diode_SMD:D_SOD-323F","~","","",""
-"","","D602","1N4148","Device:D","Diode_SMD:D_SOD-323F","~","","",""
-"","","D603","1N4148","Device:D","Diode_SMD:D_SOD-323F","~","","",""
-"","","D604","1N4148","Device:D","Diode_SMD:D_SOD-323F","~","","",""
-"","","D605","1N4148","Device:D","Diode_SMD:D_SOD-323F","~","","",""
-"","","D606","1N4148","Device:D","Diode_SMD:D_SOD-323F","~","","",""
-"","","D607","1N4148","Device:D","Diode_SMD:D_SOD-323F","~","","",""
-"","","D608","1N4148","Device:D","Diode_SMD:D_SOD-323F","~","","",""
-"","","D609","1N4148","Device:D","Diode_SMD:D_SOD-323F","~","","",""
-"","","D610","LED","Device:LED","LED_SMD:LED_0805_2012Metric","~","","",""
-"","","J201","Conn_ARM_JTAG_SWD_10","Connector:Conn_ARM_JTAG_SWD_10","Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical","http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf","NP","",""
-"","","J301","Conn_01x04","Connector_Generic:Conn_01x04","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","~","","",""
-"","","J302","Conn_01x04","Connector_Generic:Conn_01x04","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","~","","",""
-"","","J303","Micro_SD_Card","Connector:Micro_SD_Card","Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5","http://katalog.we-online.de/em/datasheet/693072010801.pdf","","",""
-"","","J304","Conn_01x04","Connector_Generic:Conn_01x04","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","~","","",""
-"","","J305","AudioJack3","Connector:AudioJack3","Connector_Audio:Jack_3.5mm_CUI_SJ-3523-SMT_Horizontal","~","","",""
-"","","J306","Conn_01x02","Connector_Generic:Conn_01x02","Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical","~","","",""
-"","","J307","Conn_01x04","Connector_Generic:Conn_01x04","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","~","","",""
-"","","J308","Conn_01x01","Connector_Generic:Conn_01x01","Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical","~","","",""
-"","","J309","Conn_01x01","Connector_Generic:Conn_01x01","Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical","~","","",""
-"","","J310","Conn_01x01","Connector_Generic:Conn_01x01","Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical","~","","",""
-"","","J311","Conn_01x04","Connector_Generic:Conn_01x04","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","~","","",""
-"","","J312","Conn_01x08","Connector_Generic:Conn_01x08","Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical","~","NP","",""
-"","","J313","USB_C_Receptacle_USB2.0","Connector:USB_C_Receptacle_USB2.0","Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12","https://www.usb.org/sites/default/files/documents/usb_type-c.zip","NP","",""
-"","","K601","G6K-2","Relay:G6K-2","Relay_SMD:Relay_DPDT_Omron_G6K-2F","http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf","","",""
-"","","K602","G6K-2","Relay:G6K-2","Relay_SMD:Relay_DPDT_Omron_G6K-2F","http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf","","",""
-"","","K603","G6K-2","Relay:G6K-2","Relay_SMD:Relay_DPDT_Omron_G6K-2F","http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf","","",""
-"","","K604","G6K-2","Relay:G6K-2","Relay_SMD:Relay_DPDT_Omron_G6K-2F","http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf","","",""
-"","","K605","G6K-2","Relay:G6K-2","Relay_SMD:Relay_DPDT_Omron_G6K-2F","http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf","","",""
-"","","K606","G6K-2","Relay:G6K-2","Relay_SMD:Relay_DPDT_Omron_G6K-2F","http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf","","",""
-"","","K607","EC2-5TNU","Relay:EC2-5TNU","Relay_THT:Relay_DPDT_Kemet_EC2_DoubleCoil","https://content.kemet.com/datasheets/KEM_R7002_EC2_EE2.pdf","","",""
-"","","L401","4,7u","Device:L","local:WE-LQ","~","","WE 744045004",""
-"","","L402","4,7u","Device:L","local:WE-LQ","~","","WE 744045004",""
-"","","L701","4,7u","Device:L","local:WE-LQ","~","","WE 744045004",""
-"","","Q201","BC856","Transistor_BJT:BC856","Package_TO_SOT_SMD:SOT-23","https://www.onsemi.com/pub/Collateral/BC860-D.pdf","NP","",""
-"","","Q601","BC846","Transistor_BJT:BC846","Package_TO_SOT_SMD:SOT-23","https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf","","",""
-"","","Q602","BC846","Transistor_BJT:BC846","Package_TO_SOT_SMD:SOT-23","https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf","","",""
-"","","Q603","BC846","Transistor_BJT:BC846","Package_TO_SOT_SMD:SOT-23","https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf","","",""
-"","","Q604","BC846","Transistor_BJT:BC846","Package_TO_SOT_SMD:SOT-23","https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf","","",""
-"","","Q605","BC846","Transistor_BJT:BC846","Package_TO_SOT_SMD:SOT-23","https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf","","",""
-"","","Q606","BC846","Transistor_BJT:BC846","Package_TO_SOT_SMD:SOT-23","https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf","","",""
-"","","Q607","BC846","Transistor_BJT:BC846","Package_TO_SOT_SMD:SOT-23","https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf","","",""
-"","","R201","10k","Device:R","Resistor_SMD:R_0603_1608Metric","~","NP","",""
-"","","R202","10k","Device:R","Resistor_SMD:R_0603_1608Metric","~","NP","",""
-"","","R203","10k","Device:R","Resistor_SMD:R_0603_1608Metric","~","NP","",""
-"","","R204","1k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R205","100","Device:R","Resistor_SMD:R_0603_1608Metric","~","NP","",""
-"","","R206","100","Device:R","Resistor_SMD:R_0603_1608Metric","~","NP","",""
-"","","R207","100","Device:R","Resistor_SMD:R_0603_1608Metric","~","NP","",""
-"","","R208","100","Device:R","Resistor_SMD:R_0603_1608Metric","~","NP","",""
-"","","R301","1k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R302","1k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R303","0","Device:R","Resistor_SMD:R_0603_1608Metric","~","NP","",""
-"","","R304","1M","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R305","100","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R306","5k1","Device:R","Resistor_SMD:R_0603_1608Metric","~","NP","",""
-"","","R307","5k1","Device:R","Resistor_SMD:R_0603_1608Metric","~","NP","",""
-"","","R308","1M","Device:R","Resistor_SMD:R_0603_1608Metric","~","NP","",""
-"","","R401","220","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R402","470","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R501","100k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R502","22k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R503","100k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R504","1k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R505","1k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R506","100k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R507","470k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R508","22k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R509","100k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R510","100k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R511","68k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R512","1k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R513","1k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R514","27k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R515","1k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R516","1k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R517","10k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R518","10k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R519","68k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R520","470k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R521","3k3","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R522","1M","Device:R","Resistor_SMD:R_0603_1608Metric","~","NP","",""
-"","","R523","120k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R524","1M","Device:R","Resistor_SMD:R_0603_1608Metric","~","NP","",""
-"","","R525","22k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R526","22k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R527","10k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R528","15k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R529","1k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R530","1k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R531","10k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R532","10k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R533","18k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R534","8k2","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R535","1M","Device:R","Resistor_SMD:R_0603_1608Metric","~","NP","",""
-"","","R536","22k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R601","1k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R602","1k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R603","1k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R604","100k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R605","100k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R606","12k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R607","1k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R608","1k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R609","10k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R610","100k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R611","100k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R612","12k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R613","1k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R614","1k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R615","100k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R616","100k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R617","1k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R618","5k7","Device:R","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal","~","","",""
-"","","R619","1k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R620","10k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R621","1k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R622","1k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R623","100k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R701","1k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R702","100k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R703","100k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R704","100k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R705","10k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R706","1M","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R707","1M","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R708","1k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R709","100k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R710","100k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R711","100","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R712","100k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R713","10k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R714","1M","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R715","100","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R716","10","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R717","22","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R718","22","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R719","100k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R720","100k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","R721","100k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"","","RV701","22k lin","Device:R_POT","Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical","~","","",""
-"","","RV702","22k lin","Device:R_POT","Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical","~","","",""
-"","","U201","DOIT-DEVKITV1-ESP32-WROOM-32","local:DOIT-DEVKITV1-ESP32-WROOM-32","local:DOIT-DEVKITV1-ESP32-WROOM-32","","","",""
-"","","U301","TSOP31238","Interface_Optical:TSOP312xx","OptoDevice:Vishay_CAST-3Pin","http://www.vishay.com/docs/82492/tsop312.pdf","","",""
-"","","U401","TEC2-0911","local:TEC2-0911","local:Converter_DCDC_TRACO_TEC2_xxxx_THT","","","",""
-"","","U402","AP1117-18","Regulator_Linear:AP1117-18","Package_TO_SOT_SMD:SOT-223-3_TabPin2","http://www.diodes.com/datasheets/AP1117.pdf","","",""
-"","","U403","AP1117-33","Regulator_Linear:AP1117-33","Package_TO_SOT_SMD:SOT-223-3_TabPin2","http://www.diodes.com/datasheets/AP1117.pdf","","",""
-"","","U501","ADA4522-2","Device:Opamp_Dual_Generic","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4522-1_4522-2_4522-4.pdf","","",""
-"","","U502","LM339","Comparator:LM339","Package_SO:SOIC-14_3.9x8.7mm_P1.27mm","https://www.st.com/resource/en/datasheet/lm139.pdf","","",""
-"","","U503","LTV-357T","Isolator:LTV-357T","Package_SO:SO-4_4.4x3.6mm_P2.54mm","https://www.buerklin.com/medias/sys_master/download/download/h91/ha0/8892020588574.pdf","","",""
-"","","U504","LTV-357T","Isolator:LTV-357T","Package_SO:SO-4_4.4x3.6mm_P2.54mm","https://www.buerklin.com/medias/sys_master/download/download/h91/ha0/8892020588574.pdf","","",""
-"","","U505","LTV-357T","Isolator:LTV-357T","Package_SO:SO-4_4.4x3.6mm_P2.54mm","https://www.buerklin.com/medias/sys_master/download/download/h91/ha0/8892020588574.pdf","","",""
-"","","U601","LTV-357T","Isolator:LTV-357T","Package_SO:SO-4_4.4x3.6mm_P2.54mm","https://www.buerklin.com/medias/sys_master/download/download/h91/ha0/8892020588574.pdf","","",""
-"","","U701","AD8656","Device:Opamp_Dual_Generic","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","https://www.analog.com/media/en/technical-documentation/data-sheets/AD8655_8656.pdf","","",""
-"","","U702","VS1053","local:VS1053","Package_QFP:LQFP-48_7x7mm_P0.5mm","","","",""
-"","","Y701","12,288MHz","Device:Crystal","Crystal:Crystal_SMD_HC49-SD","~","","",""
-
-
-
-"Collated Components:"
-
-"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet","Placement","Type","Voltage"
-"1","27","C301, C303, C304, C402, C406, C408, C411, C419, C501, C502, C506, C507, C508, C601, C701, C702, C703, C704, C707, C708, C709, C710, C711, C712, C713, C718, C725","100n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","NP","",""
-"2","11","C302, C404, C405, C412, C413, C414, C415, C416, C417, C706, C724","10u","Device:C","Capacitor_SMD:C_1206_3216Metric","~","","",""
-"3","1","C401","150p","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"4","1","C403","1000u","Device:CP","Capacitor_THT:CP_Radial_D10.0mm_P5.00mm","~","","","16V"
-"5","3","C407, C410, C418","220u","Device:CP","Capacitor_THT:CP_Radial_D10.0mm_P5.00mm","~","","","10V"
-"6","1","C409","220p","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"7","3","C503, C504, C505","470n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"8","5","C705, C716, C717, C719, C720","1u","Device:C","Capacitor_SMD:C_0805_2012Metric","~","","",""
-"9","2","C714, C715","22p","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"10","1","C721","47n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"11","2","C722, C723","10n","Device:C","Capacitor_SMD:C_0603_1608Metric","~","","",""
-"12","5","D201, D505, D506, D507, D610","LED","Device:LED","LED_SMD:LED_0805_2012Metric","~","","",""
-"13","1","D301","D_TVS_x2_D5V0L2B3W","Device:D_TVS_x2_AAC","Package_TO_SOT_SMD:SOT-323_SC-70","https://www.diodes.com/assets/Datasheets/D5V0L2B3W.pdf","","",""
-"14","5","D302, D401, D402, D403, D404","B140-E3","Diode:B140-E3","Diode_SMD:D_SMA","http://www.vishay.com/docs/88946/b120.pdf","NP","",""
-"15","1","D303","SMAJ5.0A","Diode:SM6T6V8A","Diode_SMD:D_SMA","","NP","",""
-"16","2","D405, D406","1N4007","Device:D","Diode_SMD:D_SMA","~","","",""
-"17","11","D501, D502, D601, D602, D603, D604, D605, D606, D607, D608, D609","1N4148","Device:D","Diode_SMD:D_SOD-323F","~","","",""
-"18","2","D503, D504","SMAJ33CA","Device:D_TVS","Diode_SMD:D_SMA","~","","",""
-"19","1","J201","Conn_ARM_JTAG_SWD_10","Connector:Conn_ARM_JTAG_SWD_10","Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical","http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf","NP","",""
-"20","5","J301, J302, J304, J307, J311","Conn_01x04","Connector_Generic:Conn_01x04","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","~","","",""
-"21","1","J303","Micro_SD_Card","Connector:Micro_SD_Card","Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5","http://katalog.we-online.de/em/datasheet/693072010801.pdf","","",""
-"22","1","J305","AudioJack3","Connector:AudioJack3","Connector_Audio:Jack_3.5mm_CUI_SJ-3523-SMT_Horizontal","~","","",""
-"23","1","J306","Conn_01x02","Connector_Generic:Conn_01x02","Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical","~","","",""
-"24","3","J308, J309, J310","Conn_01x01","Connector_Generic:Conn_01x01","Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical","~","","",""
-"25","1","J312","Conn_01x08","Connector_Generic:Conn_01x08","Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical","~","NP","",""
-"26","1","J313","USB_C_Receptacle_USB2.0","Connector:USB_C_Receptacle_USB2.0","Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12","https://www.usb.org/sites/default/files/documents/usb_type-c.zip","NP","",""
-"27","6","K601, K602, K603, K604, K605, K606","G6K-2","Relay:G6K-2","Relay_SMD:Relay_DPDT_Omron_G6K-2F","http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf","","",""
-"28","1","K607","EC2-5TNU","Relay:EC2-5TNU","Relay_THT:Relay_DPDT_Kemet_EC2_DoubleCoil","https://content.kemet.com/datasheets/KEM_R7002_EC2_EE2.pdf","","",""
-"29","3","L401, L402, L701","4,7u","Device:L","local:WE-LQ","~","","WE 744045004",""
-"30","1","Q201","BC856","Transistor_BJT:BC856","Package_TO_SOT_SMD:SOT-23","https://www.onsemi.com/pub/Collateral/BC860-D.pdf","NP","",""
-"31","7","Q601, Q602, Q603, Q604, Q605, Q606, Q607","BC846","Transistor_BJT:BC846","Package_TO_SOT_SMD:SOT-23","https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf","","",""
-"32","12","R201, R202, R203, R517, R518, R527, R531, R532, R609, R620, R705, R713","10k","Device:R","Resistor_SMD:R_0603_1608Metric","~","NP","",""
-"33","24","R204, R301, R302, R504, R505, R512, R513, R515, R516, R529, R530, R601, R602, R603, R607, R608, R613, R614, R617, R619, R621, R622, R701, R708","1k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"34","7","R205, R206, R207, R208, R305, R711, R715","100","Device:R","Resistor_SMD:R_0603_1608Metric","~","NP","",""
-"35","1","R303","0","Device:R","Resistor_SMD:R_0603_1608Metric","~","NP","",""
-"36","8","R304, R308, R522, R524, R535, R706, R707, R714","1M","Device:R","Resistor_SMD:R_0603_1608Metric","~","NP","",""
-"37","2","R306, R307","5k1","Device:R","Resistor_SMD:R_0603_1608Metric","~","NP","",""
-"38","1","R401","220","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"39","1","R402","470","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"40","21","R501, R503, R506, R509, R510, R604, R605, R610, R611, R615, R616, R623, R702, R703, R704, R709, R710, R712, R719, R720, R721","100k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"41","5","R502, R508, R525, R526, R536","22k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"42","2","R507, R520","470k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"43","2","R511, R519","68k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"44","1","R514","27k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"45","1","R521","3k3","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"46","1","R523","120k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"47","1","R528","15k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"48","1","R533","18k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"49","1","R534","8k2","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"50","2","R606, R612","12k","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"51","1","R618","5k7","Device:R","Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal","~","","",""
-"52","1","R716","10","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"53","2","R717, R718","22","Device:R","Resistor_SMD:R_0603_1608Metric","~","","",""
-"54","2","RV701, RV702","22k lin","Device:R_POT","Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical","~","","",""
-"55","1","U201","DOIT-DEVKITV1-ESP32-WROOM-32","local:DOIT-DEVKITV1-ESP32-WROOM-32","local:DOIT-DEVKITV1-ESP32-WROOM-32","","","",""
-"56","1","U301","TSOP31238","Interface_Optical:TSOP312xx","OptoDevice:Vishay_CAST-3Pin","http://www.vishay.com/docs/82492/tsop312.pdf","","",""
-"57","1","U401","TEC2-0911","local:TEC2-0911","local:Converter_DCDC_TRACO_TEC2_xxxx_THT","","","",""
-"58","1","U402","AP1117-18","Regulator_Linear:AP1117-18","Package_TO_SOT_SMD:SOT-223-3_TabPin2","http://www.diodes.com/datasheets/AP1117.pdf","","",""
-"59","1","U403","AP1117-33","Regulator_Linear:AP1117-33","Package_TO_SOT_SMD:SOT-223-3_TabPin2","http://www.diodes.com/datasheets/AP1117.pdf","","",""
-"60","1","U501","ADA4522-2","Device:Opamp_Dual_Generic","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4522-1_4522-2_4522-4.pdf","","",""
-"61","1","U502","LM339","Comparator:LM339","Package_SO:SOIC-14_3.9x8.7mm_P1.27mm","https://www.st.com/resource/en/datasheet/lm139.pdf","","",""
-"62","4","U503, U504, U505, U601","LTV-357T","Isolator:LTV-357T","Package_SO:SO-4_4.4x3.6mm_P2.54mm","https://www.buerklin.com/medias/sys_master/download/download/h91/ha0/8892020588574.pdf","","",""
-"63","1","U701","AD8656","Device:Opamp_Dual_Generic","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","https://www.analog.com/media/en/technical-documentation/data-sheets/AD8655_8656.pdf","","",""
-"64","1","U702","VS1053","local:VS1053","Package_QFP:LQFP-48_7x7mm_P0.5mm","","","",""
-"65","1","Y701","12,288MHz","Device:Crystal","Crystal:Crystal_SMD_HC49-SD","~","","",""
+Source:,/home/martin/elektronik/radios/saba fernbedienung/cad/pcb/saba-fernbedienung/rev1-a/saba-fernbedienung.sch,,,,,,,,
+Date:,Wed 13 Jan 2021 21:03:33 CET,,,,,,,,
+Tool:,Eeschema 5.1.9-73d0e3b20d~88~ubuntu18.04.1,,,,,,,,
+Generator:,/usr/share/kicad/plugins/bom_csv_grouped_by_value.py,,,,,,,,
+Component Count:,230,,,,,,,,
+,,,,,,,,,
+Individual Components:,,,,,,,,,
+,,,,,,,,,
+Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,Placement,Type,Voltage
+,,D405,1N4007,Device:D,Diode_SMD:D_SMA,~,,,
+,,D406,1N4007,Device:D,Diode_SMD:D_SMA,~,,,
+,,D501,1N4148,Device:D,Diode_SMD:D_SOD-323F,~,,,
+,,D502,1N4148,Device:D,Diode_SMD:D_SOD-323F,~,,,
+,,D601,1N4148,Device:D,Diode_SMD:D_SOD-323F,~,,,
+,,D602,1N4148,Device:D,Diode_SMD:D_SOD-323F,~,,,
+,,D603,1N4148,Device:D,Diode_SMD:D_SOD-323F,~,,,
+,,D604,1N4148,Device:D,Diode_SMD:D_SOD-323F,~,,,
+,,D605,1N4148,Device:D,Diode_SMD:D_SOD-323F,~,,,
+,,D606,1N4148,Device:D,Diode_SMD:D_SOD-323F,~,,,
+,,D607,1N4148,Device:D,Diode_SMD:D_SOD-323F,~,,,
+,,D608,1N4148,Device:D,Diode_SMD:D_SOD-323F,~,,,
+,,D609,1N4148,Device:D,Diode_SMD:D_SOD-323F,~,,,
+,,RV701,22k lin,Device:R_POT,Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical,~,,,
+,,RV702,22k lin,Device:R_POT,Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical,~,,,
+,,U701,AD8656,Device:Opamp_Dual_Generic,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,https://www.analog.com/media/en/technical-documentation/data-sheets/AD8655_8656.pdf,,,
+,,U501,ADA4522-2,Device:Opamp_Dual_Generic,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4522-1_4522-2_4522-4.pdf,,,
+,,U402,AP1117-18,Regulator_Linear:AP1117-18,Package_TO_SOT_SMD:SOT-223-3_TabPin2,http://www.diodes.com/datasheets/AP1117.pdf,,,
+,,U403,AP1117-33,Regulator_Linear:AP1117-33,Package_TO_SOT_SMD:SOT-223-3_TabPin2,http://www.diodes.com/datasheets/AP1117.pdf,,,
+,,J305,AudioJack3,Connector:AudioJack3,Connector_Audio:Jack_3.5mm_CUI_SJ-3523-SMT_Horizontal,~,,,
+,,D302,B140-E3,Diode:B140-E3,Diode_SMD:D_SMA,http://www.vishay.com/docs/88946/b120.pdf,NP,,
+,,D401,B140-E3,Diode:B140-E3,Diode_SMD:D_SMA,http://www.vishay.com/docs/88946/b120.pdf,,,
+,,D402,B140-E3,Diode:B140-E3,Diode_SMD:D_SMA,http://www.vishay.com/docs/88946/b120.pdf,,,
+,,D403,B140-E3,Diode:B140-E3,Diode_SMD:D_SMA,http://www.vishay.com/docs/88946/b120.pdf,,,
+,,D404,B140-E3,Diode:B140-E3,Diode_SMD:D_SMA,http://www.vishay.com/docs/88946/b120.pdf,,,
+,,Q601,BC846,Transistor_BJT:BC846,Package_TO_SOT_SMD:SOT-23,https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf,,,
+,,Q602,BC846,Transistor_BJT:BC846,Package_TO_SOT_SMD:SOT-23,https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf,,,
+,,Q603,BC846,Transistor_BJT:BC846,Package_TO_SOT_SMD:SOT-23,https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf,,,
+,,Q604,BC846,Transistor_BJT:BC846,Package_TO_SOT_SMD:SOT-23,https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf,,,
+,,Q605,BC846,Transistor_BJT:BC846,Package_TO_SOT_SMD:SOT-23,https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf,,,
+,,Q606,BC846,Transistor_BJT:BC846,Package_TO_SOT_SMD:SOT-23,https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf,,,
+,,Q607,BC846,Transistor_BJT:BC846,Package_TO_SOT_SMD:SOT-23,https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf,,,
+,,Q201,BC856,Transistor_BJT:BC856,Package_TO_SOT_SMD:SOT-23,https://www.onsemi.com/pub/Collateral/BC860-D.pdf,NP,,
+,,J308,Conn_01x01,Connector_Generic:Conn_01x01,Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical,~,,,
+,,J309,Conn_01x01,Connector_Generic:Conn_01x01,Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical,~,,,
+,,J310,Conn_01x01,Connector_Generic:Conn_01x01,Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical,~,,,
+,,J306,Conn_01x02,Connector_Generic:Conn_01x02,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,~,,,
+,,J301,Conn_01x04,Connector_Generic:Conn_01x04,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,~,,,
+,,J302,Conn_01x04,Connector_Generic:Conn_01x04,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,~,,,
+,,J304,Conn_01x04,Connector_Generic:Conn_01x04,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,~,,,
+,,J307,Conn_01x04,Connector_Generic:Conn_01x04,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,~,,,
+,,J311,Conn_01x04,Connector_Generic:Conn_01x04,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,~,,,
+,,J312,Conn_01x08,Connector_Generic:Conn_01x08,Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical,~,NP,,
+,,J201,Conn_ARM_JTAG_SWD_10,Connector:Conn_ARM_JTAG_SWD_10,Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical,http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf,NP,,
+,,D301,D_TVS_x2_D5V0L2B3W,Device:D_TVS_x2_AAC,Package_TO_SOT_SMD:SOT-323_SC-70,https://www.diodes.com/assets/Datasheets/D5V0L2B3W.pdf,,,
+,,U201,DOIT-DEVKITV1-ESP32-WROOM-32,local:DOIT-DEVKITV1-ESP32-WROOM-32,local:DOIT-DEVKITV1-ESP32-WROOM-32,,,,
+,,K607,EC2-5TNU,Relay:EC2-5TNU,Relay_THT:Relay_DPDT_Kemet_EC2_DoubleCoil,https://content.kemet.com/datasheets/KEM_R7002_EC2_EE2.pdf,,,
+,,K601,G6K-2,Relay:G6K-2,Relay_SMD:Relay_DPDT_Omron_G6K-2F,http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf,,,
+,,K602,G6K-2,Relay:G6K-2,Relay_SMD:Relay_DPDT_Omron_G6K-2F,http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf,,,
+,,K603,G6K-2,Relay:G6K-2,Relay_SMD:Relay_DPDT_Omron_G6K-2F,http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf,,,
+,,K604,G6K-2,Relay:G6K-2,Relay_SMD:Relay_DPDT_Omron_G6K-2F,http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf,,,
+,,K605,G6K-2,Relay:G6K-2,Relay_SMD:Relay_DPDT_Omron_G6K-2F,http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf,,,
+,,K606,G6K-2,Relay:G6K-2,Relay_SMD:Relay_DPDT_Omron_G6K-2F,http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf,,,
+,,D201,LED,Device:LED,LED_SMD:LED_0805_2012Metric,~,,,
+,,D505,LED,Device:LED,LED_SMD:LED_0805_2012Metric,~,,,
+,,D506,LED,Device:LED,LED_SMD:LED_0805_2012Metric,~,,,
+,,D507,LED,Device:LED,LED_SMD:LED_0805_2012Metric,~,,,
+,,D610,LED,Device:LED,LED_SMD:LED_0805_2012Metric,~,,,
+,,U502,LM339,Comparator:LM339,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,https://www.st.com/resource/en/datasheet/lm139.pdf,,,
+,,U503,LTV-357T,Isolator:LTV-357T,Package_SO:SO-4_4.4x3.6mm_P2.54mm,https://www.buerklin.com/medias/sys_master/download/download/h91/ha0/8892020588574.pdf,,,
+,,U504,LTV-357T,Isolator:LTV-357T,Package_SO:SO-4_4.4x3.6mm_P2.54mm,https://www.buerklin.com/medias/sys_master/download/download/h91/ha0/8892020588574.pdf,,,
+,,U505,LTV-357T,Isolator:LTV-357T,Package_SO:SO-4_4.4x3.6mm_P2.54mm,https://www.buerklin.com/medias/sys_master/download/download/h91/ha0/8892020588574.pdf,,,
+,,U601,LTV-357T,Isolator:LTV-357T,Package_SO:SO-4_4.4x3.6mm_P2.54mm,https://www.buerklin.com/medias/sys_master/download/download/h91/ha0/8892020588574.pdf,,,
+,,J303,Micro_SD_Card,Connector:Micro_SD_Card,Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5,http://katalog.we-online.de/em/datasheet/693072010801.pdf,,,
+,,D503,SMAJ33CA,Device:D_TVS,Diode_SMD:D_SMA,~,,,
+,,D504,SMAJ33CA,Device:D_TVS,Diode_SMD:D_SMA,~,,,
+,,D303,SMAJ5.0A,Diode:SM6T6V8A,Diode_SMD:D_SMA,,NP,,
+,,U401,TEC2-0911,local:TEC2-0911,local:Converter_DCDC_TRACO_TEC2_xxxx_THT,,,,
+,,U301,TSOP31238,Interface_Optical:TSOP312xx,OptoDevice:Vishay_CAST-3Pin,http://www.vishay.com/docs/82492/tsop312.pdf,,,
+,,J313,USB_C_Receptacle_USB2.0,Connector:USB_C_Receptacle_USB2.0,Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12,https://www.usb.org/sites/default/files/documents/usb_type-c.zip,NP,,
+,,U702,VS1053,local:VS1053,Package_QFP:LQFP-48_7x7mm_P0.5mm,,,,
+,,,,,,,,,
+,,,,,,,,,
+,,,,,,,,,
+Collated Components:,,,,,,,,,
+,,,,,,,,,
+Item,Qty,Reference(s),Value,LibPart,Footprint,Datasheet,Placement,Type,Voltage
+1,27,"C301, C303, C304, C402, C406, C408, C411, C419, C501, C502, C506, C507, C508, C601, C701, C702, C703, C704, C707, C708, C709, C710, C711, C712, C713, C718, C725",100n,Device:C,Capacitor_SMD:C_0603_1608Metric,~,NP,,
+2,11,"C302, C404, C405, C412, C413, C414, C415, C416, C417, C706, C724",10u,Device:C,Capacitor_SMD:C_1206_3216Metric,~,,,
+3,1,C401,150p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,
+4,1,C403,1000u,Device:CP,Capacitor_THT:CP_Radial_D10.0mm_P5.00mm,~,,,16V
+5,3,"C407, C410, C418",220u,Device:CP,Capacitor_THT:CP_Radial_D10.0mm_P5.00mm,~,,,10V
+6,1,C409,220p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,
+7,3,"C503, C504, C505",470n,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,
+8,5,"C705, C716, C717, C719, C720",1u,Device:C,Capacitor_SMD:C_0805_2012Metric,~,,,
+9,2,"C714, C715",22p,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,
+10,1,C721,47n,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,
+11,2,"C722, C723",10n,Device:C,Capacitor_SMD:C_0603_1608Metric,~,,,
+12,5,"D201, D505, D506, D507, D610",LED,Device:LED,LED_SMD:LED_0805_2012Metric,~,,,
+13,1,D301,D_TVS_x2_D5V0L2B3W,Device:D_TVS_x2_AAC,Package_TO_SOT_SMD:SOT-323_SC-70,https://www.diodes.com/assets/Datasheets/D5V0L2B3W.pdf,,,
+14,5,"D302, D401, D402, D403, D404",B140-E3,Diode:B140-E3,Diode_SMD:D_SMA,http://www.vishay.com/docs/88946/b120.pdf,NP,,
+15,1,D303,SMAJ5.0A,Diode:SM6T6V8A,Diode_SMD:D_SMA,,NP,,
+16,2,"D405, D406",1N4007,Device:D,Diode_SMD:D_SMA,~,,,
+17,11,"D501, D502, D601, D602, D603, D604, D605, D606, D607, D608, D609",1N4148,Device:D,Diode_SMD:D_SOD-323F,~,,,
+18,2,"D503, D504",SMAJ33CA,Device:D_TVS,Diode_SMD:D_SMA,~,,,
+19,1,J201,Conn_ARM_JTAG_SWD_10,Connector:Conn_ARM_JTAG_SWD_10,Connector_PinHeader_1.27mm:PinHeader_2x05_P1.27mm_Vertical,http://infocenter.arm.com/help/topic/com.arm.doc.ddi0314h/DDI0314H_coresight_components_trm.pdf,NP,,
+20,5,"J301, J302, J304, J307, J311",Conn_01x04,Connector_Generic:Conn_01x04,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,~,,,
+21,1,J303,Micro_SD_Card,Connector:Micro_SD_Card,Connector_Card:microSD_HC_Hirose_DM3AT-SF-PEJM5,http://katalog.we-online.de/em/datasheet/693072010801.pdf,,,
+22,1,J305,AudioJack3,Connector:AudioJack3,Connector_Audio:Jack_3.5mm_CUI_SJ-3523-SMT_Horizontal,~,,,
+23,1,J306,Conn_01x02,Connector_Generic:Conn_01x02,Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical,~,,,
+24,3,"J308, J309, J310",Conn_01x01,Connector_Generic:Conn_01x01,Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical,~,,,
+25,1,J312,Conn_01x08,Connector_Generic:Conn_01x08,Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical,~,NP,,
+26,1,J313,USB_C_Receptacle_USB2.0,Connector:USB_C_Receptacle_USB2.0,Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12,https://www.usb.org/sites/default/files/documents/usb_type-c.zip,NP,,
+27,6,"K601, K602, K603, K604, K605, K606",G6K-2,Relay:G6K-2,Relay_SMD:Relay_DPDT_Omron_G6K-2F,http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf,,,
+28,1,K607,EC2-5TNU,Relay:EC2-5TNU,Relay_THT:Relay_DPDT_Kemet_EC2_DoubleCoil,https://content.kemet.com/datasheets/KEM_R7002_EC2_EE2.pdf,,,
+29,3,"L401, L402, L701","4,7u",Device:L,local:WE-LQ,~,,WE 744045004,
+30,1,Q201,BC856,Transistor_BJT:BC856,Package_TO_SOT_SMD:SOT-23,https://www.onsemi.com/pub/Collateral/BC860-D.pdf,NP,,
+31,7,"Q601, Q602, Q603, Q604, Q605, Q606, Q607",BC846,Transistor_BJT:BC846,Package_TO_SOT_SMD:SOT-23,https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf,,,
+32,12,"R201, R202, R203, R517, R518, R527, R531, R532, R609, R620, R705, R713",10k,Device:R,Resistor_SMD:R_0603_1608Metric,~,NP,,
+33,24,"R204, R301, R302, R504, R505, R512, R513, R515, R516, R529, R530, R601, R602, R603, R607, R608, R613, R614, R617, R619, R621, R622, R701, R708",1k,Device:R,Resistor_SMD:R_0603_1608Metric,~,,,
+34,7,"R205, R206, R207, R208, R305, R711, R715",100,Device:R,Resistor_SMD:R_0603_1608Metric,~,NP,,
+35,1,R303,0,Device:R,Resistor_SMD:R_0603_1608Metric,~,NP,,
+36,8,"R304, R308, R522, R524, R535, R706, R707, R714",1M,Device:R,Resistor_SMD:R_0603_1608Metric,~,NP,,
+37,2,"R306, R307",5k1,Device:R,Resistor_SMD:R_0603_1608Metric,~,NP,,
+38,1,R401,220,Device:R,Resistor_SMD:R_0603_1608Metric,~,,,
+39,1,R402,470,Device:R,Resistor_SMD:R_0603_1608Metric,~,,,
+40,21,"R501, R503, R506, R509, R510, R604, R605, R610, R611, R615, R616, R623, R702, R703, R704, R709, R710, R712, R719, R720, R721",100k,Device:R,Resistor_SMD:R_0603_1608Metric,~,,,
+41,5,"R502, R508, R525, R526, R536",22k,Device:R,Resistor_SMD:R_0603_1608Metric,~,,,
+42,2,"R507, R520",470k,Device:R,Resistor_SMD:R_0603_1608Metric,~,,,
+43,2,"R511, R519",68k,Device:R,Resistor_SMD:R_0603_1608Metric,~,,,
+44,1,R514,27k,Device:R,Resistor_SMD:R_0603_1608Metric,~,,,
+45,1,R521,3k3,Device:R,Resistor_SMD:R_0603_1608Metric,~,,,
+46,1,R523,120k,Device:R,Resistor_SMD:R_0603_1608Metric,~,,,
+47,1,R528,15k,Device:R,Resistor_SMD:R_0603_1608Metric,~,,,
+48,1,R533,18k,Device:R,Resistor_SMD:R_0603_1608Metric,~,,,
+49,1,R534,8k2,Device:R,Resistor_SMD:R_0603_1608Metric,~,,,
+50,2,"R606, R612",12k,Device:R,Resistor_SMD:R_0603_1608Metric,~,,,
+51,1,R618,5k7,Device:R,Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal,~,,,
+52,1,R716,10,Device:R,Resistor_SMD:R_0603_1608Metric,~,,,
+53,2,"R717, R718",22,Device:R,Resistor_SMD:R_0603_1608Metric,~,,,
+54,2,"RV701, RV702",22k lin,Device:R_POT,Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical,~,,,
+55,1,U201,DOIT-DEVKITV1-ESP32-WROOM-32,local:DOIT-DEVKITV1-ESP32-WROOM-32,local:DOIT-DEVKITV1-ESP32-WROOM-32,,,,
+56,1,U301,TSOP31238,Interface_Optical:TSOP312xx,OptoDevice:Vishay_CAST-3Pin,http://www.vishay.com/docs/82492/tsop312.pdf,,,
+57,1,U401,TEC2-0911,local:TEC2-0911,local:Converter_DCDC_TRACO_TEC2_xxxx_THT,,,,
+58,1,U402,AP1117-18,Regulator_Linear:AP1117-18,Package_TO_SOT_SMD:SOT-223-3_TabPin2,http://www.diodes.com/datasheets/AP1117.pdf,,,
+59,1,U403,AP1117-33,Regulator_Linear:AP1117-33,Package_TO_SOT_SMD:SOT-223-3_TabPin2,http://www.diodes.com/datasheets/AP1117.pdf,,,
+60,1,U501,ADA4522-2,Device:Opamp_Dual_Generic,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4522-1_4522-2_4522-4.pdf,,,
+61,1,U502,LM339,Comparator:LM339,Package_SO:SOIC-14_3.9x8.7mm_P1.27mm,https://www.st.com/resource/en/datasheet/lm139.pdf,,,
+62,4,"U503, U504, U505, U601",LTV-357T,Isolator:LTV-357T,Package_SO:SO-4_4.4x3.6mm_P2.54mm,https://www.buerklin.com/medias/sys_master/download/download/h91/ha0/8892020588574.pdf,,,
+63,1,U701,AD8656,Device:Opamp_Dual_Generic,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,https://www.analog.com/media/en/technical-documentation/data-sheets/AD8655_8656.pdf,,,
+64,1,U702,VS1053,local:VS1053,Package_QFP:LQFP-48_7x7mm_P0.5mm,,,,
+65,1,Y701,"12,288MHz",Device:Crystal,Crystal:Crystal_SMD_HC49-SD,~,,,

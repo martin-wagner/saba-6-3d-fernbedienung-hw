@@ -23,6 +23,7 @@ F 0 "U501" H 10008 1646 50  0000 L CNN
 F 1 "ADA4522-2" H 10000 1800 50  0000 L CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 10050 1600 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4522-1_4522-2_4522-4.pdf" H 10050 1600 50  0001 C CNN
+F 4 "ADA4522-1ARMZ" H 10050 1600 50  0001 C CNN "Bauteil"
 	3    10050 1600
 	1    0    0    -1  
 $EndComp
@@ -83,6 +84,7 @@ F 0 "D504" V 1804 2330 50  0000 L CNN
 F 1 "SMAJ33CA" V 1895 2330 50  0000 L CNN
 F 2 "Diode_SMD:D_SMA" H 1850 2250 50  0001 C CNN
 F 3 "~" H 1850 2250 50  0001 C CNN
+F 4 "Diodes SMAJ33CAQ-13-F" V 1850 2250 50  0001 C CNN "Bauteil"
 	1    1850 2250
 	0    1    1    0   
 $EndComp
@@ -114,22 +116,8 @@ F 0 "D501" H 8500 1533 50  0000 C CNN
 F 1 "1N4148" H 8500 1624 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-323F" H 8500 1750 50  0001 C CNN
 F 3 "~" H 8500 1750 50  0001 C CNN
+F 4 "ON 1N4148WS" H 8500 1750 50  0001 C CNN "Bauteil"
 	1    8500 1750
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 60180DA8
-P 8800 2050
-AR Path="/6002EA57/60180DA8" Ref="C?"  Part="1" 
-AR Path="/6008B538/60180DA8" Ref="C?"  Part="1" 
-AR Path="/60135668/60180DA8" Ref="C504"  Part="1" 
-F 0 "C504" H 8915 2141 50  0000 L CNN
-F 1 "470n" H 8915 2050 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 8838 1900 50  0001 C CNN
-F 3 "~" H 8800 2050 50  0001 C CNN
-F 4 "" H 8915 1959 50  0000 L CNN "Placement"
-	1    8800 2050
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -159,6 +147,7 @@ F 0 "D503" V 6354 2280 50  0000 L CNN
 F 1 "SMAJ33CA" V 6445 2280 50  0000 L CNN
 F 2 "Diode_SMD:D_SMA" H 6400 2200 50  0001 C CNN
 F 3 "~" H 6400 2200 50  0001 C CNN
+F 4 "Diodes SMAJ33CAQ-13-F" V 6400 2200 50  0001 C CNN "Bauteil"
 	1    6400 2200
 	0    1    1    0   
 $EndComp
@@ -282,8 +271,6 @@ Connection ~ 3650 2400
 Wire Wire Line
 	4800 2400 3650 2400
 Wire Wire Line
-	4800 2250 4800 2400
-Wire Wire Line
 	4800 1800 4800 1950
 Wire Wire Line
 	4650 1800 4800 1800
@@ -299,22 +286,8 @@ F 0 "D502" H 4500 1583 50  0000 C CNN
 F 1 "1N4148" H 4500 1674 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-323F" H 4500 1800 50  0001 C CNN
 F 3 "~" H 4500 1800 50  0001 C CNN
+F 4 "ON 1N4148WS" H 4500 1800 50  0001 C CNN "Bauteil"
 	1    4500 1800
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 6015830E
-P 4800 2100
-AR Path="/6002EA57/6015830E" Ref="C?"  Part="1" 
-AR Path="/6008B538/6015830E" Ref="C?"  Part="1" 
-AR Path="/60135668/6015830E" Ref="C505"  Part="1" 
-F 0 "C505" H 4915 2191 50  0000 L CNN
-F 1 "470n" H 4915 2100 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 4838 1950 50  0001 C CNN
-F 3 "~" H 4800 2100 50  0001 C CNN
-F 4 "" H 4915 2009 50  0000 L CNN "Placement"
-	1    4800 2100
 	-1   0    0    1   
 $EndComp
 $Comp
@@ -367,9 +340,10 @@ AR Path="/6008B538/60152A44" Ref="C?"  Part="1"
 AR Path="/60135668/60152A44" Ref="C503"  Part="1" 
 F 0 "C503" H 3315 1891 50  0000 L CNN
 F 1 "470n" H 3315 1800 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 3238 1650 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 3238 1650 50  0001 C CNN
 F 3 "~" H 3200 1800 50  0001 C CNN
 F 4 "" H 3315 1709 50  0000 L CNN "Placement"
+F 5 "885012207102" H 3200 1800 50  0001 C CNN "Bauteil"
 	1    3200 1800
 	0    1    1    0   
 $EndComp
@@ -401,6 +375,7 @@ F 0 "U501" H 7450 1383 50  0000 C CNN
 F 1 "ADA4522-2" H 7450 1474 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7450 1750 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4522-1_4522-2_4522-4.pdf" H 7450 1750 50  0001 C CNN
+F 4 "ADA4522-1ARMZ" H 7450 1750 50  0001 C CNN "Bauteil"
 	2    7450 1750
 	1    0    0    1   
 $EndComp
@@ -412,6 +387,7 @@ F 0 "U501" H 2500 1433 50  0000 C CNN
 F 1 "ADA4522-2" H 2500 1524 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2500 1800 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4522-1_4522-2_4522-4.pdf" H 2500 1800 50  0001 C CNN
+F 4 "ADA4522-1ARMZ" H 2500 1800 50  0001 C CNN "Bauteil"
 	1    2500 1800
 	1    0    0    1   
 $EndComp
@@ -430,6 +406,7 @@ F 0 "U502" H 2150 3583 50  0000 C CNN
 F 1 "LM339" H 2150 3674 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2100 4050 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 2200 4150 50  0001 C CNN
+F 4 "ON LM339DR2G" H 2150 3950 50  0001 C CNN "Bauteil"
 	1    2150 3950
 	1    0    0    1   
 $EndComp
@@ -441,6 +418,7 @@ F 0 "U502" H 2150 5983 50  0000 C CNN
 F 1 "LM339" H 2150 6074 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 2100 6450 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 2200 6550 50  0001 C CNN
+F 4 "LM339DR2G" H 2150 6350 50  0001 C CNN "Bauteil"
 	2    2150 6350
 	1    0    0    1   
 $EndComp
@@ -452,6 +430,7 @@ F 0 "U502" H 7400 3583 50  0000 C CNN
 F 1 "LM339" H 7400 3674 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7350 4050 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 7450 4150 50  0001 C CNN
+F 4 "LM339DR2G" H 7400 3950 50  0001 C CNN "Bauteil"
 	3    7400 3950
 	1    0    0    1   
 $EndComp
@@ -463,6 +442,7 @@ F 0 "U502" H 7800 5583 50  0000 C CNN
 F 1 "LM339" H 7800 5674 50  0000 C CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 7750 6050 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 7850 6150 50  0001 C CNN
+F 4 "LM339DR2G" H 7800 5950 50  0001 C CNN "Bauteil"
 	4    7800 5950
 	1    0    0    1   
 $EndComp
@@ -474,6 +454,7 @@ F 0 "U502" H 10808 1646 50  0000 L CNN
 F 1 "LM339" H 10800 1800 50  0000 L CNN
 F 2 "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm" H 10800 1700 50  0001 C CNN
 F 3 "https://www.st.com/resource/en/datasheet/lm139.pdf" H 10900 1800 50  0001 C CNN
+F 4 "LM339DR2G" H 10850 1600 50  0001 C CNN "Bauteil"
 	5    10850 1600
 	1    0    0    -1  
 $EndComp
@@ -620,6 +601,7 @@ F 0 "U503" H 3450 4375 50  0000 C CNN
 F 1 "LTV-357T" H 3450 4284 50  0000 C CNN
 F 2 "Package_SO:SO-4_4.4x3.6mm_P2.54mm" H 3250 3850 50  0001 L CIN
 F 3 "https://www.buerklin.com/medias/sys_master/download/download/h91/ha0/8892020588574.pdf" H 3450 4050 50  0001 L CNN
+F 4 "Lite-On LTV-357T" H 3450 4050 50  0001 C CNN "Bauteil"
 	1    3450 4050
 	1    0    0    -1  
 $EndComp
@@ -706,6 +688,7 @@ F 1 "100n" H 4615 4200 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4538 4050 50  0001 C CNN
 F 3 "~" H 4500 4200 50  0001 C CNN
 F 4 "" H 4615 4109 50  0000 L CNN "Placement"
+F 5 "WE 885382206004" H 4500 4200 50  0001 C CNN "Bauteil"
 	1    4500 4200
 	-1   0    0    1   
 $EndComp
@@ -841,6 +824,7 @@ F 0 "U505" H 3450 6775 50  0000 C CNN
 F 1 "LTV-357T" H 3450 6684 50  0000 C CNN
 F 2 "Package_SO:SO-4_4.4x3.6mm_P2.54mm" H 3250 6250 50  0001 L CIN
 F 3 "https://www.buerklin.com/medias/sys_master/download/download/h91/ha0/8892020588574.pdf" H 3450 6450 50  0001 L CNN
+F 4 "Lite-On LTV-357T" H 3450 6450 50  0001 C CNN "Bauteil"
 	1    3450 6450
 	1    0    0    -1  
 $EndComp
@@ -927,6 +911,7 @@ F 1 "100n" H 4615 6600 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 4538 6450 50  0001 C CNN
 F 3 "~" H 4500 6600 50  0001 C CNN
 F 4 "" H 4615 6509 50  0000 L CNN "Placement"
+F 5 "WE 885382206004" H 4500 6600 50  0001 C CNN "Bauteil"
 	1    4500 6600
 	-1   0    0    1   
 $EndComp
@@ -1200,6 +1185,7 @@ F 0 "U504" H 8700 4375 50  0000 C CNN
 F 1 "LTV-357T" H 8700 4284 50  0000 C CNN
 F 2 "Package_SO:SO-4_4.4x3.6mm_P2.54mm" H 8500 3850 50  0001 L CIN
 F 3 "https://www.buerklin.com/medias/sys_master/download/download/h91/ha0/8892020588574.pdf" H 8700 4050 50  0001 L CNN
+F 4 "Lite-On LTV-357T" H 8700 4050 50  0001 C CNN "Bauteil"
 	1    8700 4050
 	1    0    0    -1  
 $EndComp
@@ -1286,6 +1272,7 @@ F 1 "100n" H 9865 4200 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9788 4050 50  0001 C CNN
 F 3 "~" H 9750 4200 50  0001 C CNN
 F 4 "" H 9865 4109 50  0000 L CNN "Placement"
+F 5 "WE 885382206004" H 9750 4200 50  0001 C CNN "Bauteil"
 	1    9750 4200
 	-1   0    0    1   
 $EndComp
@@ -1422,6 +1409,7 @@ F 1 "100n" H 9815 1650 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9738 1500 50  0001 C CNN
 F 3 "~" H 9700 1650 50  0001 C CNN
 F 4 "" H 9815 1559 50  0000 L CNN "Placement"
+F 5 "WE 885382206004" H 9700 1650 50  0001 C CNN "Bauteil"
 	1    9700 1650
 	-1   0    0    1   
 $EndComp
@@ -1437,6 +1425,7 @@ F 1 "100n" H 10615 1650 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 10538 1500 50  0001 C CNN
 F 3 "~" H 10500 1650 50  0001 C CNN
 F 4 "" H 10615 1559 50  0000 L CNN "Placement"
+F 5 "WE 885382206004" H 10500 1650 50  0001 C CNN "Bauteil"
 	1    10500 1650
 	-1   0    0    1   
 $EndComp
@@ -1505,6 +1494,7 @@ F 0 "D505" V 3189 4232 50  0000 R CNN
 F 1 "LED" V 3098 4232 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric" H 3150 4350 50  0001 C CNN
 F 3 "~" H 3150 4350 50  0001 C CNN
+F 4 "WE 150080BS75000" V 3150 4350 50  0001 C CNN "Bauteil"
 	1    3150 4350
 	0    -1   -1   0   
 $EndComp
@@ -1522,6 +1512,7 @@ F 0 "D507" V 3189 6632 50  0000 R CNN
 F 1 "LED" V 3098 6632 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric" H 3150 6750 50  0001 C CNN
 F 3 "~" H 3150 6750 50  0001 C CNN
+F 4 "WE 150080BS75000" V 3150 6750 50  0001 C CNN "Bauteil"
 	1    3150 6750
 	0    -1   -1   0   
 $EndComp
@@ -1539,6 +1530,7 @@ F 0 "D506" V 8439 4232 50  0000 R CNN
 F 1 "LED" V 8348 4232 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric" H 8400 4350 50  0001 C CNN
 F 3 "~" H 8400 4350 50  0001 C CNN
+F 4 "WE 150080BS75000" V 8400 4350 50  0001 C CNN "Bauteil"
 	1    8400 4350
 	0    -1   -1   0   
 $EndComp
@@ -1622,4 +1614,38 @@ Connection ~ 2000 7350
 Wire Wire Line
 	2000 7350 1700 7350
 NoConn ~ 8100 5950
+$Comp
+L Device:C C?
+U 1 1 600521DF
+P 8800 2050
+AR Path="/6002EA57/600521DF" Ref="C?"  Part="1" 
+AR Path="/6008B538/600521DF" Ref="C?"  Part="1" 
+AR Path="/60135668/600521DF" Ref="C504"  Part="1" 
+F 0 "C504" H 8915 2141 50  0000 L CNN
+F 1 "470n" H 8915 2050 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 8838 1900 50  0001 C CNN
+F 3 "~" H 8800 2050 50  0001 C CNN
+F 4 "" H 8915 1959 50  0000 L CNN "Placement"
+F 5 "885012207102" H 8800 2050 50  0001 C CNN "Bauteil"
+	1    8800 2050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4800 2250 4800 2400
+$Comp
+L Device:C C?
+U 1 1 600539D8
+P 4800 2100
+AR Path="/6002EA57/600539D8" Ref="C?"  Part="1" 
+AR Path="/6008B538/600539D8" Ref="C?"  Part="1" 
+AR Path="/60135668/600539D8" Ref="C505"  Part="1" 
+F 0 "C505" H 4915 2191 50  0000 L CNN
+F 1 "470n" H 4915 2100 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 4838 1950 50  0001 C CNN
+F 3 "~" H 4800 2100 50  0001 C CNN
+F 4 "" H 4915 2009 50  0000 L CNN "Placement"
+F 5 "885012207102" H 4800 2100 50  0001 C CNN "Bauteil"
+	1    4800 2100
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

@@ -32,6 +32,7 @@ F 0 "K607" H 6130 5996 50  0000 L CNN
 F 1 "EC2-5TNU" H 6130 5905 50  0000 L CNN
 F 2 "Relay_THT:Relay_DPDT_Kemet_EC2_DoubleCoil" H 5100 5950 50  0001 C CNN
 F 3 "https://content.kemet.com/datasheets/KEM_R7002_EC2_EE2.pdf" H 5100 5950 50  0001 C CNN
+F 4 "Kemet EC2-5TNU" H 5300 5950 50  0001 C CNN "Bauteil"
 	1    5300 5950
 	1    0    0    -1  
 $EndComp
@@ -43,19 +44,9 @@ F 0 "K602" V 1633 2000 50  0000 C CNN
 F 1 "G6K-2" V 1724 2000 50  0000 C CNN
 F 2 "Relay_SMD:Relay_DPDT_Omron_G6K-2F" H 2400 2000 50  0001 L CNN
 F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf" H 2400 2000 50  0001 C CNN
+F 4 "Omron G6K-2F-TR DC5" V 2400 2000 50  0001 C CNN "Bauteil"
 	1    2400 2000
 	0    1    1    0   
-$EndComp
-$Comp
-L Relay:G6K-2 K605
-U 1 1 600525CD
-P 2400 3900
-F 0 "K605" V 3167 3900 50  0000 C CNN
-F 1 "G6K-2" V 3076 3900 50  0000 C CNN
-F 2 "Relay_SMD:Relay_DPDT_Omron_G6K-2F" H 2400 3900 50  0001 L CNN
-F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf" H 2400 3900 50  0001 C CNN
-	1    2400 3900
-	0    1    -1   0   
 $EndComp
 $Comp
 L Device:D D606
@@ -65,6 +56,7 @@ F 0 "D606" H 2400 5017 50  0000 C CNN
 F 1 "1N4148" H 2400 4926 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-323F" H 2400 4800 50  0001 C CNN
 F 3 "~" H 2400 4800 50  0001 C CNN
+F 4 "ON 1N4148WS" H 2400 4800 50  0001 C CNN "Bauteil"
 	1    2400 4800
 	-1   0    0    -1  
 $EndComp
@@ -76,6 +68,7 @@ F 0 "D603" H 3550 2167 50  0000 C CNN
 F 1 "1N4148" H 3550 2076 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-323F" H 3550 1950 50  0001 C CNN
 F 3 "~" H 3550 1950 50  0001 C CNN
+F 4 "ON 1N4148WS" H 3550 1950 50  0001 C CNN "Bauteil"
 	1    3550 1950
 	-1   0    0    -1  
 $EndComp
@@ -87,6 +80,7 @@ F 0 "D601" H 2400 1317 50  0000 C CNN
 F 1 "1N4148" H 2400 1226 50  0000 C CNN
 F 2 "Diode_SMD:D_SOD-323F" H 2400 1100 50  0001 C CNN
 F 3 "~" H 2400 1100 50  0001 C CNN
+F 4 "ON 1N4148WS" H 2400 1100 50  0001 C CNN "Bauteil"
 	1    2400 1100
 	-1   0    0    -1  
 $EndComp
@@ -252,7 +246,8 @@ P 5750 1500
 F 0 "Q601" H 5941 1546 50  0000 L CNN
 F 1 "BC846" H 5941 1455 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5950 1425 50  0001 L CIN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf" H 5750 1500 50  0001 L CNN
+F 3 "" H 5750 1500 50  0001 L CNN
+F 4 "ON BC846BLT3G" H 5750 1500 50  0001 C CNN "Bauteil"
 	1    5750 1500
 	1    0    0    -1  
 $EndComp
@@ -366,17 +361,6 @@ Connection ~ 5850 2000
 Wire Wire Line
 	5850 1300 5850 1150
 $Comp
-L Transistor_BJT:BC846 Q603
-U 1 1 600FE7F8
-P 5750 2800
-F 0 "Q603" H 5941 2846 50  0000 L CNN
-F 1 "BC846" H 5941 2755 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5950 2725 50  0001 L CIN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf" H 5750 2800 50  0001 L CNN
-	1    5750 2800
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 600FE805
 P 5850 3300
@@ -423,17 +407,6 @@ Wire Wire Line
 Connection ~ 5850 3300
 Wire Wire Line
 	5850 2600 5850 2450
-$Comp
-L Transistor_BJT:BC846 Q605
-U 1 1 60103FD0
-P 5750 4000
-F 0 "Q605" H 5941 4046 50  0000 L CNN
-F 1 "BC846" H 5941 3955 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 5950 3925 50  0001 L CIN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf" H 5750 4000 50  0001 L CNN
-	1    5750 4000
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 60103FDD
@@ -523,6 +496,7 @@ F 0 "U601" H 2200 6675 50  0000 C CNN
 F 1 "LTV-357T" H 2200 6584 50  0000 C CNN
 F 2 "Package_SO:SO-4_4.4x3.6mm_P2.54mm" H 2000 6150 50  0001 L CIN
 F 3 "https://www.buerklin.com/medias/sys_master/download/download/h91/ha0/8892020588574.pdf" H 2200 6350 50  0001 L CNN
+F 4 "Lite-On LTV-357T" H 2200 6350 50  0001 C CNN "Bauteil"
 	1    2200 6350
 	1    0    0    -1  
 $EndComp
@@ -610,6 +584,7 @@ F 1 "100n" H 3365 6500 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 3288 6350 50  0001 C CNN
 F 3 "~" H 3250 6500 50  0001 C CNN
 F 4 "" H 3365 6409 50  0000 L CNN "Placement"
+F 5 "WE 885382206004" H 3250 6500 50  0001 C CNN "Bauteil"
 	1    3250 6500
 	-1   0    0    1   
 $EndComp
@@ -648,6 +623,7 @@ F 0 "D610" V 1939 6532 50  0000 R CNN
 F 1 "LED" V 1848 6532 50  0000 R CNN
 F 2 "LED_SMD:LED_0805_2012Metric" H 1900 6650 50  0001 C CNN
 F 3 "~" H 1900 6650 50  0001 C CNN
+F 4 "WE 150080BS75000" V 1900 6650 50  0001 C CNN "Bauteil"
 	1    1900 6650
 	0    -1   -1   0   
 $EndComp
@@ -661,6 +637,7 @@ F 0 "D609" V 1200 6950 50  0000 R CNN
 F 1 "1N4148" V 1300 7000 50  0000 R CNN
 F 2 "Diode_SMD:D_SOD-323F" H 1250 6600 50  0001 C CNN
 F 3 "~" H 1250 6600 50  0001 C CNN
+F 4 "ON 1N4148WS" V 1250 6600 50  0001 C CNN "Bauteil"
 	1    1250 6600
 	0    -1   1    0   
 $EndComp
@@ -777,39 +754,6 @@ Wire Notes Line
 Text Notes 650  5150 0    79   ~ 0
 Suchlauf Halte"spule"
 $Comp
-L Relay:G6K-2 K603
-U 1 1 601858D4
-P 7950 2500
-F 0 "K603" H 7320 2454 50  0000 R CNN
-F 1 "G6K-2" H 7320 2545 50  0000 R CNN
-F 2 "Relay_SMD:Relay_DPDT_Omron_G6K-2F" H 7950 2500 50  0001 L CNN
-F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf" H 7950 2500 50  0001 C CNN
-	1    7950 2500
-	-1   0    0    1   
-$EndComp
-$Comp
-L Relay:G6K-2 K601
-U 1 1 60185F45
-P 7950 1500
-F 0 "K601" H 7320 1546 50  0000 R CNN
-F 1 "G6K-2" H 7320 1455 50  0000 R CNN
-F 2 "Relay_SMD:Relay_DPDT_Omron_G6K-2F" H 7950 1500 50  0001 L CNN
-F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf" H 7950 1500 50  0001 C CNN
-	1    7950 1500
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Transistor_BJT:BC846 Q602
-U 1 1 601D47B4
-P 10600 1500
-F 0 "Q602" H 10791 1546 50  0000 L CNN
-F 1 "BC846" H 10791 1455 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 10800 1425 50  0001 L CIN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf" H 10600 1500 50  0001 L CNN
-	1    10600 1500
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 601D47BD
 P 10700 2000
@@ -857,17 +801,6 @@ Connection ~ 10700 2000
 Wire Wire Line
 	10700 1300 10700 1150
 $Comp
-L Transistor_BJT:BC846 Q604
-U 1 1 601D47D4
-P 10600 2800
-F 0 "Q604" H 10791 2846 50  0000 L CNN
-F 1 "BC846" H 10791 2755 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 10800 2725 50  0001 L CIN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf" H 10600 2800 50  0001 L CNN
-	1    10600 2800
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 601D47DA
 P 10700 3300
@@ -914,17 +847,6 @@ Wire Wire Line
 Connection ~ 10700 3300
 Wire Wire Line
 	10700 2600 10700 2450
-$Comp
-L Transistor_BJT:BC846 Q606
-U 1 1 601D47F1
-P 10600 4000
-F 0 "Q606" H 10791 4046 50  0000 L CNN
-F 1 "BC846" H 10791 3955 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 10800 3925 50  0001 L CIN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf" H 10600 4000 50  0001 L CNN
-	1    10600 4000
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 601D47F7
@@ -1045,6 +967,7 @@ F 0 "D602" V 8954 1420 50  0000 R CNN
 F 1 "1N4148" V 9045 1420 50  0000 R CNN
 F 2 "Diode_SMD:D_SOD-323F" H 9000 1500 50  0001 C CNN
 F 3 "~" H 9000 1500 50  0001 C CNN
+F 4 "ON 1N4148WS" V 9000 1500 50  0001 C CNN "Bauteil"
 	1    9000 1500
 	0    -1   1    0   
 $EndComp
@@ -1056,6 +979,7 @@ F 0 "D604" V 9046 2580 50  0000 L CNN
 F 1 "1N4148" V 8955 2580 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-323F" H 9000 2500 50  0001 C CNN
 F 3 "~" H 9000 2500 50  0001 C CNN
+F 4 "ON 1N4148WS" V 9000 2500 50  0001 C CNN "Bauteil"
 	1    9000 2500
 	0    1    -1   0   
 $EndComp
@@ -1135,6 +1059,7 @@ F 0 "K606" H 7320 3854 50  0000 R CNN
 F 1 "G6K-2" H 7320 3945 50  0000 R CNN
 F 2 "Relay_SMD:Relay_DPDT_Omron_G6K-2F" H 7950 3900 50  0001 L CNN
 F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf" H 7950 3900 50  0001 C CNN
+F 4 "Omron G6K-2F-TR DC5" H 7950 3900 50  0001 C CNN "Bauteil"
 	1    7950 3900
 	-1   0    0    1   
 $EndComp
@@ -1146,6 +1071,7 @@ F 0 "D605" V 9046 3980 50  0000 L CNN
 F 1 "1N4148" V 8955 3980 50  0000 L CNN
 F 2 "Diode_SMD:D_SOD-323F" H 9000 3900 50  0001 C CNN
 F 3 "~" H 9000 3900 50  0001 C CNN
+F 4 "ON 1N4148WS" V 9000 3900 50  0001 C CNN "Bauteil"
 	1    9000 3900
 	0    1    -1   0   
 $EndComp
@@ -1258,17 +1184,6 @@ Wire Wire Line
 Text Notes 2100 7250 0    50   ~ 0
 ToDo - Widerstandswerte abgleichen \nso dass Verhalten wie mit Haltespule ist
 $Comp
-L Transistor_BJT:BC846 Q607
-U 1 1 6031DB07
-P 5800 6850
-F 0 "Q607" H 5991 6896 50  0000 L CNN
-F 1 "BC846" H 5991 6805 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 6000 6775 50  0001 L CIN
-F 3 "https://assets.nexperia.com/documents/data-sheet/BC846_SER.pdf" H 5800 6850 50  0001 L CNN
-	1    5800 6850
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR?
 U 1 1 6031DB0D
 P 5900 7350
@@ -1362,6 +1277,7 @@ F 0 "D607" V 4204 5870 50  0000 R CNN
 F 1 "1N4148" V 4100 6050 50  0000 R CNN
 F 2 "Diode_SMD:D_SOD-323F" H 4250 5950 50  0001 C CNN
 F 3 "~" H 4250 5950 50  0001 C CNN
+F 4 "ON 1N4148WS" V 4250 5950 50  0001 C CNN "Bauteil"
 	1    4250 5950
 	0    -1   1    0   
 $EndComp
@@ -1373,6 +1289,7 @@ F 0 "D608" V 6604 5870 50  0000 R CNN
 F 1 "1N4148" V 6695 5870 50  0000 R CNN
 F 2 "Diode_SMD:D_SOD-323F" H 6650 5950 50  0001 C CNN
 F 3 "~" H 6650 5950 50  0001 C CNN
+F 4 "ON 1N4148WS" V 6650 5950 50  0001 C CNN "Bauteil"
 	1    6650 5950
 	0    -1   1    0   
 $EndComp
@@ -1470,6 +1387,114 @@ Wire Wire Line
 Wire Wire Line
 	3150 3400 3150 3100
 $Comp
+L Transistor_BJT:BC846 Q603
+U 1 1 60010290
+P 5750 2800
+F 0 "Q603" H 5941 2846 50  0000 L CNN
+F 1 "BC846" H 5941 2755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5950 2725 50  0001 L CIN
+F 3 "" H 5750 2800 50  0001 L CNN
+F 4 "ON BC846BLT3G" H 5750 2800 50  0001 C CNN "Bauteil"
+	1    5750 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC846 Q605
+U 1 1 600114DD
+P 5750 4000
+F 0 "Q605" H 5941 4046 50  0000 L CNN
+F 1 "BC846" H 5941 3955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 5950 3925 50  0001 L CIN
+F 3 "" H 5750 4000 50  0001 L CNN
+F 4 "ON BC846BLT3G" H 5750 4000 50  0001 C CNN "Bauteil"
+	1    5750 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC846 Q602
+U 1 1 6001260C
+P 10600 1500
+F 0 "Q602" H 10791 1546 50  0000 L CNN
+F 1 "BC846" H 10791 1455 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10800 1425 50  0001 L CIN
+F 3 "" H 10600 1500 50  0001 L CNN
+F 4 "ON BC846BLT3G" H 10600 1500 50  0001 C CNN "Bauteil"
+	1    10600 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC846 Q604
+U 1 1 60013393
+P 10600 2800
+F 0 "Q604" H 10791 2846 50  0000 L CNN
+F 1 "BC846" H 10791 2755 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10800 2725 50  0001 L CIN
+F 3 "" H 10600 2800 50  0001 L CNN
+F 4 "ON BC846BLT3G" H 10600 2800 50  0001 C CNN "Bauteil"
+	1    10600 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC846 Q606
+U 1 1 600143E8
+P 10600 4000
+F 0 "Q606" H 10791 4046 50  0000 L CNN
+F 1 "BC846" H 10791 3955 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 10800 3925 50  0001 L CIN
+F 3 "" H 10600 4000 50  0001 L CNN
+F 4 "ON BC846BLT3G" H 10600 4000 50  0001 C CNN "Bauteil"
+	1    10600 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Transistor_BJT:BC846 Q607
+U 1 1 60015199
+P 5800 6850
+F 0 "Q607" H 5991 6896 50  0000 L CNN
+F 1 "BC846" H 5991 6805 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 6000 6775 50  0001 L CIN
+F 3 "" H 5800 6850 50  0001 L CNN
+F 4 "ON BC846BLT3G" H 5800 6850 50  0001 C CNN "Bauteil"
+	1    5800 6850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Relay:G6K-2 K603
+U 1 1 601858D4
+P 7950 2500
+F 0 "K603" H 7320 2454 50  0000 R CNN
+F 1 "G6K-2" H 7320 2545 50  0000 R CNN
+F 2 "Relay_SMD:Relay_DPDT_Omron_G6K-2F" H 7950 2500 50  0001 L CNN
+F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf" H 7950 2500 50  0001 C CNN
+F 4 "Omron G6K-2F-TR DC5" H 7950 2500 50  0001 C CNN "Bauteil"
+	1    7950 2500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Relay:G6K-2 K601
+U 1 1 60185F45
+P 7950 1500
+F 0 "K601" H 7320 1546 50  0000 R CNN
+F 1 "G6K-2" H 7320 1455 50  0000 R CNN
+F 2 "Relay_SMD:Relay_DPDT_Omron_G6K-2F" H 7950 1500 50  0001 L CNN
+F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf" H 7950 1500 50  0001 C CNN
+F 4 "Omron G6K-2F-TR DC5" H 7950 1500 50  0001 C CNN "Bauteil"
+	1    7950 1500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Relay:G6K-2 K605
+U 1 1 600525CD
+P 2400 3900
+F 0 "K605" V 3167 3900 50  0000 C CNN
+F 1 "G6K-2" V 3076 3900 50  0000 C CNN
+F 2 "Relay_SMD:Relay_DPDT_Omron_G6K-2F" H 2400 3900 50  0001 L CNN
+F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf" H 2400 3900 50  0001 C CNN
+F 4 "Omron G6K-2F-TR DC5" V 2400 3900 50  0001 C CNN "Bauteil"
+	1    2400 3900
+	0    1    -1   0   
+$EndComp
+$Comp
 L Relay:G6K-2 K604
 U 1 1 60038514
 P 3550 3000
@@ -1477,6 +1502,7 @@ F 0 "K604" V 2783 3000 50  0000 C CNN
 F 1 "G6K-2" V 2874 3000 50  0000 C CNN
 F 2 "Relay_SMD:Relay_DPDT_Omron_G6K-2F" H 3550 3000 50  0001 L CNN
 F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf" H 3550 3000 50  0001 C CNN
+F 4 "Omron G6K-2F-TR DC5" V 3550 3000 50  0001 C CNN "Bauteil"
 	1    3550 3000
 	0    1    1    0   
 $EndComp
