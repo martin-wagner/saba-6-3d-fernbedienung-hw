@@ -1371,8 +1371,6 @@ F 3 "" H 6800 5800 50  0001 C CNN
 	1    6800 5800
 	1    0    0    -1  
 $EndComp
-Text GLabel 6800 6050 0    50   Input ~ 0
-SABA_GND_AC
 Wire Wire Line
 	6800 6050 6900 6050
 Wire Wire Line
@@ -1648,4 +1646,6 @@ F 5 "WE 885012207102" H 4800 2100 50  0001 C CNN "Bauteil"
 	1    4800 2100
 	-1   0    0    1   
 $EndComp
+Text GLabel 6800 6050 0    50   Input ~ 0
+SABA_GND_AC
 $EndSCHEMATC
