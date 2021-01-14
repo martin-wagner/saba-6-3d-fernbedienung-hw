@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 7
-Title "Fernbedienung SABA 6-3D"
-Date "2021-01-13"
+Title "Fernbedienung - Webradio SABA 6-3D"
+Date "2021-01-14"
 Rev "1-A"
 Comp "Martin Wagner DL2WAG"
 Comment1 "Lizenz: CERN-OHL-W (OHL v2)"
 Comment2 ""
 Comment3 "(Meersburg/Freiburg 6-3D, weitere?)"
-Comment4 "Fernbedienung für SABA \"Automatic\" Radios"
+Comment4 "Fernbedienung - Webradio für SABA \"Automatic\" Radios"
 $EndDescr
 $Comp
 L Graphic:Logo_Open_Hardware_Small #LOGO?
@@ -233,7 +233,7 @@ F 1 "150p" H 6315 1300 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 6238 1150 50  0001 C CNN
 F 3 "~" H 6200 1300 50  0001 C CNN
 F 4 "" H 6315 1209 50  0000 L CNN "Placement"
-F 5 "885012206103" H 6200 1300 50  0001 C CNN "Bauteil"
+F 5 "WE 885012206103" H 6200 1300 50  0001 C CNN "Bauteil"
 	1    6200 1300
 	0    -1   -1   0   
 $EndComp

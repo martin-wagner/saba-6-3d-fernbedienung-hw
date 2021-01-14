@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 7
-Title "Fernbedienung SABA 6-3D"
-Date "2021-01-13"
+Title "Fernbedienung - Webradio SABA 6-3D"
+Date "2021-01-14"
 Rev "1-A"
 Comp "Martin Wagner DL2WAG"
 Comment1 "Lizenz: CERN-OHL-W (OHL v2)"
 Comment2 "Fernbedienung"
 Comment3 "(Meersburg/Freiburg 6-3D, weitere?)"
-Comment4 "Fernbedienung für SABA \"Automatic\" Radios"
+Comment4 "Fernbedienung - Webradio für SABA \"Automatic\" Radios"
 $EndDescr
 $Comp
 L Graphic:Logo_Open_Hardware_Small #LOGO601
@@ -42,9 +42,9 @@ U 1 1 6005008F
 P 2400 2000
 F 0 "K602" V 1633 2000 50  0000 C CNN
 F 1 "G6K-2" V 1724 2000 50  0000 C CNN
-F 2 "Relay_SMD:Relay_DPDT_Omron_G6K-2F" H 2400 2000 50  0001 L CNN
+F 2 "Relay_THT:Relay_DPDT_Omron_G6K-2P" H 2400 2000 50  0001 L CNN
 F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf" H 2400 2000 50  0001 C CNN
-F 4 "Omron G6K-2F-TR DC5" V 2400 2000 50  0001 C CNN "Bauteil"
+F 4 "Omron G6K-2P DC5" V 2400 2000 50  0001 C CNN "Bauteil"
 	1    2400 2000
 	0    1    1    0   
 $EndComp
@@ -98,7 +98,7 @@ AR Path="/60135668/60066FC5" Ref="R?"  Part="1"
 AR Path="/6044FE50/60066FC5" Ref="R603"  Part="1" 
 F 0 "R603" H 1430 1509 50  0000 R CNN
 F 1 "1k" H 1430 1600 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1430 1600 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1430 1600 50  0001 C CNN
 F 3 "~" H 1500 1600 50  0001 C CNN
 F 4 "" V 1500 1650 50  0000 R CNN "Placement"
 	1    1500 1600
@@ -114,7 +114,7 @@ AR Path="/60135668/60067E4D" Ref="R?"  Part="1"
 AR Path="/6044FE50/60067E4D" Ref="R617"  Part="1" 
 F 0 "R617" H 1430 4259 50  0000 R CNN
 F 1 "1k" H 1430 4350 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 1430 4350 50  0001 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 1430 4350 50  0001 C CNN
 F 3 "~" H 1500 4350 50  0001 C CNN
 F 4 "" V 1500 4400 50  0000 R CNN "Placement"
 	1    1500 4350
@@ -972,18 +972,6 @@ F 4 "ON 1N4148WS" V 9000 1500 50  0001 C CNN "Bauteil"
 	0    -1   1    0   
 $EndComp
 $Comp
-L Device:D D604
-U 1 1 60234C49
-P 9000 2500
-F 0 "D604" V 9046 2580 50  0000 L CNN
-F 1 "1N4148" V 8955 2580 50  0000 L CNN
-F 2 "Diode_SMD:D_SOD-323F" H 9000 2500 50  0001 C CNN
-F 3 "~" H 9000 2500 50  0001 C CNN
-F 4 "ON 1N4148WS" V 9000 2500 50  0001 C CNN "Bauteil"
-	1    9000 2500
-	0    1    -1   0   
-$EndComp
-$Comp
 L power:+5V #PWR0602
 U 1 1 60235763
 P 8650 1100
@@ -1040,11 +1028,11 @@ Connection ~ 8650 2850
 Wire Wire Line
 	8650 2850 8350 2850
 Text Label 8050 3050 0    50   ~ 0
-Relaus_Laut
+Relais_Laut
 Text Label 8050 1000 0    50   ~ 0
 Relais_Leise
 Text Label 10700 1150 2    50   ~ 0
-Relaus_Laut
+Relais_Laut
 Text Label 10700 2450 2    50   ~ 0
 Relais_Leise
 Text GLabel 9800 1500 0    50   Input ~ 0
@@ -1057,9 +1045,9 @@ U 1 1 6026B523
 P 7950 3900
 F 0 "K606" H 7320 3854 50  0000 R CNN
 F 1 "G6K-2" H 7320 3945 50  0000 R CNN
-F 2 "Relay_SMD:Relay_DPDT_Omron_G6K-2F" H 7950 3900 50  0001 L CNN
+F 2 "Relay_THT:Relay_DPDT_Omron_G6K-2P" H 7950 3900 50  0001 L CNN
 F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf" H 7950 3900 50  0001 C CNN
-F 4 "Omron G6K-2F-TR DC5" H 7950 3900 50  0001 C CNN "Bauteil"
+F 4 "Omron G6K-2P DC5" H 7950 3900 50  0001 C CNN "Bauteil"
 	1    7950 3900
 	-1   0    0    1   
 $EndComp
@@ -1464,9 +1452,9 @@ U 1 1 601858D4
 P 7950 2500
 F 0 "K603" H 7320 2454 50  0000 R CNN
 F 1 "G6K-2" H 7320 2545 50  0000 R CNN
-F 2 "Relay_SMD:Relay_DPDT_Omron_G6K-2F" H 7950 2500 50  0001 L CNN
+F 2 "Relay_THT:Relay_DPDT_Omron_G6K-2P" H 7950 2500 50  0001 L CNN
 F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf" H 7950 2500 50  0001 C CNN
-F 4 "Omron G6K-2F-TR DC5" H 7950 2500 50  0001 C CNN "Bauteil"
+F 4 "Omron G6K-2P DC5" H 7950 2500 50  0001 C CNN "Bauteil"
 	1    7950 2500
 	-1   0    0    1   
 $EndComp
@@ -1476,9 +1464,9 @@ U 1 1 60185F45
 P 7950 1500
 F 0 "K601" H 7320 1546 50  0000 R CNN
 F 1 "G6K-2" H 7320 1455 50  0000 R CNN
-F 2 "Relay_SMD:Relay_DPDT_Omron_G6K-2F" H 7950 1500 50  0001 L CNN
+F 2 "Relay_THT:Relay_DPDT_Omron_G6K-2P" H 7950 1500 50  0001 L CNN
 F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf" H 7950 1500 50  0001 C CNN
-F 4 "Omron G6K-2F-TR DC5" H 7950 1500 50  0001 C CNN "Bauteil"
+F 4 "Omron G6K-2P DC5" H 7950 1500 50  0001 C CNN "Bauteil"
 	1    7950 1500
 	-1   0    0    -1  
 $EndComp
@@ -1488,9 +1476,9 @@ U 1 1 600525CD
 P 2400 3900
 F 0 "K605" V 3167 3900 50  0000 C CNN
 F 1 "G6K-2" V 3076 3900 50  0000 C CNN
-F 2 "Relay_SMD:Relay_DPDT_Omron_G6K-2F" H 2400 3900 50  0001 L CNN
+F 2 "Relay_THT:Relay_DPDT_Omron_G6K-2P" H 2400 3900 50  0001 L CNN
 F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf" H 2400 3900 50  0001 C CNN
-F 4 "Omron G6K-2F-TR DC5" V 2400 3900 50  0001 C CNN "Bauteil"
+F 4 "Omron G6K-2P DC5" V 2400 3900 50  0001 C CNN "Bauteil"
 	1    2400 3900
 	0    1    -1   0   
 $EndComp
@@ -1500,10 +1488,22 @@ U 1 1 60038514
 P 3550 3000
 F 0 "K604" V 2783 3000 50  0000 C CNN
 F 1 "G6K-2" V 2874 3000 50  0000 C CNN
-F 2 "Relay_SMD:Relay_DPDT_Omron_G6K-2F" H 3550 3000 50  0001 L CNN
+F 2 "Relay_THT:Relay_DPDT_Omron_G6K-2P" H 3550 3000 50  0001 L CNN
 F 3 "http://omronfs.omron.com/en_US/ecb/products/pdf/en-g6k.pdf" H 3550 3000 50  0001 C CNN
-F 4 "Omron G6K-2F-TR DC5" V 3550 3000 50  0001 C CNN "Bauteil"
+F 4 "Omron G6K-2P DC5" V 3550 3000 50  0001 C CNN "Bauteil"
 	1    3550 3000
 	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D604
+U 1 1 60234C49
+P 9000 2500
+F 0 "D604" V 9046 2580 50  0000 L CNN
+F 1 "1N4148" V 8955 2580 50  0000 L CNN
+F 2 "Diode_SMD:D_SOD-323F" H 9000 2500 50  0001 C CNN
+F 3 "~" H 9000 2500 50  0001 C CNN
+F 4 "ON 1N4148WS" V 9000 2500 50  0001 C CNN "Bauteil"
+	1    9000 2500
+	0    1    -1   0   
 $EndComp
 $EndSCHEMATC

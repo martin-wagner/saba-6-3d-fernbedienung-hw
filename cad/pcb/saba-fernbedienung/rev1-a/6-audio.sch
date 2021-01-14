@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 7 7
-Title "Fernbedienung SABA 6-3D"
-Date "2021-01-13"
+Title "Fernbedienung - Webradio SABA 6-3D"
+Date "2021-01-14"
 Rev "1-A"
 Comp "Martin Wagner DL2WAG"
 Comment1 "Lizenz: CERN-OHL-W (OHL v2)"
 Comment2 "Audio"
 Comment3 "(Meersburg/Freiburg 6-3D, weitere?)"
-Comment4 "Fernbedienung für SABA \"Automatic\" Radios"
+Comment4 "Fernbedienung - Webradio für SABA \"Automatic\" Radios"
 $EndDescr
 $Comp
 L local:VS1053 U702
@@ -21,6 +21,7 @@ F 0 "U702" H 4050 8600 50  0000 C CNN
 F 1 "VS1053" H 3200 7200 50  0000 C CNN
 F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 3150 5450 50  0001 C CNN
 F 3 "" H 3150 5450 50  0001 C CNN
+F 4 "VLSI VS1053B" H 3150 5450 50  0001 C CNN "Bauteil"
 	1    3150 5450
 	1    0    0    -1  
 $EndComp
@@ -1252,7 +1253,7 @@ U 1 1 607C7DE9
 P 9200 1450
 F 0 "RV701" H 9131 1496 50  0000 R CNN
 F 1 "20k lin" H 9131 1405 50  0000 R CNN
-F 2 "Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertica" H 9200 1450 50  0001 C CNN
+F 2 "Potentiometer_SMD:Potentiometer_Vishay_TS53YL_Vertical" H 9200 1450 50  0001 C CNN
 F 3 "~" H 9200 1450 50  0001 C CNN
 F 4 "Vishay TS53YL203MR10" H 9200 1450 50  0001 C CNN "Bauteil"
 	1    9200 1450

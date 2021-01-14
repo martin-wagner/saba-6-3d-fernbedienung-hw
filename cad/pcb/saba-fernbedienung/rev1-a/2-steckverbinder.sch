@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 7
-Title "Fernbedienung SABA 6-3D"
-Date "2021-01-13"
+Title "Fernbedienung - Webradio SABA 6-3D"
+Date "2021-01-14"
 Rev "1-A"
 Comp "Martin Wagner DL2WAG"
 Comment1 "Lizenz: CERN-OHL-W (OHL v2)"
 Comment2 "Anschlüsse und Buchsen"
 Comment3 "(Meersburg/Freiburg 6-3D, weitere?)"
-Comment4 "Fernbedienung für SABA \"Automatic\" Radios"
+Comment4 "Fernbedienung - Webradio für SABA \"Automatic\" Radios"
 $EndDescr
 $Comp
 L Connector_Generic:Conn_01x02 J306

@@ -4,14 +4,14 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 7
-Title "Fernbedienung SABA 6-3D"
-Date "2021-01-13"
+Title "Fernbedienung - Webradio SABA 6-3D"
+Date "2021-01-14"
 Rev "1-A"
 Comp "Martin Wagner DL2WAG"
 Comment1 "Lizenz: CERN-OHL-W (OHL v2)"
 Comment2 "Suchlauf Eingang"
 Comment3 "(Meersburg/Freiburg 6-3D, weitere?)"
-Comment4 "Fernbedienung für SABA \"Automatic\" Radios"
+Comment4 "Fernbedienung - Webradio für SABA \"Automatic\" Radios"
 $EndDescr
 Text Notes 650  800  0    79   ~ 0
 Ermittlung Signalamplitude / Phasenlage
@@ -343,7 +343,7 @@ F 1 "470n" H 3315 1800 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 3238 1650 50  0001 C CNN
 F 3 "~" H 3200 1800 50  0001 C CNN
 F 4 "" H 3315 1709 50  0000 L CNN "Placement"
-F 5 "885012207102" H 3200 1800 50  0001 C CNN "Bauteil"
+F 5 "WE 885012207102" H 3200 1800 50  0001 C CNN "Bauteil"
 	1    3200 1800
 	0    1    1    0   
 $EndComp
@@ -1626,7 +1626,7 @@ F 1 "470n" H 8915 2050 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 8838 1900 50  0001 C CNN
 F 3 "~" H 8800 2050 50  0001 C CNN
 F 4 "" H 8915 1959 50  0000 L CNN "Placement"
-F 5 "885012207102" H 8800 2050 50  0001 C CNN "Bauteil"
+F 5 "WE 885012207102" H 8800 2050 50  0001 C CNN "Bauteil"
 	1    8800 2050
 	-1   0    0    1   
 $EndComp
@@ -1644,7 +1644,7 @@ F 1 "470n" H 4915 2100 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric" H 4838 1950 50  0001 C CNN
 F 3 "~" H 4800 2100 50  0001 C CNN
 F 4 "" H 4915 2009 50  0000 L CNN "Placement"
-F 5 "885012207102" H 4800 2100 50  0001 C CNN "Bauteil"
+F 5 "WE 885012207102" H 4800 2100 50  0001 C CNN "Bauteil"
 	1    4800 2100
 	-1   0    0    1   
 $EndComp
