@@ -869,9 +869,9 @@ Text GLabel 6150 4700 0    50   Input ~ 0
 SPI_SCK
 Text GLabel 6150 4800 0    50   Input ~ 0
 SPI_MOSI
-Text GLabel 6150 5300 0    50   Input ~ 0
-~RESET
 Text GLabel 6150 4900 0    50   Input ~ 0
+~RESET
+Text GLabel 6150 5300 0    50   Input ~ 0
 LCD_A0
 Text GLabel 6150 5000 0    50   Input ~ 0
 LCD_BL

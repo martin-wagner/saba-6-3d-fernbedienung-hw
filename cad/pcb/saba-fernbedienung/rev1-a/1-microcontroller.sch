@@ -108,7 +108,7 @@ Wire Wire Line
 	5550 3700 3300 3700
 Text GLabel 5550 3300 2    50   BiDi ~ 0
 LCD_A0
-Text GLabel 5550 2600 2    50   Output ~ 0
+Text GLabel 5550 3400 2    50   Output ~ 0
 SPI_CS_LCD
 Text GLabel 5550 3200 2    50   Output ~ 0
 SPI_CS_SDCARD
@@ -174,7 +174,7 @@ Text GLabel 5550 2700 2    50   Output ~ 0
 SABA_Mute
 Text GLabel 5550 1900 2    50   Output ~ 0
 SABA_Laut
-Text GLabel 5550 3400 2    50   Output ~ 0
+Text GLabel 5550 2600 2    50   Output ~ 0
 SABA_Leise
 Text GLabel 5550 3500 2    50   Output ~ 0
 SABA_Netz
