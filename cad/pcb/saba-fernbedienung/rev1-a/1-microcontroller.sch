@@ -158,13 +158,13 @@ F 3 "" H 8400 2500 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	8400 2500 8400 2600
-Text GLabel 5550 3900 2    50   Input ~ 0
+Text GLabel 5550 4100 2    50   Input ~ 0
 SABA_HS
 Wire Wire Line
 	5550 3900 3300 3900
 Text GLabel 5550 2400 2    50   Output ~ 0
 SABA_Suchlauf_R
-Text GLabel 5550 2300 2    50   Output ~ 0
+Text GLabel 5550 2500 2    50   Output ~ 0
 SABA_Suchlauf_L
 Wire Wire Line
 	3300 2300 3950 2300
@@ -184,7 +184,7 @@ Text GLabel 5550 3600 2    50   Input ~ 0
 SABA_Laufrichtung
 Text GLabel 5550 3800 2    50   Input ~ 0
 SABA_Suchlauf_Langsam
-Text GLabel 5550 4100 2    50   Input ~ 0
+Text GLabel 5550 3900 2    50   Input ~ 0
 SABA_Suchlauf_Schnell
 $Comp
 L Device:R R204
@@ -387,7 +387,7 @@ F 4 "Doit ESP32 DEVKITV1 (Board mit ESP WROOM-32)" H 2700 2900 50  0001 C CNN "B
 	1    2700 2900
 	1    0    0    -1  
 $EndComp
-Text GLabel 5550 2500 2    50   Output ~ 0
+Text GLabel 5550 2300 2    50   Output ~ 0
 SABA_Schnelllauf
 Wire Wire Line
 	4550 2500 5550 2500
