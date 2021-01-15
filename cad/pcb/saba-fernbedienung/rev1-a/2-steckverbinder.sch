@@ -851,10 +851,6 @@ Wire Wire Line
 Wire Wire Line
 	4450 3100 4450 2600
 Connection ~ 4450 2600
-Text GLabel 2250 3200 2    50   Output ~ 0
-SABA_Reserve
-Wire Wire Line
-	2250 3200 1850 3200
 $Comp
 L Connector_Generic:Conn_01x08 J312
 U 1 1 60A4DF30
@@ -964,4 +960,5 @@ F 4 "CUI SJ-3523-SMT-TR" H 4150 2250 50  0001 C CNN "Bauteil"
 	1    4150 2250
 	1    0    0    -1  
 $EndComp
+NoConn ~ 1850 3200
 $EndSCHEMATC

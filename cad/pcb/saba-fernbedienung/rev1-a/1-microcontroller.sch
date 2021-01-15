@@ -106,7 +106,7 @@ Wire Wire Line
 	5550 2200 3300 2200
 Wire Wire Line
 	5550 3700 3300 3700
-Text GLabel 5550 1900 2    50   BiDi ~ 0
+Text GLabel 5550 3300 2    50   BiDi ~ 0
 LCD_A0
 Text GLabel 5550 2600 2    50   Output ~ 0
 SPI_CS_LCD
@@ -172,9 +172,7 @@ Wire Wire Line
 	3300 2400 4850 2400
 Text GLabel 5550 2700 2    50   Output ~ 0
 SABA_Mute
-Wire Wire Line
-	5550 2700 3300 2700
-Text GLabel 5550 3300 2    50   Output ~ 0
+Text GLabel 5550 1900 2    50   Output ~ 0
 SABA_Laut
 Text GLabel 5550 3400 2    50   Output ~ 0
 SABA_Leise
@@ -405,54 +403,7 @@ F 5 "ON BC856BLT1G" H 8300 2800 50  0001 C CNN "Bauteil"
 	1    8300 2800
 	1    0    0    1   
 $EndComp
-$Comp
-L Device:R R201
-U 1 1 60A2E32A
-P 6800 1750
-F 0 "R201" V 6600 1750 50  0000 C CNN
-F 1 "10k" V 6700 1750 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6730 1750 50  0001 C CNN
-F 3 "~" H 6800 1750 50  0001 C CNN
-F 4 "NP" V 6800 1750 50  0000 C CNN "Placement"
-	1    6800 1750
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R202
-U 1 1 60A2EA0B
-P 6800 2250
-F 0 "R202" V 6600 2250 50  0000 C CNN
-F 1 "10k" V 6700 2250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 6730 2250 50  0001 C CNN
-F 3 "~" H 6800 2250 50  0001 C CNN
-F 4 "NP" V 6800 2250 50  0000 C CNN "Placement"
-	1    6800 2250
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
-	3300 2000 6800 2000
-Wire Wire Line
-	6800 1900 6800 2000
-Connection ~ 6800 2000
-Wire Wire Line
-	6800 2000 6800 2100
-Wire Wire Line
-	6800 2400 6800 2450
-Text GLabel 6850 1500 2    50   Input ~ 0
-SABA_Reserve
-Wire Wire Line
-	6800 1600 6800 1500
-$Comp
-L power:GND #PWR0202
-U 1 1 60A7B96C
-P 6800 2450
-F 0 "#PWR0202" H 6800 2200 50  0001 C CNN
-F 1 "GND" H 6805 2277 50  0000 C CNN
-F 2 "" H 6800 2450 50  0001 C CNN
-F 3 "" H 6800 2450 50  0001 C CNN
-	1    6800 2450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6800 1500 6850 1500
+	5550 2700 3300 2700
+NoConn ~ 3300 2000
 $EndSCHEMATC
