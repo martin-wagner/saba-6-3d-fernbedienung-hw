@@ -1,10 +1,10 @@
 Fertigungsdatensatz generieren in KiCad
 
 - plot scm in eeschema (scm)
-- export BOM in pcbnew - file -> fab output -> BOM file (place)
+- export BOM in eeschema - tools -> generate bill of material -> Script "bom_csv_grouped_by_value". Datei ohne Endung umbenennen nach stueckliste.csv, andere Dateien loeschen.
 - Gerber photoplot - file -> plot -> "Gerber", disable "plot footprint values", Lagenauswahl nach belegten Lagen
     - Button "Plot"
     - Button "Generate Drill Files..."
     -> Ergebnis: Gerbers + Excellon Bohrdaten mit und ohne Durchkontaktierung
-- Bestückungsplan PDF - file -> print -> "PDF" Lagen Front/Back Silkscreen + Edge Cuts + Fab (place)
+- Bestückungsplan PDF - file -> print -> "PDF" Lagen Front/Back Silkscreen + Edge Cuts + Fab (place). Drucken mit "print to file", nicht mit dem PDF Drucker.
 - Kontrollieren im Gerber Viewer
