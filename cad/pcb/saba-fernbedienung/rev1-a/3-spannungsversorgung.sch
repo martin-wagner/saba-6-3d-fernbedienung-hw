@@ -388,7 +388,7 @@ Wire Wire Line
 Wire Wire Line
 	3450 2700 4400 2700
 Text Notes 700  900  0    79   ~ 0
-Spannungsversorgung 5V mit Trenung GND
+Spannungsversorgung 5V mit Trennung GND
 Wire Notes Line
 	650  950  8300 950 
 Wire Notes Line

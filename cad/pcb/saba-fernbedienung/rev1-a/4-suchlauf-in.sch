@@ -387,7 +387,7 @@ F 0 "U501" H 2500 1433 50  0000 C CNN
 F 1 "ADA4522-2" H 2500 1524 50  0000 C CNN
 F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 2500 1800 50  0001 C CNN
 F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/ADA4522-1_4522-2_4522-4.pdf" H 2500 1800 50  0001 C CNN
-F 4 "ADA4522-1ARMZ" H 2500 1800 50  0001 C CNN "Bauteil"
+F 4 "ADA4522-2ARMZ" H 2500 1800 50  0001 C CNN "Bauteil"
 	1    2500 1800
 	1    0    0    1   
 $EndComp
