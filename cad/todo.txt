@@ -1,0 +1,9 @@
+scm
+  -TRS Pinbelegung T und S tauschen
+  -uC SPI MOSI muss auf GPIO23
+  -U702 Stromaufnahme >1A wenn IOVDD nicht angeschlossen (uC gesteckt)
+  -OP IC701 Poti verschiebt DC Arbeitspunkt
+
+pcb
+  -Quarz Bauform passt nicht zum Layout
+  -Bestueckungsplan Bauteile links unter TRS nicht aufgeraeumt
