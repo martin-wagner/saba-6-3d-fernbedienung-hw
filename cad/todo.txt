@@ -3,6 +3,8 @@ scm
   -uC SPI MOSI muss auf GPIO23
   -U702 Stromaufnahme >1A wenn IOVDD nicht angeschlossen (uC gesteckt)
   -OP IC701 Poti verschiebt DC Arbeitspunkt
+  -U702 Reset ueber ODER an uC GPIO
+  -U701 C in Serie zu R705, R713 (https://www.mikrocontroller.net/articles/Operationsverst%C3%A4rker-Grundschaltungen#Betrieb_mit_einfacher_Versorgungsspannung)
 
 pcb
   -Quarz Bauform passt nicht zum Layout
