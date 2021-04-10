@@ -58,6 +58,8 @@
 %
 % fettes rotes todo
 \newcommand {\todo} {\textbf{\color{red} todo\ }}
+% Gr"o"se eines Oszillogramms
+\newcommand {\tscopesize}{12cm}
 
 % Links, Querverweise, Titel
 \usepackage[
@@ -144,7 +146,7 @@ Wird h"aufig die Webradiofunktion verwendet, sollte das magische Auge im TA Betr
 \begin{tikzpicture}
      \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=6cm]{auge.png}};
 \end{tikzpicture}
-\caption{Schaltungsvorschlag } \label{fig:st}
+\caption{Schaltungsvorschlag } \label{fig:1}
 \end{figure}
 
 \section{Bedienung} \label{sec:bedienung}
@@ -279,7 +281,7 @@ Der Verlauf wird an der Simulation sichtbar
 \begin{tikzpicture}
      \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\textwidth]{messen.png}};
 \end{tikzpicture}
-\caption{Spannung Rot: Suchlaufleitung -- AC 0V, Blau: Suchlaufleitung -- AC 15V -90°} \label{fig:st}
+\caption{Spannung Rot: Suchlaufleitung -- AC 0V, Blau: Suchlaufleitung -- AC 15V -90°} \label{fig:1}
 \end{figure}
 
 
@@ -299,6 +301,122 @@ Die beiden Platinen werden "uber 2,54\,mm Stecker miteinander verbunden. Dies er
 
 
 5v nie ohne ESP32, sonst VLSI hei"s -> kaputt.
+
+
+\section{Inbetriebnahme} \label{sec:inbetriebnahme}
+
+
+\subsection{OP / Comparatoren} \label{sec:op-cmp}
+
+Versorgungsspannung 2x16\,V AC -- +/-22\,V. Die Comparatoren sind auf eine Versorgungsspannung von 22\,V berechnet. Da in der Schaltung Spannungsverh"altnisse verglichen werden sind die berechneten Schaltschwellen nur bei dieser Spannung g"ultig. Bei anderen Versorgungsspannungen verschieben sich die Schaltpunkte proportional zur Versorgungsspannung.
+
+Alle Messungen mit Bezug auf die Mittelanzapfung der 15\,V Wicklung, nicht Masse des Radios!
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\textwidth]{messen2.png}};
+\end{tikzpicture}
+\caption{Spannungen in Simulation} \label{fig:1}
+\end{figure}
+
+\textbf{Laufrichtung}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\tscopesize]{image27346.png}};
+\end{tikzpicture}
+\caption{Laufrichtung 1, suchen} \label{fig:1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\tscopesize]{image17823.png}};
+\end{tikzpicture}
+\caption{Laufrichtung 2, suchen} \label{fig:1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\tscopesize]{image9355.png}};
+\end{tikzpicture}
+\caption{Laufrichtung 1, schnell} \label{fig:1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\tscopesize]{image29704.png}};
+\end{tikzpicture}
+\caption{Laufrichtung 2, schnell} \label{fig:1}
+\end{figure}
+
+Die Laufrichtung wird korrekt erkannt. Die Spannungen sind wie erwartet. Die Verz"ogerung ist mit max. ca 50\,ms in einem akzeptablen Rahmen.
+
+\textbf{Versorgungsspannung Laufrichtung}
+
+Sweep Versorgungsspannung +/- 10\,V ... 18\,V AC. 
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\tscopesize]{image22258.png}};
+\end{tikzpicture}
+\caption{Laufrichtung 1, suchen} \label{fig:1}
+\end{figure}
+
+Das digitale Signal steht im gesamten Versorgungsspannungsbereich korrekt an. 
+
+\todo wie wirken sich Widerstandstoleranzen des Teilers aus?
+
+\textbf{Amplitude}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\tscopesize]{image24190.png}};
+\end{tikzpicture}
+\caption{suchen} \label{fig:1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\tscopesize]{image9293.png}};
+\end{tikzpicture}
+\caption{schnelllauf} \label{fig:1}
+\end{figure}
+
+Die Aplitude wird korrekt erkannt. Die Spannungen sind wie erwartet. Die Verz"ogerung ist mit max. ca 50\,ms in einem akzeptablen Rahmen.
+
+\textbf{Versorgungsspannung Amplitude}
+
+Sweep Versorgungsspannung +/- 10\,V ... 18\,V AC. 
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\tscopesize]{image22512.png}};
+\end{tikzpicture}
+\caption{suchen} \label{fig:1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\tscopesize]{image9576.png}};
+\end{tikzpicture}
+\caption{schnelllauf} \label{fig:1}
+\end{figure}
+
+Das digitale Signal steht im gesamten Versorgungsspannungsbereich korrekt an. 
+
+\todo wie wirken sich Widerstandstoleranzen des Teilers aus?
+
+\textbf{Amplitude}
 
 
 \end{document}
