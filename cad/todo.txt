@@ -5,7 +5,12 @@ scm
   -OP IC701 Poti verschiebt DC Arbeitspunkt
   -U702 Reset ueber ODER an uC GPIO
   -U701 C in Serie zu R705, R713 (https://www.mikrocontroller.net/articles/Operationsverst%C3%A4rker-Grundschaltungen#Betrieb_mit_einfacher_Versorgungsspannung)
+  -R512, R515, R529 1k -> 10k (U*I an 20V...); Werte um Comparator anpassen so dass 10k im Vergleich vernachl"assigbar bleibt.
+  -R618 5k6 -> 5k7
+  -R513, R516, R530, R619 -> 4k7
+  -CMP R514 -> 20k, R520 360k, Schaltschwelle 18,5V. Andere 22k -> 20k?
 
 pcb
   -Quarz Bauform passt nicht zum Layout
   -Bestueckungsplan Bauteile links unter TRS nicht aufgeraeumt
+  -NP Bauteile auch im Bestueckungsplan als NP markieren
