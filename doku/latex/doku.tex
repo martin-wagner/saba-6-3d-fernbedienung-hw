@@ -264,10 +264,8 @@ Abh"angig von der Schalterposition wird das Signal auf der Suchlaufleitung ver"a
 \item Bet"atigung Schnelllauf - Wie Suchlauf, aber AC Amplitude h"oher.
 \end{itemize}
 
-Die Schalterposition kann folglich anhand der aufaddierten Wechselspannung ermittelt werden. Achtung: Die Messung bezieht sich auf die Mittelanzapfung des Trafos. Dieser Punkt ist \textbf{nicht} mit der Masse des Radios verbunden.
+Die Schalterposition kann folglich anhand der aufaddierten Wechselspannung ermittelt werden. Der Verlauf wird an der Simulation sichtbar:
 
-
-Der Verlauf wird an der Simulation sichtbar
 \begin{itemize}
 \item 1\,s ... 2\,s - links Schnelllauf
 \item 3\,s ... 4\,s - links Suchlauf
@@ -284,10 +282,7 @@ Der Verlauf wird an der Simulation sichtbar
 \caption{Spannung Rot: Suchlaufleitung -- AC 0V, Blau: Suchlaufleitung -- AC 15V -90°} \label{fig:1}
 \end{figure}
 
-
-
-
-
+Messung mit Einweggleichrichtung und Siebung der Wechselspannung. Umsetzung in digitale Signale mit Komparatoren. Die Spannungen beziehen sich auf die Mittelanzapfung des Trafos. Dieser Punkt ist \textbf{nicht} mit der Masse des Radios verbunden. Daher ist f"ur die digitalen Signale Potentialtrennung erforderlich.
 
 \section{Aufbau} \label{sec:aufbau}
 
@@ -300,17 +295,72 @@ Die Schaltung wird auf zwei Platinen aufgebaut:
 Die beiden Platinen werden "uber 2,54\,mm Stecker miteinander verbunden. Dies erm"oglicht ein leichtes Anpassen des Steckers auf Ger"atetypen mit anderer Buchse.
 
 
-5v nie ohne ESP32, sonst VLSI hei"s -> kaputt.
+\todo 5V nie ohne ESP32, sonst VLSI hei"s -> kaputt.
 
 
 \section{Inbetriebnahme} \label{sec:inbetriebnahme}
 
+\subsection{Netzteil 5\,V} \label{sec:inbetriebnahme:netzteil}
 
-\subsection{OP / Comparatoren} \label{sec:op-cmp}
+Der verwendete TEC 2-0911 ist ein Wandler mit weitem Eingangsspannungsbereich und geregeltem Ausgang. Dies ist notwendig da die Eingangsspannung aus der Heizspannung des Radios generiert wird.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\tscopesize]{image30485.png}};
+\end{tikzpicture}
+\caption{DC @ 6,3\,V AC, Eingangsspannung} \label{fig:1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\tscopesize]{image9693.png}};
+\end{tikzpicture}
+\caption{DC @ 6,3\,V AC, Ausgangsspannung} \label{fig:1}
+\end{figure}
+
+Der DC/DC Wandler muss ab 4,5\,V DC Eingangsspannung funktionieren (Datenblatt).
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\tscopesize]{image18876.png}};
+\end{tikzpicture}
+\caption{DC @ 3,3\,V AC, Ausgangsspannung} \label{fig:1}
+\end{figure}
+
+Bei Unterschreiten der Mindestspannung schaltet der Wandler den Ausgang nicht ab.
+
+\textbf{St"orungen}
+
+Direkt gemessen, ohne Netznachbildung...
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\tscopesize]{image13289.png}};
+\end{tikzpicture}
+\caption{St"orpegel am 6,3\,V Eingang} \label{fig:1}
+\end{figure}
+
+Die Schaltfrequenz des DC/DC ist sichtbar.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\tscopesize]{image29579.png}};
+\end{tikzpicture}
+\caption{St"orpegel zwischen Ein- und Ausgangsseite} \label{fig:1}
+\end{figure}
+
+L"asst sich um ca. 20 ... 30\,dB absenken durch Br"uckkondensatoren ca. 10\,nF statt der vorgegebenen. \todo pr"ufen wie sich verschiedene Kondensatorwerte auf den Radioempfang auswirken.
+
+\subsection{OP / Comparatoren} \label{sec:inbetriebnahme:op-cmp}
 
 Versorgungsspannung 2x16\,V AC -- +/-22\,V. Die Comparatoren sind auf eine Versorgungsspannung von 22\,V berechnet. Da in der Schaltung Spannungsverh"altnisse verglichen werden sind die berechneten Schaltschwellen nur bei dieser Spannung g"ultig. Bei anderen Versorgungsspannungen verschieben sich die Schaltpunkte proportional zur Versorgungsspannung.
 
-Alle Messungen mit Bezug auf die Mittelanzapfung der 15\,V Wicklung, nicht Masse des Radios!
+Alle Messungen mit Bezug auf die Mittelanzapfung der 15\,V Wicklung, nicht Masse des Radios! Beim Messen aufpassen das nicht versehentlich die verschiedenen Massepotentiale verbunden werden!
 
 \begin{figure}[H]
 \centering
@@ -354,9 +404,11 @@ Alle Messungen mit Bezug auf die Mittelanzapfung der 15\,V Wicklung, nicht Masse
 \caption{Laufrichtung 2, schnell} \label{fig:1}
 \end{figure}
 
-Die Laufrichtung wird korrekt erkannt. Die Spannungen sind wie erwartet. Die Verz"ogerung ist mit max. ca 50\,ms in einem akzeptablen Rahmen.
+Die Laufrichtung wird korrekt erkannt. Die Spannungen sind wie erwartet. Die Verz"ogerung ist mit max. ca 50\,ms in einem akzeptablen Rahmen. Beim Schnelllauf wird zuerst der Kontakt f"ur den Suchlauf geschlossen, bereits dieser f"uhrt zur Erkennung.
 
 \textbf{Versorgungsspannung Laufrichtung}
+
+Die Versorgungsspannung f"ur Radio und Komparatorschaltung ist nicht stabilisiert und schwankt daher in Abh"angikeit der Netzspannung.
 
 Sweep Versorgungsspannung +/- 10\,V ... 18\,V AC. 
 
@@ -416,8 +468,19 @@ Das digitale Signal steht im gesamten Versorgungsspannungsbereich korrekt an.
 
 \todo wie wirken sich Widerstandstoleranzen des Teilers aus?
 
-\textbf{Amplitude}
+\subsection{Haltespule} \label{sec:inbetriebnahme:hs}
 
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\tscopesize]{image31192.png}};
+\end{tikzpicture}
+\caption{schnelllauf} \label{fig:1}
+\end{figure}
+
+Der digitale Eingang schaltet bei ca. 30\,V / 5\,mA um.
+
+\todo Schaltschwellen Radio?
 
 \end{document}
 

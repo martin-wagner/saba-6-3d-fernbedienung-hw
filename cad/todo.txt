@@ -14,3 +14,4 @@ pcb
   -Quarz Bauform passt nicht zum Layout
   -Bestueckungsplan Bauteile links unter TRS nicht aufgeraeumt
   -NP Bauteile auch im Bestueckungsplan als NP markieren
+  -Tracopower Layout passt nicht
