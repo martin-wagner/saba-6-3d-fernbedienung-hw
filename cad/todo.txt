@@ -9,9 +9,14 @@ scm
   -R618 5k6 -> 5k7
   -R513, R516, R530, R619 -> 4k7
   -CMP R514 -> 20k, R520 360k, Schaltschwelle 18,5V. Andere 22k -> 20k?
+  -"Netzschalter" geht so nicht, schaltet dauerhaft hin und her. Entweder wegmachen oder 2 Transistor + dig. Eingang oder Relais DOLD OB 5693, OB 5694
+  -comparatoren suchlauf poti feinabstimmung sollwert
+  -Schalttransistoren Vorwiderstand, Pulldown beide 4k7. ESP32 gibt beim Boot kurz ca. 1V aus...
+  -suchlauf links/rechts und lautstaerke +/- gpio vertauscht
+  -dcdc wandler rausmachen und stattdessen audiouebertrager verwenden. EMV...
+  -wg. vorherig diodenbruecke durch einweg ersetzen.
 
 pcb
   -Quarz Bauform passt nicht zum Layout
   -Bestueckungsplan Bauteile links unter TRS nicht aufgeraeumt
   -NP Bauteile auch im Bestueckungsplan als NP markieren
-  -Tracopower Layout passt nicht

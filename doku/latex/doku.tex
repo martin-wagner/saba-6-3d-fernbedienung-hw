@@ -482,6 +482,131 @@ Der digitale Eingang schaltet bei ca. 30\,V / 5\,mA um.
 
 \todo Schaltschwellen Radio?
 
+
+\section{Untersuchungen} \label{sec:untersuchung}
+
+\subsection{Ausgangs"ubertrager} \label{sec:untersuchung:ausgangsuebertrager}
+
+Wir haben einen relativ niederohmigen Ausgang (Opamp) und eine sehr hochohmige Last (Radio Phonoeingang).
+
+Es wurden verschiedene Ausgangs"ubertrager untersucht um ein geeignetes Bauteil zu finden. 
+
+Von links nach rechts:
+\begin{itemize}
+\item Ground Loop Isolator Sinus Live GL-205, 2 x RCA (ca. 15 Euro)
+\item Telefon"ubertrager 600:600 Ohm EI14 (Ebay China ca. 4 Euro / 10 Stk.)
+\item CMC 47\,mH Talema CAF 0,5-47 (ca. 3 Euro)
+\item NFU 1-1 EI19 50\,Hz ... 10\,kHz, 34\,mH (ca. 3 Euro)
+\item FeinTech ATG00101 Audio Masse-Trennglied, Klinke 3,5\,mm (ca. 15 Euro)
+\end{itemize}
+
+Wir brauchen ca. 100\,Hz ... 15\,kHz.
+
+Versuchsaufbau nach https://keysightoscilloscopes.wordpress.com/2016/04/13/how-to-create-bode-plots-on-an-oscilloscope/
+
+Sweep 0 ... 20\,kHz, 1\,V\textsubscript{SS}, 50\,Ohm Ausgangswiderstand Generator, 100\,kOhm Lastwiderstand Sekund"arseite. Hat Scope Wavegen hier einen Bug, es kommen 2\,V\textsubscript{SS} raus?
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\textwidth]{uebertrager.jpg}};
+\end{tikzpicture}
+\caption{getestete "Ubertrager} \label{fig:1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\tscopesize]{image13017.png}};
+\end{tikzpicture}
+\caption{GL-205} \label{fig:1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\tscopesize]{image5878.png}};
+\end{tikzpicture}
+\caption{China 600:600 Ohm} \label{fig:1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\tscopesize]{image3233.png}};
+\end{tikzpicture}
+\caption{CMC 47\,mH} \label{fig:1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\tscopesize]{image5900.png}};
+\end{tikzpicture}
+\caption{NFU 1-1} \label{fig:1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\tscopesize]{image20292.png}};
+\end{tikzpicture}
+\caption{ATG00101} \label{fig:1}
+\end{figure}
+
+Im niedrigen Frequenzbereich sind Unterschiede sichtbar. Daher nochmal Detailmessung 0 ... 2\,kHz.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\tscopesize]{image5940.png}};
+\end{tikzpicture}
+\caption{GL-205} \label{fig:1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\tscopesize]{image923.png}};
+\end{tikzpicture}
+\caption{China 600:600 Ohm} \label{fig:1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\tscopesize]{image30564.png}};
+\end{tikzpicture}
+\caption{CMC 47\,mH} \label{fig:1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\tscopesize]{image4312.png}};
+\end{tikzpicture}
+\caption{NFU 1-1} \label{fig:1}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\tscopesize]{image9178.png}};
+\end{tikzpicture}
+\caption{ATG00101} \label{fig:1}
+\end{figure}
+
+Ergebnis:
+\begin{itemize}
+\item Die beiden kommerziell erhältlichen Massetrenner zeigen keinen nennenswerten Unterschied zwischen dem Spannungspegel an Ein- und Ausgang.
+\item Im niedrigen Frequenzbereich wird die "Ubertragung scheinbar durch die Belastung der Quelle durch die Induktivit"at der Prim"arspule bestimmt (50\,mH @ 50\,Hz -- 16\,Ohm). \todo Wie bestimmt sich die Induktivit"at auf der Prim"arseite bei Trafo -- Theorie untersuchen?
+\item Die CMC funktioniert "uberraschend gut -- in diesem Testaufbau sogar besser als der Audio"ubertrager.
+\item Der 600:600 Ohm Telefon"ubertrager ist billig, leicht zu bekommen, klein und mehr als ausreichend gut.
+\end{itemize}
+
+\todo H"ortest...
+
+
 \end{document}
 
 
