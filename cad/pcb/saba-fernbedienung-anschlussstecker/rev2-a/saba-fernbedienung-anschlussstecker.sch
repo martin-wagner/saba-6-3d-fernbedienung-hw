@@ -18,7 +18,7 @@ L stecker:Stecker-6-3D X101
 U 1 1 5FFB3011
 P 2350 2850
 F 0 "X101" H 2500 3650 50  0000 C CNN
-F 1 "Stecker-6-3D" H 2500 1300 50  0000 C CNN
+F 1 "Stecker-6-3D" H 2700 1000 50  0000 C CNN
 F 2 "stecker:stecker-6-3d" H 2350 2700 50  0001 C CNN
 F 3 "" H 2350 2700 50  0001 C CNN
 	1    2350 2850
@@ -60,12 +60,12 @@ $EndComp
 $Comp
 L Connector_Generic:Conn_01x04 J105
 U 1 1 5FFBFD33
-P 4600 3900
-F 0 "J105" H 4680 3892 50  0000 L CNN
-F 1 "Conn_01x04" H 4680 3801 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4600 3900 50  0001 C CNN
-F 3 "~" H 4600 3900 50  0001 C CNN
-	1    4600 3900
+P 4600 4350
+F 0 "J105" H 4680 4342 50  0000 L CNN
+F 1 "Conn_01x04" H 4680 4251 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4600 4350 50  0001 C CNN
+F 3 "~" H 4600 4350 50  0001 C CNN
+	1    4600 4350
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -128,24 +128,12 @@ Wire Wire Line
 Wire Wire Line
 	3650 3400 4400 3400
 Wire Wire Line
-	4400 3900 4250 3900
-$Comp
-L Connector_Generic:Conn_01x04 J106
-U 1 1 5FFD7E5D
-P 4600 4350
-F 0 "J106" H 4680 4342 50  0000 L CNN
-F 1 "Conn_01x04" H 4680 4251 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4600 4350 50  0001 C CNN
-F 3 "~" H 4600 4350 50  0001 C CNN
-	1    4600 4350
-	1    0    0    -1  
-$EndComp
+	4400 4350 4250 4350
 Wire Wire Line
-	4250 3800 4400 3800
-NoConn ~ 4400 4250
-NoConn ~ 4400 4350
-NoConn ~ 4400 4450
-NoConn ~ 4400 4550
+	4250 4250 4400 4250
+NoConn ~ 4400 3900
+NoConn ~ 4400 4000
+NoConn ~ 4400 4100
 Text Notes 1350 1850 0    118  ~ 0
 Anschluss Saba Stecker -> 2,54mm Pinheader
 $Comp
@@ -160,9 +148,9 @@ F 3 "~" H 10700 6850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4250 4000 4400 4000
+	4250 4450 4400 4450
 Wire Wire Line
-	4400 4100 4250 4100
+	4400 4550 4250 4550
 $Comp
 L Connector_Generic:Conn_01x02 J104
 U 1 1 5FFCDAC5
@@ -175,10 +163,6 @@ F 3 "~" H 4600 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	2650 4250 3750 4250
-Wire Wire Line
-	3750 4250 3750 3600
-Wire Wire Line
 	3750 3600 4250 3600
 Wire Wire Line
 	4250 3600 4250 3550
@@ -189,26 +173,47 @@ Wire Wire Line
 Wire Wire Line
 	4250 3650 4250 3600
 Connection ~ 4250 3600
+$Comp
+L Connector_Generic:Conn_01x04 J106
+U 1 1 5FFD7E5D
+P 4600 3900
+F 0 "J106" H 4680 3892 50  0000 L CNN
+F 1 "Conn_01x04" H 4680 3801 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 4600 3900 50  0001 C CNN
+F 3 "~" H 4600 3900 50  0001 C CNN
+	1    4600 3900
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	2650 3950 3450 3950
+	4250 4450 4250 4500
 Wire Wire Line
-	4250 3800 4250 3850
+	4250 4250 4250 4300
 Wire Wire Line
-	4250 4000 4250 4050
+	3750 3600 3750 4500
 Wire Wire Line
-	3450 3950 3450 3850
+	3750 4500 2650 4500
 Wire Wire Line
-	3450 3850 4250 3850
-Connection ~ 4250 3850
+	2650 4350 3850 4350
 Wire Wire Line
-	4250 3850 4250 3900
+	3850 4350 3850 4500
 Wire Wire Line
-	3550 4100 3550 4050
+	3850 4500 4250 4500
+Connection ~ 4250 4500
 Wire Wire Line
-	3550 4050 4250 4050
+	4250 4500 4250 4550
 Wire Wire Line
-	2650 4100 3550 4100
-Connection ~ 4250 4050
+	4250 4300 3850 4300
 Wire Wire Line
-	4250 4050 4250 4100
+	3850 4300 3850 4200
+Wire Wire Line
+	3850 4200 2650 4200
+Connection ~ 4250 4300
+Wire Wire Line
+	4250 4300 4250 4350
+Wire Wire Line
+	3850 3800 3850 3950
+Wire Wire Line
+	3850 3950 2650 3950
+Wire Wire Line
+	4400 3800 3850 3800
 $EndSCHEMATC

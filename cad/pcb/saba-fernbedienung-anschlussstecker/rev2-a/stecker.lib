@@ -5,33 +5,35 @@ EESchema-LIBRARY Version 2.4
 #
 DEF Stecker-6-3D X 0 40 Y Y 1 F N
 F0 "X" 100 800 50 H V C CNN
-F1 "Stecker-6-3D" 150 -1550 50 H V C CNN
+F1 "Stecker-6-3D" 150 -1850 50 H V C CNN
 F2 "" 0 -150 50 H I C CNN
 F3 "" 0 -150 50 H I C CNN
 DRAW
-T 0 150 650 50 0 0 0 "+15V AC" Normal 0 C C
-T 0 150 350 50 0 0 0 "-15V AC" Normal 0 C C
-T 0 0 500 50 0 0 0 "0V AC" Normal 0 L C
-T 0 0 -1250 50 0 0 0 "230V AC" Normal 0 L C
-T 0 0 100 50 0 0 0 "6.3V AC" Normal 0 L C
+T 0 200 650 50 0 0 0 "+15V AC" Normal 0 C C
+T 0 200 350 50 0 0 0 "-15V AC" Normal 0 C C
+T 0 50 500 50 0 0 0 "0V AC" Normal 0 L C
+T 0 50 -1500 50 0 0 0 "230V AC" Normal 0 L C
+T 0 50 100 50 0 0 0 "6.3V AC" Normal 0 L C
 T 0 50 -850 50 0 0 0 Haltestrom Normal 0 L C
 T 0 50 -700 50 0 0 0 Haltestrom Normal 0 L C
-T 0 0 -300 50 0 0 0 Lautstärke Normal 0 L C
-T 0 0 -50 50 0 0 0 "SABA GND" Normal 0 L C
-T 0 0 -550 50 0 0 0 Suchlauf Normal 0 L C
-T 0 0 -1100 50 0 0 0 Wechsler Normal 0 L C
-T 0 150 -1400 50 0 0 0 Wechsler Normal 0 C C
-S -200 750 500 -1500 0 1 0 N
+T 0 50 -300 50 0 0 0 Lautstärke Normal 0 L C
+T 0 50 -50 50 0 0 0 "SABA GND" Normal 0 L C
+T 0 50 -550 50 0 0 0 Suchlauf Normal 0 L C
+T 0 50 -1100 50 0 0 0 "TA Modus (optional)" Normal 0 L C
+T 0 50 -1350 50 0 0 0 Wechsler Normal 0 L C
+T 0 200 -1650 50 0 0 0 Wechsler Normal 0 C C
+S -200 750 850 -1750 0 1 0 N
 X s 1 -300 -550 100 R 50 50 1 1 B
+X TA 11 -300 -1100 100 R 50 50 1 1 I
 X b 12 -300 350 100 R 50 50 1 1 W
 X m 13 -300 500 100 R 50 50 1 1 W
 X HS2 14 -300 -700 100 R 50 50 1 1 B
 X H 15 -300 100 100 R 50 50 1 1 W
 X HS3 18 -300 -850 100 R 50 50 1 1 B
 X a 2 -300 650 100 R 50 50 1 1 W
-X N1 21 -300 -1100 100 R 50 50 1 1 w
-X N 23 -300 -1250 100 R 50 50 1 1 W
-X N2 24 -300 -1400 100 R 50 50 1 1 w
+X N1 21 -300 -1350 100 R 50 50 1 1 w
+X N 23 -300 -1500 100 R 50 50 1 1 W
+X N2 24 -300 -1650 100 R 50 50 1 1 w
 X L 5 -300 -300 100 R 50 50 1 1 O
 X E 8 -300 -50 100 R 50 50 1 1 W
 ENDDRAW
