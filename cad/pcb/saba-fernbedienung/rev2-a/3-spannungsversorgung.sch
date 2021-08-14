@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 7
 Title "Fernbedienung - Webradio SABA 6-3D"
-Date "2021-01-16"
-Rev "1-A"
+Date "2021-08-14"
+Rev "2-A"
 Comp "Martin Wagner DL2WAG"
 Comment1 "Lizenz: CERN-OHL-W (OHL v2)"
 Comment2 ""
@@ -67,21 +67,6 @@ F 5 "WE 885382206004" H 3000 1950 50  0001 C CNN "Bauteil"
 	1    3000 1950
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C?
-U 1 1 600BAEC6
-P 4400 1950
-AR Path="/6002EA57/600BAEC6" Ref="C?"  Part="1" 
-AR Path="/6008B538/600BAEC6" Ref="C404"  Part="1" 
-F 0 "C404" H 4515 2041 50  0000 L CNN
-F 1 "10u" H 4515 1950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 4438 1800 50  0001 C CNN
-F 3 "~" H 4400 1950 50  0001 C CNN
-F 4 "" H 4515 1859 50  0000 L CNN "Placement"
-F 5 "WE 885012208069" H 4400 1950 50  0001 C CNN "Bauteil"
-	1    4400 1950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3000 1300 3000 1800
 Wire Wire Line
@@ -136,226 +121,78 @@ Wire Wire Line
 	2600 1750 2600 2150
 Wire Wire Line
 	3000 1300 3450 1300
-Wire Wire Line
-	4400 1300 4400 1800
-Wire Wire Line
-	4400 2100 4400 2700
-$Comp
-L Device:L L401
-U 1 1 600C8755
-P 4750 1300
-F 0 "L401" V 4940 1300 50  0000 C CNN
-F 1 "4,7u" V 4849 1300 50  0000 C CNN
-F 2 "local:WE-LQ" H 4750 1300 50  0001 C CNN
-F 3 "~" H 4750 1300 50  0001 C CNN
-F 4 "WE 744045004" V 4750 1300 50  0001 C CNN "Bauteil"
-	1    4750 1300
-	0    -1   -1   0   
-$EndComp
 $Comp
 L Device:C C?
 U 1 1 600C92CE
-P 5100 1950
+P 4500 1950
 AR Path="/6002EA57/600C92CE" Ref="C?"  Part="1" 
 AR Path="/6008B538/600C92CE" Ref="C405"  Part="1" 
-F 0 "C405" H 5215 2041 50  0000 L CNN
-F 1 "10u" H 5215 1950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_1206_3216Metric" H 5138 1800 50  0001 C CNN
-F 3 "~" H 5100 1950 50  0001 C CNN
-F 4 "" H 5215 1859 50  0000 L CNN "Placement"
-F 5 "WE 885012208069" H 5100 1950 50  0001 C CNN "Bauteil"
-	1    5100 1950
+F 0 "C405" H 4615 2041 50  0000 L CNN
+F 1 "10u" H 4615 1950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 4538 1800 50  0001 C CNN
+F 3 "~" H 4500 1950 50  0001 C CNN
+F 4 "" H 4615 1859 50  0000 L CNN "Placement"
+F 5 "WE 885012208069" H 4500 1950 50  0001 C CNN "Bauteil"
+	1    4500 1950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4400 1300 4600 1300
+	4500 1300 4500 1800
 Wire Wire Line
-	5100 1300 5100 1800
-Connection ~ 4400 1300
-Wire Wire Line
-	5100 2100 5100 2700
+	4500 2100 4500 2700
 Wire Wire Line
 	3000 2700 3450 2700
-Connection ~ 4400 2700
-$Comp
-L local:TEC2-0911 U401
-U 1 1 600D0BD3
-P 6200 1950
-F 0 "U401" H 6200 2417 50  0000 C CNN
-F 1 "TEC2-0911" H 6200 2326 50  0000 C CNN
-F 2 "local:Converter_DCDC_TRACO_TEC2_xxxx_THT" H 6200 1950 50  0001 C CNN
-F 3 "" H 6200 1950 50  0001 C CNN
-F 4 "Traco Power TEC 2-0911" H 6200 1950 50  0001 C CNN "Bauteil"
-	1    6200 1950
-	1    0    0    -1  
-$EndComp
-NoConn ~ 5700 1950
-Text Notes 5250 2900 0    50   ~ 0
-Nach "TEC 2 Series EMI Consideration, Class B"
-Wire Wire Line
-	5700 1750 5650 1750
-Wire Wire Line
-	5500 1750 5500 1300
-Wire Wire Line
-	4900 1300 5100 1300
-Connection ~ 5100 1300
-Wire Wire Line
-	5100 1300 5500 1300
-Wire Wire Line
-	5700 2150 5650 2150
-Wire Wire Line
-	5500 2150 5500 2700
-Wire Wire Line
-	4400 2700 5100 2700
-Connection ~ 5100 2700
-Wire Wire Line
-	5100 2700 5500 2700
-Wire Wire Line
-	6700 1750 6750 1750
-Wire Wire Line
-	6900 1750 6900 1300
-Wire Wire Line
-	6900 1300 7250 1300
-Wire Wire Line
-	6700 2150 6750 2150
-Wire Wire Line
-	6900 2150 6900 2700
-Wire Wire Line
-	6900 2700 7250 2700
-$Comp
-L Device:C C?
-U 1 1 600D732B
-P 6200 1300
-AR Path="/6002EA57/600D732B" Ref="C?"  Part="1" 
-AR Path="/6008B538/600D732B" Ref="C401"  Part="1" 
-F 0 "C401" H 6315 1391 50  0000 L CNN
-F 1 "150p" H 6315 1300 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6238 1150 50  0001 C CNN
-F 3 "~" H 6200 1300 50  0001 C CNN
-F 4 "" H 6315 1209 50  0000 L CNN "Placement"
-F 5 "WE 885012206103" H 6200 1300 50  0001 C CNN "Bauteil"
-	1    6200 1300
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	6050 2450 5650 2450
-Wire Wire Line
-	5650 2450 5650 2150
-Connection ~ 5650 2150
-Wire Wire Line
-	5650 2150 5500 2150
-Wire Wire Line
-	6350 2450 6750 2450
-Wire Wire Line
-	6750 2450 6750 2150
-Connection ~ 6750 2150
-Wire Wire Line
-	6750 2150 6900 2150
-Wire Wire Line
-	6750 1750 6750 1300
-Wire Wire Line
-	6750 1300 6350 1300
-Wire Wire Line
-	5650 1300 5650 1750
-Wire Wire Line
-	6050 1300 5650 1300
-Connection ~ 6750 1750
-Wire Wire Line
-	6750 1750 6900 1750
-Connection ~ 5650 1750
-Wire Wire Line
-	5650 1750 5500 1750
-$Comp
-L Device:C C?
-U 1 1 600DC7FD
-P 6200 2450
-AR Path="/6002EA57/600DC7FD" Ref="C?"  Part="1" 
-AR Path="/6008B538/600DC7FD" Ref="C409"  Part="1" 
-F 0 "C409" H 6315 2541 50  0000 L CNN
-F 1 "220p" H 6315 2450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 6238 2300 50  0001 C CNN
-F 3 "~" H 6200 2450 50  0001 C CNN
-F 4 "" H 6315 2359 50  0000 L CNN "Placement"
-F 5 "WE 885012206079" H 6200 2450 50  0001 C CNN "Bauteil"
-	1    6200 2450
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:CP C407
 U 1 1 600DE083
-P 7750 1950
-F 0 "C407" H 7868 2041 50  0000 L CNN
-F 1 "220u" H 7868 1950 50  0000 L CNN
-F 2 "local:CP_Radial_D10.0mm_P5.00mm_liegend" H 7788 1800 50  0001 C CNN
-F 3 "~" H 7750 1950 50  0001 C CNN
-F 4 "10V" H 7868 1859 50  0000 L CNN "Voltage"
-F 5 "WE 860020675020" H 7750 1950 50  0001 C CNN "Bauteil"
-	1    7750 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:C C?
-U 1 1 600DED12
-P 7250 1950
-AR Path="/6002EA57/600DED12" Ref="C?"  Part="1" 
-AR Path="/6008B538/600DED12" Ref="C406"  Part="1" 
-F 0 "C406" H 7365 2041 50  0000 L CNN
-F 1 "100n" H 7365 1950 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 7288 1800 50  0001 C CNN
-F 3 "~" H 7250 1950 50  0001 C CNN
-F 4 "" H 7365 1859 50  0000 L CNN "Placement"
-F 5 "WE 885382206004" H 7250 1950 50  0001 C CNN "Bauteil"
-	1    7250 1950
+P 6750 1950
+F 0 "C407" H 6868 2041 50  0000 L CNN
+F 1 "220u" H 6868 1950 50  0000 L CNN
+F 2 "local:CP_Radial_D10.0mm_P5.00mm_liegend" H 6788 1800 50  0001 C CNN
+F 3 "~" H 6750 1950 50  0001 C CNN
+F 4 "10V" H 6868 1859 50  0000 L CNN "Voltage"
+F 5 "WE 860020675020" H 6750 1950 50  0001 C CNN "Bauteil"
+	1    6750 1950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7250 1800 7250 1300
-Connection ~ 7250 1300
+	6750 2700 6750 2100
 Wire Wire Line
-	7250 1300 7750 1300
+	6750 1800 6750 1300
+Connection ~ 6750 2700
 Wire Wire Line
-	7250 2100 7250 2700
-Connection ~ 7250 2700
+	6750 2700 6950 2700
+Connection ~ 6750 1300
 Wire Wire Line
-	7250 2700 7750 2700
-Wire Wire Line
-	7750 2700 7750 2100
-Wire Wire Line
-	7750 1800 7750 1300
-Connection ~ 7750 2700
-Wire Wire Line
-	7750 2700 7950 2700
-Connection ~ 7750 1300
-Wire Wire Line
-	7750 1300 7950 1300
+	6750 1300 6950 1300
 $Comp
 L power:GND #PWR?
 U 1 1 600E3C16
-P 7950 2800
+P 6950 2800
 AR Path="/6002EA57/600E3C16" Ref="#PWR?"  Part="1" 
 AR Path="/6008B538/600E3C16" Ref="#PWR0403"  Part="1" 
-F 0 "#PWR0403" H 7950 2550 50  0001 C CNN
-F 1 "GND" H 7955 2627 50  0000 C CNN
-F 2 "" H 7950 2800 50  0001 C CNN
-F 3 "" H 7950 2800 50  0001 C CNN
-	1    7950 2800
+F 0 "#PWR0403" H 6950 2550 50  0001 C CNN
+F 1 "GND" H 6955 2627 50  0000 C CNN
+F 2 "" H 6950 2800 50  0001 C CNN
+F 3 "" H 6950 2800 50  0001 C CNN
+	1    6950 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7950 2700 7950 2800
+	6950 2700 6950 2800
 $Comp
 L power:+5V #PWR0401
 U 1 1 600E5AFB
-P 7950 1200
-F 0 "#PWR0401" H 7950 1050 50  0001 C CNN
-F 1 "+5V" H 7965 1373 50  0000 C CNN
-F 2 "" H 7950 1200 50  0001 C CNN
-F 3 "" H 7950 1200 50  0001 C CNN
-	1    7950 1200
+P 6950 1200
+F 0 "#PWR0401" H 6950 1050 50  0001 C CNN
+F 1 "+5V" H 6965 1373 50  0000 C CNN
+F 2 "" H 6950 1200 50  0001 C CNN
+F 3 "" H 6950 1200 50  0001 C CNN
+	1    6950 1200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7950 1200 7950 1300
+	6950 1200 6950 1300
 Connection ~ 3000 1300
 Connection ~ 2600 1300
 Connection ~ 3000 2700
@@ -383,18 +220,10 @@ Wire Wire Line
 	2600 2700 3000 2700
 Wire Wire Line
 	3000 1300 2600 1300
-Wire Wire Line
-	3450 1300 4400 1300
-Wire Wire Line
-	3450 2700 4400 2700
 Text Notes 700  900  0    79   ~ 0
-Spannungsversorgung 5V mit Trennung GND
+Spannungsversorgung 5V
 Wire Notes Line
-	650  950  8300 950 
-Wire Notes Line
-	8300 950  8300 3100
-Wire Notes Line
-	8300 3100 650  3100
+	650  950  7300 950 
 Wire Notes Line
 	650  3100 650  950 
 Text GLabel 1600 4050 0    50   Input ~ 0
@@ -746,18 +575,10 @@ Wire Wire Line
 	7800 4400 8200 4400
 Connection ~ 8200 4400
 Wire Wire Line
-	8200 4400 8600 4400
-Wire Wire Line
 	8200 4950 8200 5000
 Connection ~ 7800 5000
 Wire Wire Line
 	7800 5000 7800 5050
-Wire Notes Line
-	4150 3600 8850 3600
-Wire Notes Line
-	8850 3600 8850 5600
-Wire Notes Line
-	8850 5600 4150 5600
 Wire Notes Line
 	4150 5600 4150 3600
 Text Notes 4200 3550 0    79   ~ 0
@@ -979,6 +800,107 @@ F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 7350 4600 50  0001 C CNN
 F 3 "" H 7450 4150 50  0001 C CNN
 F 4 "ST LD1117S33CTR" H 7350 4400 50  0001 C CNN "Bauteil"
 	1    7350 4400
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	10050 3600 10050 5600
+Wire Notes Line
+	4150 3600 10050 3600
+Wire Notes Line
+	4150 5600 10050 5600
+$Comp
+L power:+3V3 #PWR?
+U 1 1 611C7361
+P 9350 4050
+AR Path="/5FFC49DA/611C7361" Ref="#PWR?"  Part="1" 
+AR Path="/6008B538/611C7361" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 9350 3900 50  0001 C CNN
+F 1 "+3V3" H 9365 4223 50  0000 C CNN
+F 2 "" H 9350 4050 50  0001 C CNN
+F 3 "" H 9350 4050 50  0001 C CNN
+	1    9350 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Diode:B140-E3 D?
+U 1 1 611CB2E1
+P 9000 4400
+AR Path="/6002EA57/611CB2E1" Ref="D?"  Part="1" 
+AR Path="/6008B538/611CB2E1" Ref="D?"  Part="1" 
+F 0 "D?" H 9000 4150 50  0000 C CNN
+F 1 "B140-E3" H 9000 4250 50  0000 C CNN
+F 2 "Diode_SMD:D_SMA" H 9000 4225 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/88946/b120.pdf" H 9000 4400 50  0001 C CNN
+F 4 "Vishay B140-E3/61T" H 9000 4400 50  0001 C CNN "Bauteil"
+	1    9000 4400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9350 4050 9350 4400
+Wire Wire Line
+	8200 4400 8600 4400
+Wire Wire Line
+	8850 4400 8600 4400
+Wire Wire Line
+	9150 4400 9350 4400
+Text Notes 8950 4750 0    50   ~ 0
+3V3 darf nicht in der Luft \nhängen wenn ESP32 nicht \ngesteckt ist
+Wire Wire Line
+	3450 1300 4500 1300
+$Comp
+L Device:C C?
+U 1 1 614C8397
+P 5850 1950
+AR Path="/6002EA57/614C8397" Ref="C?"  Part="1" 
+AR Path="/6008B538/614C8397" Ref="C?"  Part="1" 
+F 0 "C?" H 5965 2041 50  0000 L CNN
+F 1 "10u" H 5965 1950 50  0000 L CNN
+F 2 "Capacitor_SMD:C_1206_3216Metric" H 5888 1800 50  0001 C CNN
+F 3 "~" H 5850 1950 50  0001 C CNN
+F 4 "" H 5965 1859 50  0000 L CNN "Placement"
+F 5 "WE 885012208069" H 5850 1950 50  0001 C CNN "Bauteil"
+	1    5850 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 1300 4900 1300
+Connection ~ 4500 1300
+Wire Wire Line
+	5500 1300 5850 1300
+Wire Wire Line
+	5850 1800 5850 1300
+Connection ~ 5850 1300
+Wire Wire Line
+	5850 2700 5850 2100
+Wire Wire Line
+	3450 2700 4500 2700
+Connection ~ 4500 2700
+Wire Wire Line
+	4500 2700 5200 2700
+Connection ~ 5850 2700
+Wire Wire Line
+	5200 1600 5200 2700
+Connection ~ 5200 2700
+Wire Wire Line
+	5200 2700 5850 2700
+Wire Notes Line
+	7300 3100 650  3100
+Wire Notes Line
+	7300 950  7300 3100
+Wire Wire Line
+	5850 1300 6750 1300
+Wire Wire Line
+	5850 2700 6750 2700
+$Comp
+L Regulator_Linear:AP1117-18 U?
+U 1 1 6177A88D
+P 5200 1300
+F 0 "U?" H 5200 1542 50  0000 C CNN
+F 1 "1117 5.0V" H 5200 1451 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-3_TabPin2" H 5200 1500 50  0001 C CNN
+F 3 "" H 5300 1050 50  0001 C CNN
+F 4 "LD1117DT50CTR" H 5200 1300 50  0001 C CNN "Bauteil"
+	1    5200 1300
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

@@ -5,8 +5,8 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 7
 Title "Fernbedienung - Webradio SABA 6-3D"
-Date "2021-01-16"
-Rev "1-A"
+Date "2021-08-14"
+Rev "2-A"
 Comp "Martin Wagner DL2WAG"
 Comment1 "Lizenz: CERN-OHL-W (OHL v2)"
 Comment2 "Anschlüsse und Buchsen"
@@ -529,118 +529,46 @@ Micro SD Karte (Optional)
 $Comp
 L Interface_Optical:TSOP312xx U301
 U 1 1 60019665
-P 8050 4850
-F 0 "U301" H 8038 5275 50  0000 C CNN
-F 1 "TSOP31238" H 8038 5184 50  0000 C CNN
-F 2 "OptoDevice:Vishay_CAST-3Pin" H 8000 4475 50  0001 C CNN
-F 3 "http://www.vishay.com/docs/82492/tsop312.pdf" H 8700 5150 50  0001 C CNN
-F 4 "Vishay TSOP31238" H 8050 4850 50  0001 C CNN "Bauteil"
-	1    8050 4850
+P 6250 4850
+F 0 "U301" H 6238 5275 50  0000 C CNN
+F 1 "TSOP31238" H 6238 5184 50  0000 C CNN
+F 2 "OptoDevice:Vishay_CAST-3Pin" H 6200 4475 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/82492/tsop312.pdf" H 6900 5150 50  0001 C CNN
+F 4 "Vishay TSOP31238" H 6250 4850 50  0001 C CNN "Bauteil"
+	1    6250 4850
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0312
 U 1 1 6001F94B
-P 8550 5200
-F 0 "#PWR0312" H 8550 4950 50  0001 C CNN
-F 1 "GND" H 8555 5027 50  0000 C CNN
-F 2 "" H 8550 5200 50  0001 C CNN
-F 3 "" H 8550 5200 50  0001 C CNN
-	1    8550 5200
+P 6750 5200
+F 0 "#PWR0312" H 6750 4950 50  0001 C CNN
+F 1 "GND" H 6755 5027 50  0000 C CNN
+F 2 "" H 6750 5200 50  0001 C CNN
+F 3 "" H 6750 5200 50  0001 C CNN
+	1    6750 5200
 	1    0    0    -1  
 $EndComp
-Text GLabel 8700 4850 2    50   Output ~ 0
+Text GLabel 6900 4850 2    50   Output ~ 0
 IR_RX
 Wire Wire Line
-	8450 4850 8700 4850
+	6650 4850 6900 4850
 Wire Wire Line
-	8450 5050 8550 5050
+	6650 5050 6750 5050
 Wire Wire Line
-	8550 5050 8550 5200
+	6750 5050 6750 5200
 Wire Notes Line
-	7400 4150 10600 4150
+	5600 4150 8800 4150
 Wire Notes Line
-	10600 4150 10600 5900
+	8800 4150 8800 5900
 Wire Notes Line
-	10600 5900 7400 5900
+	8800 5900 5600 5900
 Wire Notes Line
-	7400 5900 7400 4150
-Text Notes 7450 4100 0    79   ~ 0
+	5600 5900 5600 4150
+Text Notes 5650 4100 0    79   ~ 0
 Infrarot Fernbedienung (optional)
-Wire Wire Line
-	4350 2350 4450 2350
-Wire Wire Line
-	4450 2350 4450 2600
-Text GLabel 6000 1550 1    50   Input ~ 0
-Audio_Links
-Text GLabel 6000 1750 3    50   Input ~ 0
+Text GLabel 5250 1750 1    50   Input ~ 0
 Audio_Rechts
-$Comp
-L Device:R R?
-U 1 1 6004A4C2
-P 5350 1600
-AR Path="/5FFC49DA/6004A4C2" Ref="R?"  Part="1" 
-AR Path="/6002EA57/6004A4C2" Ref="R301"  Part="1" 
-F 0 "R301" V 5150 1600 50  0000 R CNN
-F 1 "1k" V 5250 1600 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5280 1600 50  0001 C CNN
-F 3 "~" H 5350 1600 50  0001 C CNN
-F 4 "" V 5350 1650 50  0000 R CNN "Placement"
-	1    5350 1600
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 6004C1BB
-P 5350 1700
-AR Path="/5FFC49DA/6004C1BB" Ref="R?"  Part="1" 
-AR Path="/6002EA57/6004C1BB" Ref="R302"  Part="1" 
-F 0 "R302" V 5450 1700 50  0000 R CNN
-F 1 "1k" V 5550 1700 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5280 1700 50  0001 C CNN
-F 3 "~" H 5350 1700 50  0001 C CNN
-F 4 "" V 5350 1750 50  0000 R CNN "Placement"
-	1    5350 1700
-	0    1    1    0   
-$EndComp
-$Comp
-L Device:R R?
-U 1 1 6004E129
-P 5550 1950
-AR Path="/5FFC49DA/6004E129" Ref="R?"  Part="1" 
-AR Path="/6002EA57/6004E129" Ref="R303"  Part="1" 
-F 0 "R303" H 5480 1859 50  0000 R CNN
-F 1 "0" H 5480 1950 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5480 1950 50  0001 C CNN
-F 3 "~" H 5550 1950 50  0001 C CNN
-F 4 "NP" V 5550 2000 50  0000 R CNN "Placement"
-	1    5550 1950
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5500 1700 5550 1700
-Wire Wire Line
-	5550 1800 5550 1700
-Connection ~ 5550 1700
-Wire Wire Line
-	5550 1700 6000 1700
-Wire Wire Line
-	5200 1600 5150 1600
-Wire Wire Line
-	5150 1600 5150 1700
-Wire Wire Line
-	5150 1700 5200 1700
-Wire Wire Line
-	5150 1700 5150 2150
-Wire Wire Line
-	5150 2150 4600 2150
-Connection ~ 5150 1700
-Wire Wire Line
-	5500 1600 6000 1600
-Wire Wire Line
-	5550 2100 5550 2250
-Text Notes 4800 1350 0    50   ~ 0
-Optional: Stereo - 2x 0R
 Wire Notes Line
 	3650 1000 6200 1000
 Wire Notes Line
@@ -654,111 +582,96 @@ Anschlussstecker Radio Audio
 $Comp
 L Connector_Generic:Conn_01x01 J308
 U 1 1 6006BC03
-P 5250 2850
-F 0 "J308" H 5350 2850 50  0000 L CNN
-F 1 "Conn_01x01" H 5600 2850 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5250 2850 50  0001 C CNN
-F 3 "~" H 5250 2850 50  0001 C CNN
-	1    5250 2850
+P 5500 2850
+F 0 "J308" H 5600 2850 50  0000 L CNN
+F 1 "Conn_01x01" H 5850 2850 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5500 2850 50  0001 C CNN
+F 3 "~" H 5500 2850 50  0001 C CNN
+	1    5500 2850
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J309
 U 1 1 6006CD13
-P 5400 2850
-F 0 "J309" H 5500 2850 50  0000 L CNN
-F 1 "Conn_01x01" H 5750 2850 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5400 2850 50  0001 C CNN
-F 3 "~" H 5400 2850 50  0001 C CNN
-	1    5400 2850
+P 5650 2850
+F 0 "J309" H 5750 2850 50  0000 L CNN
+F 1 "Conn_01x01" H 6000 2850 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5650 2850 50  0001 C CNN
+F 3 "~" H 5650 2850 50  0001 C CNN
+	1    5650 2850
 	0    1    1    0   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J310
 U 1 1 6006D1FB
-P 5550 2850
-F 0 "J310" H 5650 2850 50  0000 L CNN
-F 1 "Conn_01x01" H 5900 2850 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5550 2850 50  0001 C CNN
-F 3 "~" H 5550 2850 50  0001 C CNN
-	1    5550 2850
+P 5800 2850
+F 0 "J310" H 5900 2850 50  0000 L CNN
+F 1 "Conn_01x01" H 6150 2850 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 5800 2850 50  0001 C CNN
+F 3 "~" H 5800 2850 50  0001 C CNN
+	1    5800 2850
 	0    1    1    0   
 $EndComp
-Connection ~ 5150 2150
 Wire Wire Line
-	4350 2250 4850 2250
+	7400 4650 6650 4650
 Wire Wire Line
-	5400 2150 5400 2650
+	7400 4750 7400 4650
 Wire Wire Line
-	5150 2150 5400 2150
+	7400 5150 7400 5050
+Connection ~ 7400 4650
 Wire Wire Line
-	5550 2250 5550 2650
-Connection ~ 5550 2250
+	7700 4650 7400 4650
 Wire Wire Line
-	5250 2650 5250 2350
+	8100 4650 8000 4650
 Wire Wire Line
-	5250 2350 4450 2350
-Connection ~ 4450 2350
-Wire Wire Line
-	9200 4650 8450 4650
-Wire Wire Line
-	9200 4750 9200 4650
-Wire Wire Line
-	9200 5150 9200 5050
-Connection ~ 9200 4650
-Wire Wire Line
-	9500 4650 9200 4650
-Wire Wire Line
-	9900 4650 9800 4650
-Wire Wire Line
-	9900 4550 9900 4650
+	8100 4550 8100 4650
 $Comp
 L power:+3.3V #PWR0308
 U 1 1 60021397
-P 9900 4550
-F 0 "#PWR0308" H 9900 4400 50  0001 C CNN
-F 1 "+3.3V" H 9915 4723 50  0000 C CNN
-F 2 "" H 9900 4550 50  0001 C CNN
-F 3 "" H 9900 4550 50  0001 C CNN
-	1    9900 4550
+P 8100 4550
+F 0 "#PWR0308" H 8100 4400 50  0001 C CNN
+F 1 "+3.3V" H 8115 4723 50  0000 C CNN
+F 2 "" H 8100 4550 50  0001 C CNN
+F 3 "" H 8100 4550 50  0001 C CNN
+	1    8100 4550
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR0311
 U 1 1 60020161
-P 9200 5150
-F 0 "#PWR0311" H 9200 4900 50  0001 C CNN
-F 1 "GND" H 9205 4977 50  0000 C CNN
-F 2 "" H 9200 5150 50  0001 C CNN
-F 3 "" H 9200 5150 50  0001 C CNN
-	1    9200 5150
+P 7400 5150
+F 0 "#PWR0311" H 7400 4900 50  0001 C CNN
+F 1 "GND" H 7405 4977 50  0000 C CNN
+F 2 "" H 7400 5150 50  0001 C CNN
+F 3 "" H 7400 5150 50  0001 C CNN
+	1    7400 5150
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C304
 U 1 1 6001EC41
-P 9200 4900
-F 0 "C304" H 9315 4991 50  0000 L CNN
-F 1 "100n" H 9315 4900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9238 4750 50  0001 C CNN
-F 3 "~" H 9200 4900 50  0001 C CNN
-F 4 "" H 9315 4809 50  0000 L CNN "Placement"
-F 5 "WE 885382206004" H 9200 4900 50  0001 C CNN "Bauteil"
-	1    9200 4900
+P 7400 4900
+F 0 "C304" H 7515 4991 50  0000 L CNN
+F 1 "100n" H 7515 4900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7438 4750 50  0001 C CNN
+F 3 "~" H 7400 4900 50  0001 C CNN
+F 4 "" H 7515 4809 50  0000 L CNN "Placement"
+F 5 "WE 885382206004" H 7400 4900 50  0001 C CNN "Bauteil"
+	1    7400 4900
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:R R?
 U 1 1 6001BDE1
-P 9650 4650
+P 7850 4650
 AR Path="/5FFC49DA/6001BDE1" Ref="R?"  Part="1" 
 AR Path="/6002EA57/6001BDE1" Ref="R305"  Part="1" 
-F 0 "R305" H 9580 4559 50  0000 R CNN
-F 1 "100" H 9580 4650 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9580 4650 50  0001 C CNN
-F 3 "~" H 9650 4650 50  0001 C CNN
-F 4 "" V 9650 4700 50  0000 R CNN "Placement"
-	1    9650 4650
+F 0 "R305" H 7780 4559 50  0000 R CNN
+F 1 "100" H 7780 4650 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7780 4650 50  0001 C CNN
+F 3 "~" H 7850 4650 50  0001 C CNN
+F 4 "" V 7850 4700 50  0000 R CNN "Placement"
+	1    7850 4650
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -797,137 +710,25 @@ F 3 "~" H 2250 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6000 1600 6000 1550
-Wire Wire Line
-	6000 1700 6000 1750
-$Comp
-L Device:D_TVS_x2_AAC D301
-U 1 1 609A1EE5
-P 4600 3100
-F 0 "D301" V 4700 2750 50  0000 L CNN
-F 1 "5V" V 4800 2800 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 4450 3100 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/D5V0L2B3W.pdf" H 4450 3100 50  0001 C CNN
-F 4 "Diodes D5V0L2B3W" V 4600 3100 50  0001 C CNN "Bauteil"
-	1    4600 3100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4600 2750 4600 2150
-Connection ~ 4600 2150
-Wire Wire Line
-	4600 2150 4350 2150
-Wire Wire Line
-	4600 3450 4600 3500
-Wire Wire Line
-	4600 3500 4850 3500
-Wire Wire Line
-	4850 3500 4850 2250
-Connection ~ 4850 2250
-Wire Wire Line
-	4850 2250 5550 2250
-Wire Wire Line
-	4450 3100 4450 2600
-Connection ~ 4450 2600
-$Comp
-L Connector_Generic:Conn_01x08 J312
-U 1 1 60A4DF30
-P 6600 4900
-F 0 "J312" H 6680 4937 50  0000 L CNN
-F 1 "Conn_01x08" H 6680 4846 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x04_P2.54mm_Vertical" H 6600 4900 50  0001 C CNN
-F 3 "~" H 6600 4900 50  0001 C CNN
-F 4 "NP" H 6680 4755 50  0000 L CNN "Placement"
-	1    6600 4900
-	1    0    0    -1  
-$EndComp
-Text GLabel 6150 4600 0    50   Input ~ 0
-SPI_CS_LCD
-Text GLabel 6150 4700 0    50   Input ~ 0
-SPI_SCK
-Text GLabel 6150 4800 0    50   Input ~ 0
-SPI_MOSI
-Text GLabel 6150 4900 0    50   Input ~ 0
-~RESET
-Text GLabel 6150 5300 0    50   Input ~ 0
-LCD_A0
-Text GLabel 6150 5000 0    50   Input ~ 0
-LCD_BL
-$Comp
-L power:+5V #PWR0310
-U 1 1 60A526F1
-P 5650 5050
-F 0 "#PWR0310" H 5650 4900 50  0001 C CNN
-F 1 "+5V" H 5665 5223 50  0000 C CNN
-F 2 "" H 5650 5050 50  0001 C CNN
-F 3 "" H 5650 5050 50  0001 C CNN
-	1    5650 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0313
-U 1 1 60A52FFC
-P 5650 5250
-F 0 "#PWR0313" H 5650 5000 50  0001 C CNN
-F 1 "GND" H 5655 5077 50  0000 C CNN
-F 2 "" H 5650 5250 50  0001 C CNN
-F 3 "" H 5650 5250 50  0001 C CNN
-	1    5650 5250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6150 4600 6400 4600
-Wire Wire Line
-	6150 4700 6400 4700
-Wire Wire Line
-	6150 4800 6400 4800
-Wire Wire Line
-	6150 4900 6400 4900
-Wire Wire Line
-	6400 5000 6150 5000
-Wire Wire Line
-	6400 5100 5650 5100
-Wire Wire Line
-	5650 5100 5650 5050
-Wire Wire Line
-	6400 5200 5650 5200
-Wire Wire Line
-	5650 5200 5650 5250
-Wire Wire Line
-	6400 5300 6150 5300
-Text Notes 5550 4100 0    79   ~ 0
-TFT (optional)
-Wire Notes Line
-	5500 4150 7250 4150
-Wire Notes Line
-	7250 4150 7250 5900
-Wire Notes Line
-	7250 5900 5500 5900
-Wire Notes Line
-	5500 5900 5500 4150
+	4850 3450 4850 3500
 NoConn ~ 2450 5150
 NoConn ~ 2450 5250
 NoConn ~ 2450 5350
 NoConn ~ 2450 5450
 NoConn ~ 2450 5750
 NoConn ~ 2450 5850
-Wire Wire Line
-	4350 2600 4350 2650
-Wire Wire Line
-	4450 2600 4350 2600
 $Comp
 L Connector:AudioJack3 J305
 U 1 1 60BB0BE0
-P 4150 2250
-F 0 "J305" H 4132 2575 50  0000 C CNN
-F 1 "AudioJack3" H 4132 2484 50  0000 C CNN
-F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ-3523-SMT_Horizontal" H 4150 2250 50  0001 C CNN
-F 3 "~" H 4150 2250 50  0001 C CNN
-F 4 "CUI SJ-3523-SMT-TR" H 4150 2250 50  0001 C CNN "Bauteil"
-	1    4150 2250
-	1    0    0    -1  
+P 4300 2200
+F 0 "J305" H 4282 2525 50  0000 C CNN
+F 1 "AudioJack3" H 4282 2434 50  0000 C CNN
+F 2 "Connector_Audio:Jack_3.5mm_CUI_SJ-3523-SMT_Horizontal" H 4300 2200 50  0001 C CNN
+F 3 "~" H 4300 2200 50  0001 C CNN
+F 4 "CUI SJ-3523-SMT-TR" H 4300 2200 50  0001 C CNN "Bauteil"
+	1    4300 2200
+	1    0    0    1   
 $EndComp
-NoConn ~ 1850 3200
 $Comp
 L power:GND #PWR0101
 U 1 1 6003FF39
@@ -937,17 +738,6 @@ F 1 "GND" H 6605 3077 50  0000 C CNN
 F 2 "" H 6600 3250 50  0001 C CNN
 F 3 "" H 6600 3250 50  0001 C CNN
 	1    6600 3250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0102
-U 1 1 60040609
-P 4350 2650
-F 0 "#PWR0102" H 4350 2400 50  0001 C CNN
-F 1 "GND" H 4355 2477 50  0000 C CNN
-F 2 "" H 4350 2650 50  0001 C CNN
-F 3 "" H 4350 2650 50  0001 C CNN
-	1    4350 2650
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -961,4 +751,68 @@ F 3 "" H 1550 6700 50  0001 C CNN
 	1    1550 6700
 	1    0    0    -1  
 $EndComp
+Text GLabel 2250 3200 2    50   Input ~ 0
+TA_Aktiv
+Wire Wire Line
+	2250 3200 1850 3200
+Text GLabel 5100 1750 1    50   Output ~ 0
+Audio_GND
+Wire Wire Line
+	4500 2300 4700 2300
+Wire Wire Line
+	4500 2200 4850 2200
+Wire Wire Line
+	4850 2200 4850 2750
+Wire Wire Line
+	4500 2100 5000 2100
+Wire Wire Line
+	5000 3500 4850 3500
+$Comp
+L Device:D_TVS_x2_AAC D301
+U 1 1 609A1EE5
+P 4850 3100
+F 0 "D301" V 4950 2750 50  0000 L CNN
+F 1 "5V" V 5050 2800 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 4700 3100 50  0001 C CNN
+F 3 "https://www.diodes.com/assets/Datasheets/D5V0L2B3W.pdf" H 4700 3100 50  0001 C CNN
+F 4 "Diodes D5V0L2B3W" V 4850 3100 50  0001 C CNN "Bauteil"
+	1    4850 3100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4700 2300 5100 2300
+Wire Wire Line
+	5500 2300 5500 2650
+Connection ~ 4700 2300
+Wire Wire Line
+	4850 2200 5250 2200
+Wire Wire Line
+	5650 2200 5650 2650
+Connection ~ 4850 2200
+Wire Wire Line
+	5000 2100 5400 2100
+Wire Wire Line
+	5800 2100 5800 2650
+Connection ~ 5000 2100
+Wire Wire Line
+	5000 2100 5000 3500
+Text GLabel 5400 1750 1    50   Input ~ 0
+Audio_Links
+Wire Wire Line
+	5100 1750 5100 2300
+Connection ~ 5100 2300
+Wire Wire Line
+	5100 2300 5500 2300
+Wire Wire Line
+	5250 1750 5250 2200
+Connection ~ 5250 2200
+Wire Wire Line
+	5250 2200 5650 2200
+Wire Wire Line
+	5400 1750 5400 2100
+Connection ~ 5400 2100
+Wire Wire Line
+	5400 2100 5800 2100
+Wire Wire Line
+	4700 2300 4700 3100
 $EndSCHEMATC

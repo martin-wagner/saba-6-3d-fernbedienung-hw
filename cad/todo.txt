@@ -1,22 +1,6 @@
 scm
-  -TRS Pinbelegung T und S tauschen
-  -uC SPI MOSI muss auf GPIO23
-  -U702 Stromaufnahme >1A wenn IOVDD nicht angeschlossen (uC gesteckt)
-  -OP IC701 Poti verschiebt DC Arbeitspunkt
-  -U702 Reset ueber ODER an uC GPIO
-  -U701 C in Serie zu R705, R713 (https://www.mikrocontroller.net/articles/Operationsverst%C3%A4rker-Grundschaltungen#Betrieb_mit_einfacher_Versorgungsspannung)
-  -R512, R515, R529 1k -> 10k (U*I an 20V...); Werte um Comparator anpassen so dass 10k im Vergleich vernachl"assigbar bleibt.
-  -R618 5k6 -> 5k7
-  -R513, R516, R530, R619 -> 4k7
-  -CMP R514 -> 20k, R520 360k, Schaltschwelle 18,5V. Andere 22k -> 20k?
-  -"Netzschalter" geht so nicht, schaltet dauerhaft hin und her. Entweder wegmachen oder 2 Transistor + dig. Eingang oder Relais DOLD OB 5693, OB 5694
-  -comparatoren suchlauf poti feinabstimmung sollwert
-  -Schalttransistoren Vorwiderstand, Pulldown beide 4k7. ESP32 gibt beim Boot kurz ca. 1V aus...
-  -suchlauf links/rechts und lautstaerke +/- gpio vertauscht
-  -dcdc wandler rausmachen und stattdessen audiouebertrager verwenden. EMV...
-  -wg. vorherig diodenbruecke durch einweg ersetzen.
 
 pcb
-  -Quarz Bauform passt nicht zum Layout
   -Bestueckungsplan Bauteile links unter TRS nicht aufgeraeumt
   -NP Bauteile auch im Bestueckungsplan als NP markieren
+  -IR am falschen Ende PCB (Innenseite Radio statt aussen)

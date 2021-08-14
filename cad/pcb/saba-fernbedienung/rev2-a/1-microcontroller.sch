@@ -5,18 +5,18 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 2 7
 Title "Fernbedienung - Webradio SABA 6-3D"
-Date "2021-01-16"
-Rev "1-A"
+Date "2021-08-14"
+Rev "2-A"
 Comp "Martin Wagner DL2WAG"
 Comment1 "Lizenz: CERN-OHL-W (OHL v2)"
 Comment2 "Microcontroller + Umgebung"
 Comment3 "(Meersburg/Freiburg 6-3D, weitere?)"
 Comment4 "Fernbedienung - Webradio für SABA \"Automatic\" Radios"
 $EndDescr
-Text GLabel 1700 1900 0    50   BiDi ~ 0
+Text GLabel 1250 1900 0    50   Output ~ 0
 ~RESET
 Wire Wire Line
-	1700 1900 2100 1900
+	1950 1900 2100 1900
 $Comp
 L power:GND #PWR0206
 U 1 1 5FFCD50A
@@ -88,10 +88,6 @@ Wire Wire Line
 	5550 2900 3300 2900
 Text GLabel 5550 3000 2    50   Input ~ 0
 SPI_MISO
-Text GLabel 5550 3100 2    50   Output ~ 0
-SPI_MOSI
-Wire Wire Line
-	5550 3100 3300 3100
 Wire Wire Line
 	3300 3000 5550 3000
 Text GLabel 5550 3700 2    50   Output ~ 0
@@ -106,10 +102,6 @@ Wire Wire Line
 	5550 2200 3300 2200
 Wire Wire Line
 	5550 3700 3300 3700
-Text GLabel 5550 3300 2    50   BiDi ~ 0
-LCD_A0
-Text GLabel 5550 3400 2    50   Output ~ 0
-SPI_CS_LCD
 Text GLabel 5550 3200 2    50   Output ~ 0
 SPI_CS_SDCARD
 NoConn ~ 3300 1800
@@ -123,48 +115,13 @@ Text GLabel 5550 4000 2    50   Input ~ 0
 IR_RX
 Wire Wire Line
 	5550 4000 3300 4000
-$Comp
-L Device:R R203
-U 1 1 5FFDB025
-P 7850 2800
-F 0 "R203" V 7650 2800 50  0000 C CNN
-F 1 "10k" V 7750 2800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 7780 2800 50  0001 C CNN
-F 3 "~" H 7850 2800 50  0001 C CNN
-F 4 "NP" V 7850 2800 50  0000 C CNN "Placement"
-	1    7850 2800
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7700 2800 3300 2800
-Wire Wire Line
-	8100 2800 8000 2800
-Wire Wire Line
-	8400 3000 8400 3200
-Wire Wire Line
-	8400 3200 8850 3200
-Text GLabel 8850 3200 2    50   Output ~ 0
-LCD_BL
-$Comp
-L power:+3V3 #PWR0203
-U 1 1 5FFE05B3
-P 8400 2500
-F 0 "#PWR0203" H 8400 2350 50  0001 C CNN
-F 1 "+3V3" H 8415 2673 50  0000 C CNN
-F 2 "" H 8400 2500 50  0001 C CNN
-F 3 "" H 8400 2500 50  0001 C CNN
-	1    8400 2500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8400 2500 8400 2600
 Text GLabel 5550 4100 2    50   Input ~ 0
 SABA_HS
 Wire Wire Line
 	5550 3900 3300 3900
-Text GLabel 5550 2400 2    50   Output ~ 0
-SABA_Suchlauf_R
 Text GLabel 5550 2500 2    50   Output ~ 0
+SABA_Suchlauf_R
+Text GLabel 5550 2400 2    50   Output ~ 0
 SABA_Suchlauf_L
 Wire Wire Line
 	3300 2300 3950 2300
@@ -172,32 +129,14 @@ Wire Wire Line
 	3300 2400 4850 2400
 Text GLabel 5550 2700 2    50   Output ~ 0
 SABA_Mute
-Text GLabel 5550 1900 2    50   Output ~ 0
-SABA_Laut
-Text GLabel 5550 2600 2    50   Output ~ 0
-SABA_Leise
 Text GLabel 5550 3500 2    50   Output ~ 0
-SABA_Netz
+SABA_Netz_Set
 Text GLabel 5550 3600 2    50   Input ~ 0
 SABA_Laufrichtung
 Text GLabel 5550 3800 2    50   Input ~ 0
 SABA_Suchlauf_Langsam
 Text GLabel 5550 3900 2    50   Input ~ 0
 SABA_Suchlauf_Schnell
-$Comp
-L Device:R R204
-U 1 1 5FFF2B18
-P 3550 4450
-F 0 "R204" H 3480 4404 50  0000 R CNN
-F 1 "1k" H 3480 4495 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 3480 4450 50  0001 C CNN
-F 3 "~" H 3550 4450 50  0001 C CNN
-F 4 "" V 3435 4450 50  0001 C CNN "Placement"
-	1    3550 4450
-	-1   0    0    1   
-$EndComp
-Wire Wire Line
-	5550 3300 3300 3300
 Wire Wire Line
 	5550 3400 3300 3400
 Wire Wire Line
@@ -208,37 +147,6 @@ Wire Wire Line
 	5550 3800 3300 3800
 Wire Wire Line
 	5550 4100 3300 4100
-Wire Wire Line
-	3550 4300 3550 4200
-Wire Wire Line
-	3550 4200 3300 4200
-$Comp
-L power:GND #PWR0208
-U 1 1 5FFF784B
-P 3550 5050
-F 0 "#PWR0208" H 3550 4800 50  0001 C CNN
-F 1 "GND" H 3555 4877 50  0000 C CNN
-F 2 "" H 3550 5050 50  0001 C CNN
-F 3 "" H 3550 5050 50  0001 C CNN
-	1    3550 5050
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:LED D201
-U 1 1 5FFF97AB
-P 3550 4800
-F 0 "D201" V 3589 4682 50  0000 R CNN
-F 1 "LED" V 3498 4682 50  0000 R CNN
-F 2 "LED_SMD:LED_0805_2012Metric" H 3550 4800 50  0001 C CNN
-F 3 "~" H 3550 4800 50  0001 C CNN
-F 4 "WE 150080BS75000" V 3550 4800 50  0001 C CNN "Bauteil"
-	1    3550 4800
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	3550 4600 3550 4650
-Wire Wire Line
-	3550 4950 3550 5050
 $Comp
 L Connector:Conn_ARM_JTAG_SWD_10 J201
 U 1 1 60006D51
@@ -390,20 +298,91 @@ SABA_Schnelllauf
 Wire Wire Line
 	4550 2500 5550 2500
 Connection ~ 4550 2500
-$Comp
-L Transistor_BJT:BC856 Q201
-U 1 1 5FFDE545
-P 8300 2800
-F 0 "Q201" H 8491 2709 50  0000 L CNN
-F 1 "BC856" H 8491 2800 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 8500 2725 50  0001 L CIN
-F 3 "" H 8300 2800 50  0001 L CNN
-F 4 "NP" H 8491 2891 50  0000 L CNN "Placement"
-F 5 "ON BC856BLT1G" H 8300 2800 50  0001 C CNN "Bauteil"
-	1    8300 2800
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	5550 2700 3300 2700
 NoConn ~ 3300 2000
+Text GLabel 5550 3300 2    50   Output ~ 0
+SPI_MOSI
+Wire Wire Line
+	5550 3300 3300 3300
+Text GLabel 5550 1900 2    50   Output ~ 0
+SABA_Leise
+Text GLabel 5550 2600 2    50   Output ~ 0
+SABA_Laut
+Text GLabel 5550 3400 2    50   Output ~ 0
+SABA_Netz_Reset
+Text GLabel 5550 3100 2    50   Input ~ 0
+SABA_Netz_Feedback
+Wire Wire Line
+	5550 3100 3300 3100
+Wire Wire Line
+	1650 1900 1450 1900
+Text GLabel 5550 2800 2    50   Output ~ 0
+~RESET
+$Comp
+L Device:R R?
+U 1 1 61300578
+P 1450 1600
+F 0 "R?" H 1380 1554 50  0000 R CNN
+F 1 "10k" H 1380 1645 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 1380 1600 50  0001 C CNN
+F 3 "~" H 1450 1600 50  0001 C CNN
+F 4 "" V 1450 1600 50  0000 C CNN "Placement"
+	1    1450 1600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:+3V3 #PWR?
+U 1 1 61300CA4
+P 1450 1350
+F 0 "#PWR?" H 1450 1200 50  0001 C CNN
+F 1 "+3V3" H 1465 1523 50  0000 C CNN
+F 2 "" H 1450 1350 50  0001 C CNN
+F 3 "" H 1450 1350 50  0001 C CNN
+	1    1450 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 1350 1450 1450
+Wire Wire Line
+	1450 1750 1450 1900
+Connection ~ 1450 1900
+Wire Wire Line
+	1450 1900 1250 1900
+$Comp
+L Device:R R?
+U 1 1 61303F4D
+P 5200 2800
+F 0 "R?" V 5150 3100 50  0000 R CNN
+F 1 "0" V 5150 2650 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5130 2800 50  0001 C CNN
+F 3 "~" H 5200 2800 50  0001 C CNN
+F 4 "NP" V 5200 2850 50  0000 R CNN "Placement"
+	1    5200 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	5550 2800 5350 2800
+Wire Wire Line
+	5050 2800 3300 2800
+$Comp
+L Device:D D?
+U 1 1 612F9783
+P 1800 1900
+AR Path="/6008B538/612F9783" Ref="D?"  Part="1" 
+AR Path="/60135668/612F9783" Ref="D?"  Part="1" 
+AR Path="/5FFC49DA/612F9783" Ref="D?"  Part="1" 
+F 0 "D?" H 1800 1683 50  0000 C CNN
+F 1 "1N4148" H 1800 1774 50  0000 C CNN
+F 2 "Diode_SMD:D_SOD-323F" H 1800 1900 50  0001 C CNN
+F 3 "~" H 1800 1900 50  0001 C CNN
+F 4 "0R" H 1800 1900 50  0001 C CNN "Bauteil"
+F 5 "" H 1800 2000 50  0001 C CNN "Placement"
+	1    1800 1900
+	-1   0    0    1   
+$EndComp
+Text GLabel 5550 4200 2    50   Input ~ 0
+TA_Aktiv
+Wire Wire Line
+	3300 4200 5550 4200
 $EndSCHEMATC
