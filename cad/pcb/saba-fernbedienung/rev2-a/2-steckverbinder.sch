@@ -751,10 +751,6 @@ F 3 "" H 1550 6700 50  0001 C CNN
 	1    1550 6700
 	1    0    0    -1  
 $EndComp
-Text GLabel 2250 3200 2    50   Input ~ 0
-TA_Aktiv
-Wire Wire Line
-	2250 3200 1850 3200
 Text GLabel 5100 1750 1    50   Output ~ 0
 Audio_GND
 Wire Wire Line
@@ -815,4 +811,8 @@ Wire Wire Line
 	5400 2100 5800 2100
 Wire Wire Line
 	4700 2300 4700 3100
+Wire Wire Line
+	2250 3200 1850 3200
+Text GLabel 2250 3200 2    50   Input ~ 0
+TA_Aktiv
 $EndSCHEMATC

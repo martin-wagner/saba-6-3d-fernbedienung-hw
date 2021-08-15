@@ -1937,8 +1937,8 @@ L Device:Transformer_1P_1S T701
 U 1 1 61369FF5
 P 5100 6400
 F 0 "T701" H 5100 6781 50  0000 C CNN
-F 1 "Transformer_1P_1S" H 5100 6690 50  0000 C CNN
-F 2 "" H 5100 6400 50  0001 C CNN
+F 1 "1:1" H 5100 6690 50  0000 C CNN
+F 2 "local:Transformer_NF_EI14" H 5100 6400 50  0001 C CNN
 F 3 "~" H 5100 6400 50  0001 C CNN
 	1    5100 6400
 	1    0    0    -1  
@@ -1948,8 +1948,8 @@ L Device:Transformer_1P_1S T702
 U 1 1 6136BBA4
 P 5100 7100
 F 0 "T702" H 5100 7500 50  0000 C CNN
-F 1 "Transformer_1P_1S" H 5100 7400 50  0000 C CNN
-F 2 "" H 5100 7100 50  0001 C CNN
+F 1 "1:1" H 5100 7400 50  0000 C CNN
+F 2 "local:Transformer_NF_EI14" H 5100 7100 50  0001 C CNN
 F 3 "~" H 5100 7100 50  0001 C CNN
 F 4 "NP" H 5100 6800 50  0000 C CNN "Placement"
 	1    5100 7100
@@ -2061,7 +2061,7 @@ amp_links
 Text Label 3350 6900 2    50   ~ 0
 amp_rechts
 Text Notes 3250 7150 0    50   ~ 0
-Optional: Stereo - 2x 0R,\n2x Übertrager
+Optional: Stereo - 1x 0R,\n2x Übertrager
 Text GLabel 5650 7300 2    50   Output ~ 0
 Audio_GND
 Wire Wire Line
