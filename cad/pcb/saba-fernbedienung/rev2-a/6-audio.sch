@@ -1379,23 +1379,6 @@ F 4 "" V 9650 3600 50  0000 R CNN "Placement"
 	1    9650 3550
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R R?
-U 1 1 60904B86
-P 9200 4500
-AR Path="/5FFC49DA/60904B86" Ref="R?"  Part="1" 
-AR Path="/6002EA57/60904B86" Ref="R?"  Part="1" 
-AR Path="/60135668/60904B86" Ref="R?"  Part="1" 
-AR Path="/6044FE50/60904B86" Ref="R?"  Part="1" 
-AR Path="/6041BFCD/60904B86" Ref="R714"  Part="1" 
-F 0 "R714" H 9130 4409 50  0000 R CNN
-F 1 "10k" H 9130 4500 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 9130 4500 50  0001 C CNN
-F 3 "~" H 9200 4500 50  0001 C CNN
-F 4 "" V 9200 4550 50  0000 R CNN "Placement"
-	1    9200 4500
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	10150 4100 10150 3550
 Wire Wire Line
@@ -1900,24 +1883,6 @@ F 5 "WE 885012207078" H 9200 2650 50  0001 C CNN "Bauteil"
 	1    9200 2650
 	1    0    0    1   
 $EndComp
-$Comp
-L Device:C C?
-U 1 1 611EFD20
-P 9200 4900
-AR Path="/6002EA57/611EFD20" Ref="C?"  Part="1" 
-AR Path="/6008B538/611EFD20" Ref="C?"  Part="1" 
-AR Path="/60135668/611EFD20" Ref="C?"  Part="1" 
-AR Path="/6044FE50/611EFD20" Ref="C?"  Part="1" 
-AR Path="/6041BFCD/611EFD20" Ref="C721"  Part="1" 
-F 0 "C721" H 9315 4991 50  0000 L CNN
-F 1 "1u" H 9315 4900 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric" H 9238 4750 50  0001 C CNN
-F 3 "~" H 9200 4900 50  0001 C CNN
-F 4 "" H 9315 4809 50  0000 L CNN "Placement"
-F 5 "WE 885012207078" H 9200 4900 50  0001 C CNN "Bauteil"
-	1    9200 4900
-	1    0    0    1   
-$EndComp
 Wire Notes Line
 	7900 5750 10950 5750
 Wire Notes Line
@@ -2077,4 +2042,39 @@ Wire Wire Line
 	5500 6900 5650 6900
 Wire Wire Line
 	5500 6200 5650 6200
+$Comp
+L Device:C C?
+U 1 1 611EFD20
+P 9200 4900
+AR Path="/6002EA57/611EFD20" Ref="C?"  Part="1" 
+AR Path="/6008B538/611EFD20" Ref="C?"  Part="1" 
+AR Path="/60135668/611EFD20" Ref="C?"  Part="1" 
+AR Path="/6044FE50/611EFD20" Ref="C?"  Part="1" 
+AR Path="/6041BFCD/611EFD20" Ref="C721"  Part="1" 
+F 0 "C721" H 9315 4991 50  0000 L CNN
+F 1 "1u" H 9315 4900 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric" H 9238 4750 50  0001 C CNN
+F 3 "~" H 9200 4900 50  0001 C CNN
+F 4 "" H 9315 4809 50  0000 L CNN "Placement"
+F 5 "WE 885012207078" H 9200 4900 50  0001 C CNN "Bauteil"
+	1    9200 4900
+	1    0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 60904B86
+P 9200 4500
+AR Path="/5FFC49DA/60904B86" Ref="R?"  Part="1" 
+AR Path="/6002EA57/60904B86" Ref="R?"  Part="1" 
+AR Path="/60135668/60904B86" Ref="R?"  Part="1" 
+AR Path="/6044FE50/60904B86" Ref="R?"  Part="1" 
+AR Path="/6041BFCD/60904B86" Ref="R714"  Part="1" 
+F 0 "R714" H 9130 4409 50  0000 R CNN
+F 1 "10k" H 9130 4500 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 9130 4500 50  0001 C CNN
+F 3 "~" H 9200 4500 50  0001 C CNN
+F 4 "" V 9200 4550 50  0000 R CNN "Placement"
+	1    9200 4500
+	-1   0    0    1   
+$EndComp
 $EndSCHEMATC

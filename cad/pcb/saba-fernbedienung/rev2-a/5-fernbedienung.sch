@@ -1206,9 +1206,9 @@ F 4 "" V 5550 6800 50  0000 R CNN "Placement"
 $EndComp
 Text GLabel 7150 6350 2    50   Input ~ 0
 SABA_230V_AC
-Text GLabel 7300 5400 2    50   Output ~ 0
-SABA_N1
 Text GLabel 7300 5550 2    50   Output ~ 0
+SABA_N1
+Text GLabel 7300 5400 2    50   Output ~ 0
 SABA_N2
 $Comp
 L Device:D D609

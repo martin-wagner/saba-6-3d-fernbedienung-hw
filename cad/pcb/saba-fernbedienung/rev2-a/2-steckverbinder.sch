@@ -709,8 +709,6 @@ F 3 "~" H 2250 1850 50  0001 C CNN
 	1    2250 1850
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4850 3450 4850 3500
 NoConn ~ 2450 5150
 NoConn ~ 2450 5250
 NoConn ~ 2450 5350
@@ -754,44 +752,11 @@ $EndComp
 Text GLabel 5100 1750 1    50   Output ~ 0
 Audio_GND
 Wire Wire Line
-	4500 2300 4700 2300
-Wire Wire Line
-	4500 2200 4850 2200
-Wire Wire Line
-	4850 2200 4850 2750
-Wire Wire Line
-	4500 2100 5000 2100
-Wire Wire Line
-	5000 3500 4850 3500
-$Comp
-L Device:D_TVS_x2_AAC D301
-U 1 1 609A1EE5
-P 4850 3100
-F 0 "D301" V 4950 2750 50  0000 L CNN
-F 1 "5V" V 5050 2800 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-323_SC-70" H 4700 3100 50  0001 C CNN
-F 3 "https://www.diodes.com/assets/Datasheets/D5V0L2B3W.pdf" H 4700 3100 50  0001 C CNN
-F 4 "Diodes D5V0L2B3W" V 4850 3100 50  0001 C CNN "Bauteil"
-	1    4850 3100
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	4700 2300 5100 2300
-Wire Wire Line
 	5500 2300 5500 2650
-Connection ~ 4700 2300
-Wire Wire Line
-	4850 2200 5250 2200
 Wire Wire Line
 	5650 2200 5650 2650
-Connection ~ 4850 2200
-Wire Wire Line
-	5000 2100 5400 2100
 Wire Wire Line
 	5800 2100 5800 2650
-Connection ~ 5000 2100
-Wire Wire Line
-	5000 2100 5000 3500
 Text GLabel 5400 1750 1    50   Input ~ 0
 Audio_Links
 Wire Wire Line
@@ -810,9 +775,13 @@ Connection ~ 5400 2100
 Wire Wire Line
 	5400 2100 5800 2100
 Wire Wire Line
-	4700 2300 4700 3100
-Wire Wire Line
 	2250 3200 1850 3200
 Text GLabel 2250 3200 2    50   Input ~ 0
 TA_Aktiv
+Wire Wire Line
+	4500 2300 5100 2300
+Wire Wire Line
+	4500 2200 5250 2200
+Wire Wire Line
+	4500 2100 5400 2100
 $EndSCHEMATC
