@@ -311,13 +311,11 @@ Text GLabel 5550 2600 2    50   Output ~ 0
 SABA_Laut
 Text GLabel 5550 3400 2    50   Output ~ 0
 SABA_Netz_Reset
-Text GLabel 5550 3100 2    50   Input ~ 0
+Text GLabel 5550 2800 2    50   Input ~ 0
 SABA_Netz_Feedback
 Wire Wire Line
-	5550 3100 3300 3100
-Wire Wire Line
 	1650 1900 1450 1900
-Text GLabel 5550 2800 2    50   Output ~ 0
+Text GLabel 5550 3100 2    50   Output ~ 0
 ~RESET
 $Comp
 L Device:R R201
@@ -352,19 +350,15 @@ Wire Wire Line
 $Comp
 L Device:R R202
 U 1 1 61303F4D
-P 5200 2800
-F 0 "R202" V 5150 3100 50  0000 R CNN
-F 1 "0" V 5150 2650 50  0000 R CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5130 2800 50  0001 C CNN
-F 3 "~" H 5200 2800 50  0001 C CNN
-F 4 "NP" V 5200 2850 50  0000 R CNN "Placement"
-	1    5200 2800
+P 5200 3100
+F 0 "R202" V 5150 3400 50  0000 R CNN
+F 1 "0" V 5150 2950 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5130 3100 50  0001 C CNN
+F 3 "~" H 5200 3100 50  0001 C CNN
+F 4 "NP" V 5200 3150 50  0000 R CNN "Placement"
+	1    5200 3100
 	0    -1   -1   0   
 $EndComp
-Wire Wire Line
-	5550 2800 5350 2800
-Wire Wire Line
-	5050 2800 3300 2800
 $Comp
 L Device:D D?
 U 1 1 612F9783
@@ -562,4 +556,10 @@ Wire Wire Line
 	9450 4200 9600 4200
 Wire Wire Line
 	9900 4200 10100 4200
+Wire Wire Line
+	3300 2800 5550 2800
+Wire Wire Line
+	5550 3100 5350 3100
+Wire Wire Line
+	5050 3100 3300 3100
 $EndSCHEMATC
