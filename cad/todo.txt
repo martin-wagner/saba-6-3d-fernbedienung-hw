@@ -1,6 +1,3 @@
 scm
 
 pcb
-  -Bestueckungsplan Bauteile links unter TRS nicht aufgeraeumt
-  -NP Bauteile auch im Bestueckungsplan als NP markieren
-  -IR am falschen Ende PCB (Innenseite Radio statt aussen)
