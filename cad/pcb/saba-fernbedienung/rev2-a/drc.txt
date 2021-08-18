@@ -1,0 +1,41 @@
+** Drc report for /home/martin/elektronik/radios/saba fernbedienung/cad/pcb/saba-fernbedienung/rev2-a/saba-fernbedienung.kicad_pcb **
+** Created on 2021-08-18 11:19:13 **
+
+** Found 11 DRC errors **
+ErrType(45): Courtyards overlap
+    @(191.000 mm, 130.500 mm): Footprint REF** on F.Cu
+    @(195.650 mm, 130.100 mm): Footprint Q607 on F.Cu
+ErrType(45): Courtyards overlap
+    @(191.000 mm, 72.500 mm): Footprint REF** on F.Cu
+    @(184.200 mm, 73.250 mm): Footprint D303 on F.Cu
+ErrType(45): Courtyards overlap
+    @(171.700 mm, 67.900 mm): Footprint J305 on F.Cu
+    @(167.400 mm, 70.800 mm): Footprint J310 on F.Cu
+ErrType(45): Courtyards overlap
+    @(171.700 mm, 67.900 mm): Footprint J305 on F.Cu
+    @(175.900 mm, 69.000 mm): Footprint J309 on F.Cu
+ErrType(45): Courtyards overlap
+    @(171.700 mm, 67.900 mm): Footprint J305 on F.Cu
+    @(167.400 mm, 66.900 mm): Footprint J308 on F.Cu
+ErrType(45): Courtyards overlap
+    @(171.700 mm, 67.900 mm): Footprint J305 on F.Cu
+    @(178.300 mm, 72.000 mm): Footprint D302 on F.Cu
+ErrType(45): Courtyards overlap
+    @(184.400 mm, 86.900 mm): Footprint C402 on F.Cu
+    @(182.200 mm, 84.175 mm): Footprint C403 on F.Cu
+ErrType(45): Courtyards overlap
+    @(175.900 mm, 69.000 mm): Footprint J309 on F.Cu
+    @(182.680 mm, 62.500 mm): Footprint J312 on F.Cu
+ErrType(45): Courtyards overlap
+    @(175.900 mm, 69.000 mm): Footprint J309 on F.Cu
+    @(178.300 mm, 72.000 mm): Footprint D302 on F.Cu
+ErrType(45): Courtyards overlap
+    @(104.325 mm, 93.000 mm): Footprint R202 on F.Cu
+    @(108.200 mm, 100.355 mm): Footprint Y701 on F.Cu
+ErrType(45): Courtyards overlap
+    @(103.700 mm, 107.100 mm): Footprint D406 on F.Cu
+    @(121.488 mm, 101.851 mm): Footprint U201 on F.Cu
+
+** Found 0 unconnected pads **
+
+** End of Report **
