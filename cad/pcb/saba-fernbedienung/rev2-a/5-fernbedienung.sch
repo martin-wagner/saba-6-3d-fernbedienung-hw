@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 6 7
 Title "Fernbedienung - Webradio SABA 6-3D"
-Date "2021-08-14"
+Date "2022-06-05"
 Rev "2-A"
 Comp "Martin Wagner DL2WAG"
 Comment1 "Lizenz: CERN-OHL-W (OHL v2)"
@@ -1170,7 +1170,7 @@ F 0 "R626" H 5680 6909 50  0000 R CNN
 F 1 "4k7" H 5680 7000 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5680 7000 50  0001 C CNN
 F 3 "~" H 5750 7000 50  0001 C CNN
-F 4 "" V 5750 7050 50  0000 R CNN "Placement"
+F 4 "NP" V 5750 7050 50  0000 R CNN "Placement"
 	1    5750 7000
 	-1   0    0    1   
 $EndComp
@@ -1200,7 +1200,7 @@ F 0 "R623" H 5480 6659 50  0000 R CNN
 F 1 "4k7" H 5480 6750 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 5480 6750 50  0001 C CNN
 F 3 "~" H 5550 6750 50  0001 C CNN
-F 4 "" V 5550 6800 50  0000 R CNN "Placement"
+F 4 "NP" V 5550 6800 50  0000 R CNN "Placement"
 	1    5550 6750
 	0    1    1    0   
 $EndComp
@@ -1219,6 +1219,7 @@ F 1 "1N4148" V 5450 5600 50  0000 R CNN
 F 2 "Diode_SMD:D_SOD-323F" H 5550 5700 50  0001 C CNN
 F 3 "~" H 5550 5700 50  0001 C CNN
 F 4 "ON 1N4148WS" V 5550 5700 50  0001 C CNN "Bauteil"
+F 5 "NP" V 5550 5800 50  0000 C CNN "Placement"
 	1    5550 5700
 	0    1    -1   0   
 $EndComp
@@ -1231,6 +1232,7 @@ F 1 "1N4148" V 5650 6600 50  0000 R CNN
 F 2 "Diode_SMD:D_SOD-323F" H 5550 6200 50  0001 C CNN
 F 3 "~" H 5550 6200 50  0001 C CNN
 F 4 "ON 1N4148WS" V 5550 6200 50  0001 C CNN "Bauteil"
+F 5 "NP" V 5550 6100 50  0000 C CNN "Placement"
 	1    5550 6200
 	0    -1   1    0   
 $EndComp
@@ -1252,7 +1254,7 @@ Wire Notes Line
 Wire Notes Line
 	4100 7650 4100 5200
 Text Notes 4100 5150 0    79   ~ 0
-Netzschalter
+Netzschalter (Optional)
 NoConn ~ 7650 2800
 NoConn ~ 7850 2800
 NoConn ~ 7650 4200
@@ -1353,6 +1355,7 @@ F 1 "BC846" H 5800 6900 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 6200 6675 50  0001 L CIN
 F 3 "" H 6000 6750 50  0001 L CNN
 F 4 "ON BC846BLT3G" H 6000 6750 50  0001 C CNN "Bauteil"
+F 5 "NP" H 5850 6800 50  0000 C CNN "Placement"
 	1    6000 6750
 	1    0    0    -1  
 $EndComp
@@ -1485,10 +1488,12 @@ L Relay:RT42xFxx K607
 U 1 1 61579A80
 P 6700 5950
 F 0 "K607" H 7330 6041 50  0000 L CNN
-F 1 "RT42xFxx" H 7330 5950 50  0000 L CNN
+F 1 "RT424F05" H 7330 5950 50  0000 L CNN
 F 2 "Relay_THT:Relay_DPDT_Schrack-RT2-FormC-Dual-Coil_RM5mm" H 6700 5950 50  0001 C CNN
 F 3 "http://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Data+Sheet%7FRT2_bistable%7F1116%7Fpdf%7FEnglish%7FENG_DS_RT2_bistable_1116.pdf%7F1-1415537-8" H 6700 5950 50  0001 C CNN
 F 4 "5V" H 7330 5859 50  0000 L CNN "Coil Voltage"
+F 5 "NP" H 7400 5750 50  0000 C CNN "Placement"
+F 6 "rt424f06 (5V noch in der Toleranz der Spule)" H 6700 5950 50  0001 C CNN "Alternative"
 	1    6700 5950
 	1    0    0    -1  
 $EndComp
@@ -1545,7 +1550,7 @@ F 0 "R625" H 4630 6909 50  0000 R CNN
 F 1 "4k7" H 4630 7000 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4630 7000 50  0001 C CNN
 F 3 "~" H 4700 7000 50  0001 C CNN
-F 4 "" V 4700 7050 50  0000 R CNN "Placement"
+F 4 "NP" V 4700 7050 50  0000 R CNN "Placement"
 	1    4700 7000
 	-1   0    0    1   
 $EndComp
@@ -1575,7 +1580,7 @@ F 0 "R622" H 4430 6659 50  0000 R CNN
 F 1 "4k7" H 4430 6750 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4430 6750 50  0001 C CNN
 F 3 "~" H 4500 6750 50  0001 C CNN
-F 4 "" V 4500 6800 50  0000 R CNN "Placement"
+F 4 "NP" V 4500 6800 50  0000 R CNN "Placement"
 	1    4500 6750
 	0    1    1    0   
 $EndComp
@@ -1588,6 +1593,7 @@ F 1 "BC846" H 4750 6900 50  0000 L CNN
 F 2 "Package_TO_SOT_SMD:SOT-23" H 5150 6675 50  0001 L CIN
 F 3 "" H 4950 6750 50  0001 L CNN
 F 4 "ON BC846BLT3G" H 4950 6750 50  0001 C CNN "Bauteil"
+F 5 "NP" H 4800 6800 50  0000 C CNN "Placement"
 	1    4950 6750
 	1    0    0    -1  
 $EndComp
@@ -1653,7 +1659,7 @@ F 0 "R624" H 6330 6759 50  0000 R CNN
 F 1 "10k" H 6330 6850 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 6330 6850 50  0001 C CNN
 F 3 "~" H 6400 6850 50  0001 C CNN
-F 4 "" V 6400 6900 50  0000 R CNN "Placement"
+F 4 "NP" V 6400 6900 50  0000 R CNN "Placement"
 	1    6400 6850
 	-1   0    0    1   
 $EndComp

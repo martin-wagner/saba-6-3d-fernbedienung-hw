@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 5 7
 Title "Fernbedienung - Webradio SABA 6-3D"
-Date "2021-08-14"
+Date "2022-06-05"
 Rev "2-A"
 Comp "Martin Wagner DL2WAG"
 Comment1 "Lizenz: CERN-OHL-W (OHL v2)"

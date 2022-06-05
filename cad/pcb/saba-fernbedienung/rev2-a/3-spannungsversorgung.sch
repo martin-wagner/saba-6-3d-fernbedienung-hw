@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 4 7
 Title "Fernbedienung - Webradio SABA 6-3D"
-Date "2021-08-14"
+Date "2022-06-05"
 Rev "2-A"
 Comp "Martin Wagner DL2WAG"
 Comment1 "Lizenz: CERN-OHL-W (OHL v2)"
@@ -892,7 +892,7 @@ Wire Wire Line
 Wire Wire Line
 	5850 2700 6750 2700
 $Comp
-L Regulator_Linear:AP1117-18 U401
+L Regulator_Linear:AP1117-50 U401
 U 1 1 6177A88D
 P 5200 1300
 F 0 "U401" H 5200 1542 50  0000 C CNN

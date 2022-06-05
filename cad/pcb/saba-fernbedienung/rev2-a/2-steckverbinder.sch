@@ -5,7 +5,7 @@ $Descr A4 11693 8268
 encoding utf-8
 Sheet 3 7
 Title "Fernbedienung - Webradio SABA 6-3D"
-Date "2021-08-14"
+Date "2022-06-05"
 Rev "2-A"
 Comp "Martin Wagner DL2WAG"
 Comment1 "Lizenz: CERN-OHL-W (OHL v2)"
@@ -535,6 +535,7 @@ F 1 "TSOP31238" H 6238 5184 50  0000 C CNN
 F 2 "OptoDevice:Vishay_CAST-3Pin" H 6200 4475 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/82492/tsop312.pdf" H 6900 5150 50  0001 C CNN
 F 4 "Vishay TSOP31238" H 6250 4850 50  0001 C CNN "Bauteil"
+F 5 "NP" H 6250 4850 50  0000 C CNN "Placement"
 	1    6250 4850
 	1    0    0    -1  
 $EndComp
@@ -655,7 +656,7 @@ F 0 "C304" H 7515 4991 50  0000 L CNN
 F 1 "100n" H 7515 4900 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 7438 4750 50  0001 C CNN
 F 3 "~" H 7400 4900 50  0001 C CNN
-F 4 "" H 7515 4809 50  0000 L CNN "Placement"
+F 4 "NP" H 7515 4809 50  0000 L CNN "Placement"
 F 5 "WE 885382206004" H 7400 4900 50  0001 C CNN "Bauteil"
 	1    7400 4900
 	1    0    0    -1  
@@ -670,7 +671,7 @@ F 0 "R302" H 7780 4559 50  0000 R CNN
 F 1 "100" H 7780 4650 50  0000 R CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 7780 4650 50  0001 C CNN
 F 3 "~" H 7850 4650 50  0001 C CNN
-F 4 "" V 7850 4700 50  0000 R CNN "Placement"
+F 4 "NP" V 7850 4700 50  0000 R CNN "Placement"
 	1    7850 4650
 	0    -1   -1   0   
 $EndComp
