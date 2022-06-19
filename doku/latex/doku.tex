@@ -717,7 +717,7 @@ Es k"onnen die folgenden Einstellungen ge"andert werden:
 \begin{tikzpicture}
      \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=\textwidth]{webradio3}};
 \end{tikzpicture}
-\caption{Fernbedienung} \label{fig:1}
+\caption{Konfiguration} \label{fig:config}
 \end{figure}
 
 Einstellunge "ubernehmen mit "`Save"', "`Restart"'.
@@ -726,9 +726,14 @@ Einstellunge "ubernehmen mit "`Save"', "`Restart"'.
 
 Weitere Funktionen sind in der Dokumentation des ESP32-radio Projekts beschrieben.
 
-\subsection{OTA Update}
+\subsection{OTA Firmwareupdate}
 
-\todo bekommen wir das hin?
+Webseite Reiter \emph{Config} ausw"ahlen. \emph{Update} dr"ucken, siehe Bild \ref{fig:config}. Es wird die Datei \url{http://martinwag.atwebpages.com/ESP32_radio/firmware.bin} gepr"uft, heruntergeladen und ins Flash geschrieben\footnote{Download per HTTP. Keine Verschl"usselung, keine Authentifizierung, etc. .}. Das Kommando wird im Textfeld best"atigt, eine Erfolgsmeldung gibt es nicht. Sp"atestens nach ein paar Minuten sollte das Update fertig sein, im Reiter \emph{About} sollte eine neues Builddatum auftauchen (oder auch nicht falls kein Update verf"ugbar ist). 
+
+Die Einstellungen werden beim Update beibehalten.
+
+\todo binary auf dem server sollte man zumindest herunterladen und gegen bekannten hash vergleichen k"onnen...
+
 
 \section{Schaltungsbeschreibung} \label{sec:schaltung}
 
@@ -877,7 +882,16 @@ Messung mit Einweggleichrichtung und Siebung der Wechselspannung. Umsetzung in d
 
 \subsection{Probleme} \label{sec:untersuchung:probleme}
 
-Probleme und L"osungen.
+Probleme und L"osungsvorschl"age.
+
+\textbf{In Software funktioniert \emph{xyz} nicht}
+
+\begin{itemize}
+\item ESP32 mit PC USB verbinden, Kapitel \ref{sec:aufbau:programmierung} beachten. Der ESP32 verh"alt sich wie ein USB Seriell Wandler.
+\item Serielles Terminal verbinden, 115200 8-N-1. Linux z.B. minicom, Windows z.B. Putty oder HyperTerminal
+\item Funktion starten, Ausgabe auswerten. 
+\item Im Terminal k"onnen auch Kommandos eingegeben werden (z.B. \emph{reset}). Der ESP32 selbst macht kein "`Echo"', d.H. abh"angig von der Terminalkofiguration sieht man die eigene Eingabe nicht. "`Enter"' f"uhrt Eingabe aus. Liste der Kommandos ist im Sourcecode in "`main.c"', Funktion "`analyzeCmd"' enthalten.
+\end{itemize}
 
 \textbf{Erkennung TA Eingang und LEDs in den Tasten}
 
@@ -895,7 +909,11 @@ Die Gl"uhlampen f"ur die Taster werden nicht mehr hergestellt und sind auch ande
 \caption{Anpassung LEDs} \label{fig:1}
 \end{figure}
 
+\textbf{Webinterface reagiert langsam}
 
+Webseite aufrufen mit der IP Adresse statt URL. Scheinbar bringen div. Router da etwas durcheinander wenn mehrere ESP32 am Netz sind.
+
+\textbf{Weitere}
 
 \todo weitere ...
 
@@ -1079,6 +1097,215 @@ Hash of data verified.
 
 Leaving...
 Hard resetting via RTS pin...
+\end{lstlisting}
+
+\section{Ausgabe serielle Schnittstelle beim Boot}
+
+Boot, Webradio aktiv (TA Modus), keine SD Karte.
+
+\begin{lstlisting}
+D: Starting ESP32-radio running on CPU 1 at 240 MHz.  Version Mon, 28 Jun 2021 12:40:00 GMT.  Free memory 273896
+D: Display type is DUMMYTFT
+D: Partition nvs found, 20480 bytes
+D: Read 36 keys from NVS
+D: pin_ir set to -1
+D: pin_enc_clk set to -1
+D: pin_enc_dt set to -1
+D: pin_enc_sw set to -1
+D: pin_tft_cs set to -1
+D: pin_tft_dc set to -1
+D: pin_tft_scl set to -1
+D: pin_tft_sda set to -1
+D: pin_tft_bl set to -1
+D: pin_tft_blx set to -1
+D: pin_sd_cs set to 21
+D: pin_ch376_cs set to -1
+D: pin_ch376_int set to -1
+D: pin_vs_cs set to 5
+D: pin_vs_dcs set to 32
+D: pin_vs_dreq set to 4
+D: pin_shutdown set to -1
+D: pin_shutdownx set to -1
+D: pin_spi_sck set to 18
+D: pin_spi_miso set to 19
+D: pin_spi_mosi set to 23
+D: pin_saba_power1 set to -1
+D: pin_saba_power2 set to -1
+D: pin_saba_power_fb set to -1
+D: pin_saba_vol_up set to 15
+D: pin_saba_vol_down set to 2
+D: pin_saba_vol_mute set to 16
+D: pin_saba_move_left set to 13
+D: pin_saba_move_right set to 14
+D: pin_saba_move_fast set to 12
+D: pin_saba_move_dir set to 27
+D: pin_saba_move_is_fast set to 34
+D: pin_saba_move_is_slow set to 33
+D: pin_saba_search_hold set to 36
+D: pin_saba_pickup_active set to 39
+D: GPIO0 is HIGH
+D: GPIO2 is LOW, probably no PULL-UP
+D: GPIO4 is HIGH
+D: GPIO5 is HIGH
+D: GPIO12 is LOW, probably no PULL-UP
+D: GPIO13 is LOW, probably no PULL-UP
+D: GPIO14 is LOW, probably no PULL-UP
+D: GPIO15 is LOW, probably no PULL-UP
+D: GPIO16 is LOW, probably no PULL-UP
+D: GPIO17 is HIGH
+D: GPIO18 is LOW, probably no PULL-UP
+D: GPIO19 is HIGH
+D: GPIO21 is HIGH
+D: GPIO22 is HIGH
+D: GPIO23 is HIGH
+D: GPIO25 is LOW, probably no PULL-UP
+D: GPIO26 is LOW, probably no PULL-UP
+D: GPIO27 is HIGH
+D: GPIO32 is HIGH
+D: GPIO33 is HIGH
+D: GPIO34 is HIGH
+D: GPIO35 is LOW, probably no PULL-UP
+D: GPIO36 is HIGH
+D: GPIO39 is HIGH
+[E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+[E][sd_diskio.cpp:775] sdcard_mount(): f_mount failed: (3) The physical drive cannot work
+[E][sd_diskio.cpp:123] sdSelectCard(): Select Failed
+D: SD Card Mount Failed!
+D: Create list with acceptable WiFi networks
+D: Added wlan-meins to list of networks
+D: End adding networks
+D: Scan Networks
+D: Scan completed
+D: Number of available networks: 2
+D:  1 - wlan-meins                Signal: -59 dBm, Encryption WPA2_PSK, Acceptable
+D:  2 - WLAN-xxxxxx               Signal: -93 dBm, Encryption WPA2_PSK, 
+D: End of list
+D: Command: clk_dst with parameter 1
+D: Command: clk_offset with parameter 1
+D: Command: clk_server with parameter pool.ntp.org
+D: Command: lstmods with parameter Sun, 19 Jun 2022 13:10:24 GMT
+D: Command: mqqprefix with parameter none
+D: Command: mqttbroker with parameter none
+D: Command: mqttpasswd with parameter *******
+D: Command: mqttport with parameter 1883
+D: Command: mqttuser with parameter none
+D: Command: pin_sd_cs with parameter 21
+D: Command: pin_vs_cs with parameter 5
+D: Command: pin_vs_dcs with parameter 32
+D: Command: pin_vs_dreq with parameter 4
+D: Command: preset with parameter 9
+D: Command: preset_00 with parameter edge67.streamonkey.net/gong-live/stream/mp3?aggregator=user
+D: Command: preset_01 with parameter stream.live.vc.bbcmedia.co.uk/bbc_6music
+D: Command: preset_02 with parameter dispatcher.rndfnk.com/br/puls/live/mp3/mid
+D: Command: preset_03 with parameter mp3ad.egofm.c.nmdn.net/egofm_128/livestream.mp3?
+D: Command: preset_04 with parameter sunshinelive.hoerradar.de/sunshinelive-live-mp3-hq
+D: Command: preset_05 with parameter media-sov.musicradio.com:80/GoldMP3
+D: Command: preset_06 with parameter liveradio.swr.de/d9zadj3/dasding/
+D: Command: preset_07 with parameter stream.live.vc.bbcmedia.co.uk/bbc_radio_one
+D: Command: preset_08 with parameter stream.live.vc.bbcmedia.co.uk/bbc_radio_two
+D: Command: preset_09 with parameter mp3ad.egofm.c.nmdn.net/egofmpure_128/livestream.mp3?
+D: Command: preset_10 with parameter sunshinelive.hoerradar.de/sunshinelive-house-mp3-hq
+D: Command: preset_11 with parameter sunshinelive.hoerradar.de/sunshinelive-classics-mp3-hq
+D: Command: preset_12 with parameter airspectrum.cdnstream1.com:8114/1648_128
+D: Command: preset_13 with parameter airspectrum.cdnstream1.com:8000/1261_192
+D: Command: preset_14 with parameter icecast.omroep.nl:80/radio1-bb-mp3
+D: Command: preset_15 with parameter stream.srg-ssr.ch/drsvirus/mp3_128.m3u
+D: Command: toneha with parameter 0
+D: Command: tonehf with parameter 0
+D: Command: tonela with parameter 0 
+D: Command: tonelf with parameter 0
+D: Command: volume with parameter 100
+D: Slow SPI, Testing VS1053 read/write registers...
+D: Fast SPI, Testing VS1053 read/write registers again...
+D: endFillByte is 0
+D: Connect to WiFi
+D: Try WiFi wlan-meins
+D: Connected to wlan-meins
+D: IP = 192.168.1.86
+D: Start server for commands
+D: Network found. Starting mqtt and OTA
+D: MDNS responder started
+D: Rotary encoder is disabled (-1/-1/-1)
+D: STOP requested 
+D: New preset/file requested (9/0) from mp3ad.egofm.c.nmdn.net/egofmpure_128/livestream.mp3?
+D: New station request
+D: Connect to new host mp3ad.egofm.c.nmdn.net/egofmpure_128/livestream.mp3?
+D: Connect to mp3ad.egofm.c.nmdn.net on port 80, extension /egofmpure_128/livestream.mp3?
+D: Song stopped correctly after 0 msec
+D: Connected to server
+D: switch to pickup (direct)
+D: station active
+D: Switch to HEADER
+D: Headerline: Server: nginx
+D: Headerline: Content-Length: 0
+D: Headerline: Connection: close
+D: Headerline: Cache-Control: no-cache, no-store, must-revalidate
+D: Headerline: Expires: Mon, 26 Jul 1997 05:00:00 GMT
+D: Headerline: Access-Control-Allow-Origin: *
+D: Headerline: Access-Control-Allow-Headers: Origin, Accept, X-Requested-With, Content-Type
+D: l-Allow-Headers: Origin, Accept, X-Requested-With, Content-Type seen.
+D: Headerline: Access-Control-Allow-Methods: GET, OPTIONS, HEAD
+D: Headerline: Location: http://egofm--di--nacs-ais-lgc--0c--cdn.cast.addradio.de/egofm/pure/mp3/high/stream.mp3?_art=dj0yJmlwPTkzLjIzMy4xNi4yNDkmaWQ9aW
+D: Switch to DATA, bitrate is 0, metaint is 0
+D: Duration mp3loop 52
+D: New station request
+D: Connect to new host egofm--di--nacs-ais-lgc--0c--cdn.cast.addradio.de/egofm/pure/mp3/high/stream.mp3?_art=dj0yJmlwPTkzLjIzMy4xNi4yNDkmaWQ9aWNzY3hsLWN
+D: Connect to egofm--di--nacs-ais-lgc--0c--cdn.cast.addradio.de on port 80, extension /egofm/pure/mp3/high/stream.mp3?_art=dj0yJmlwPTkzLjIzMy4xNi4yNDkma
+D: Connected to server
+D: Command: resume with parameter 0
+D: Command accepted
+D: Switch to HEADER
+D: Headerline: Cache-Control: no-cache
+D: Headerline: Pragma: no-cache
+D: Headerline: Expires: Mon, 26 Jul 1997 05:00:00 GMT
+D: Headerline: icy-br: 128
+D: Headerline: Instance-id: 93bd887a54781410ccf2dd678482d06d
+D: Headerline: Server: nacs-ais-lgc_fra-01-eco_edge_765330e391dc9d6ac20249d04f9ce671 9.0.6
+D: Headerline: icy-genre: egoFM - pure
+D: Headerline: icy-metaint: 16000
+D: Headerline: Content-Type: audio/mpeg
+D: audio/mpeg seen.
+D: Headerline: icy-name: egoFM - pure
+D: Headerline: Access-Control-Allow-Origin: *
+D: Headerline: Connection: close
+D: Headerline: icy-url:  
+D: Headerline: icy-audio-info: ice-samplerate=44100;ice-bitrate=128;ice-channels=2
+D: Headerline: icy-pub: 0
+D: Headerline: icy-description: egoFM - pure
+D: Headerline: X-Loudness: -10.097031
+D: Headerline: Set-Cookie: AISSessionId=62509951cb194777_6196743_KpUkaTto__0000001qoJk; Path=/; Domain=egofm--di--nacs-ais-lgc--0c--cdn.cast.addradio.de
+D: Switch to DATA, bitrate is 128, metaint is 16000
+D: Duration mp3loop 82
+D: New station request
+D: Stopping client
+D: Connect to new host egofm--di--nacs-ais-lgc--0c--cdn.cast.addradio.de/egofm/pure/mp3/high/stream.mp3?_art=dj0yJmlwPTkzLjIzMy4xNi4yNDkmaWQ9aWNzY3hsLWN
+D: Connect to egofm--di--nacs-ais-lgc--0c--cdn.cast.addradio.de on port 80, extension /egofm/pure/mp3/high/stream.mp3?_art=dj0yJmlwPTkzLjIzMy4xNi4yNDkma
+D: Connected to server
+D: Switch to HEADER
+D: Headerline: Cache-Control: no-cache
+D: Headerline: Pragma: no-cache
+D: Headerline: Expires: Mon, 26 Jul 1997 05:00:00 GMT
+D: Headerline: icy-br: 128
+D: Headerline: Instance-id: 93bd887a54781410ccf2dd678482d06d
+D: Headerline: Server: nacs-ais-lgc_fra-01-eco_edge_765330e391dc9d6ac20249d04f9ce671 9.0.6
+D: Headerline: icy-genre: egoFM - pure
+D: Headerline: icy-metaint: 16000
+D: Headerline: Content-Type: audio/mpeg
+D: audio/mpeg seen.
+D: Headerline: icy-name: egoFM - pure
+D: Headerline: Access-Control-Allow-Origin: *
+D: Headerline: Connection: close
+D: Headerline: icy-url:  
+D: Headerline: icy-audio-info: ice-samplerate=44100;ice-bitrate=128;ice-channels=2
+D: Headerline: icy-pub: 0
+D: Headerline: icy-description: egoFM - pure
+D: Headerline: X-Loudness: -10.097031
+D: Headerline: Set-Cookie: AISSessionId=62509951cb194777_6196744_moKPC10f__0000001qoJm; Path=/; Domain=egofm--di--nacs-ais-lgc--0c--cdn.cast.addradio.de
+D: Switch to DATA, bitrate is 128, metaint is 16000
+D: Metadata block 112 bytes
+D: Streamtitle found, 107 bytes
+D: StreamTitle='';StreamUrl='';adw_ad='true';durationMilliseconds='30537';adId='7567';insertionType='preroll';
+
 \end{lstlisting}
 
 
