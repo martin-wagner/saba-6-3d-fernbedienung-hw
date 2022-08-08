@@ -133,11 +133,18 @@ Das Saba Webradio erweitert ein Saba Automatic Radio um die folgenden Funktionen
 \end{itemize}
 Es kann direkt auf die Anschlussbuchse f"ur die Fernbedienung aufgesteckt werden. Kompatibel sind mind. das Meersburg und Freiburg 6-3D. Am Ger"at selbst sind keine Modifikationen notwendig (aber empfehlen). Der Audioausgang des Webradio wird mit dem TA Eingang des Radios verbunden und kann durch Wahl des zugeh"origen Eingangs am Radio verwendet werden.
 
-\todo Bild Stecker mit Ma"sen.
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+.-     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=.7\textwidth]{komplett.jpg}};
+\end{tikzpicture}
+\caption{Fertig montiertes Saba Webradio} \label{fig:1}
+\end{figure}
 
-Das Webradio basiert auf dem \emph{\href{https://github.com/Edzelf/ESP32-Radio}{ESP32-Radio Projekt von Ed Smallenburg}}.
+Das Webradio basiert auf dem ESP32-Radio Projekt von Ed Smallenburg: \url{https://github.com/Edzelf/ESP32-Radio}.
 
-\todo github link radio hw und modifizierte sw
+Hardware: \url{https://github.com/martin-wagner/saba-6-3d-fernbedienung-hw}\\
+Software: \url{https://github.com/martin-wagner/ESP32-Radio}
 
 
 \section{Empfohlene Modifikationen} \label{sec:mod}
@@ -549,7 +556,7 @@ Der digitale Eingang muss bei ca. 30\,V / 5\,mA umschalten.
 Die Signale am ESP32 k"onnen auf zwei M"oglichkeiten getestet werden:
 \begin{itemize}
 \item Spannungsquelle (Relais) + Multimeter (Eing"ange) anstelle des ESP32 an der Stiftleiste anschlie"sen
-\item ESP32 + Arduino Testsoftware\footnote{Verzeichnis Testsoftware, aufspielen wie in \ref{sec:aufbau:programmierung} "`Arduino"'}
+\item ESP32 + Arduino Testsoftware\footnote{Verzeichnis "`software/test"', aufspielen wie in \ref{sec:aufbau:programmierung} "`Arduino"'}
 \end{itemize}
 
 Signale nacheinander anlegen, es muss der zugeh"orige Eingang umschalten bzw. das zugeh"orige Relais schalten.
@@ -564,16 +571,15 @@ Der ESP32 Controller kann sowohl auserhalb wie auch in der Schaltung programmier
 
 \textbf{M"oglichkeit 1: Kommandozeile, Python -- esptool.py}
 
-
 Funktionierende Pythoninstallation mit \emph{pip} wird vorrausgesetzt. Sollte dann mit allen Betriebssystemen etwa gleich funktionieren. Normalerweise erkennt \emph{esptool.py} automatisch die richtige Schnittstelle, falls nicht kann man nachhelfen mit \emph{-{}-port /dev/ttyUSBx} (Linux) oder \emph{-{}-port COMx} (Windows).
 
-\todo Angabe wo Binaries heruntergeladen werden k"onnen.
+Vorcompilierte Binaries sind im Verzeichnis "`software/bin"' abgelegt.
 
 \begin{itemize}
 \item \texttt{\$ pip install esptool}
 \item ESP Board mit PC USB verbinden
 \item Verbindung testen und ggf. vorhandene Altlasten entfernen:\\
-		\texttt{\$ esptool.py erase}
+		\texttt{\$ esptool.py erase\_flash}
 \item Bootloader und Firmware programmieren:\\
 		\texttt{\$ esptool.py --chip esp32  --baud 921600 --before default\_reset --after hard\_reset write\_flash -z --flash\_mode dio --flash\_freq 80m --flash\_size detect 0xe000 boot\_app0.bin 0x1000 bootloader\_dio\_80m.bin 0x10000 \\ESP32\_Radio.bin 0x8000 ESP32\_Radio.partitions.bin}
 \end{itemize}
@@ -590,13 +596,13 @@ Ich empfehle die Installation als Portable App (\url{https://docs.arduino.cc/sof
 \item Keine Probleme durch Updates der IDE / Bibliotheken / Toolchain.
 \end{itemize}
 
-\todo Angabe wo Sourcecode heruntergeladne werden kann.\\
 Getestet mit Arduino V1.8.12 Linux.
 
 \begin{itemize}
 \item Arduino IDE herunterladen, entpacken
 \item Ordner \emph{portable} anlegen, wie in Anleitung beschrieben
 \item Anleitung von \emph{\href{https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html}{Espressif}} befolgen. Stable verwenden.
+\item Sourcecode von der in \ref{sec:sabawebradio}. "`Software"' angegebenen URL herunterladen.
 \item Datei "`ESP32-Radio.ino"' laden. Da die Arduino IDE nicht f"ur die Entwicklung verwendet wird ist diese Datei fast leer.
 \item Board "`DOIT ESP32 Devkit V1"' ausw"ahlen
 \item Bibliotheken hinzuf"ugen (PubSubClient, Ch376msc, TFT, SD, ... ohne Garantie auf Vollst"andigkeit) solange bis alle Abh"angigkeiten erf"ullt sind
@@ -642,7 +648,7 @@ Bis zum Ende scrollen, Knopf "`Default"' dr"ucken.
 \caption{Defaults} \label{fig:1}
 \end{figure}
 
-Feld \emph{wifi\_00} W-Lan Namen und Passwort eingeben. "`Save"', "`Reload"' dr"ucken. Das Passwort wird auf dem ESP32 unverschl"usselt gespeichert!
+Feld \emph{wifi\_00} W-Lan Namen und Passwort eingeben. "`Save"', "`Restart"' dr"ucken. Das Passwort wird auf dem ESP32 unverschl"usselt gespeichert!
 
 \begin{figure}[H]
 \centering
@@ -732,8 +738,7 @@ Webseite Reiter \emph{Config} ausw"ahlen. \emph{Update} dr"ucken, siehe Bild \re
 
 Die Einstellungen werden beim Update beibehalten.
 
-\todo binary auf dem server sollte man zumindest herunterladen und gegen bekannten hash vergleichen k"onnen...
-
+MD5 Version "`Build: 2022-08-08 -- 1"': c14b029a3c16b14e4aa896f9e22090a8.
 
 \section{Schaltungsbeschreibung} \label{sec:schaltung}
 
@@ -1036,9 +1041,58 @@ Ergebnis:
 \item Der 600:600 Ohm Telefon"ubertrager ist mehr als ausreichend gut, billig, leicht zu bekommen und klein.
 \end{itemize}
 
+\subsection{W-Lan Antenne}
 
+Es kann eine 2,4\,GHz W-Lan Antenne angeschlossen werden\footnote{\url{https://community.home-assistant.io/t/how-to-add-an-external-antenna-to-an-esp-board/131601}}.  
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=.4\textwidth]{ant1}};
+\end{tikzpicture}
+\hspace{1cm} %no empty line!
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=.434\textwidth]{ant2}};
+\end{tikzpicture}
+\caption{Nach Anleitung} \label{fig:1}
+\end{figure}
+
+Anstelle eines Kabels kann auch eine Buchse montiert werden.
+
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+     \node[anchor=south west,inner sep=0] at (0,0) {\includegraphics[width=.6\textwidth]{ant3}};
+\end{tikzpicture}
+\caption{Mit Buchse / Stecker} \label{fig:1}
+\end{figure}
+                                                        
+Im Versuch wurde das Signal ca. 6 ... 10\,dB st"arker.
 
 \appendix
+
+\section{Ausgabe md5sum Webserver}
+
+Version "`Build: 2022-08-08 -- 1"'
+
+\begin{lstlisting}
+martin@mint ~/workspace/esp32_radio/ESP32-Radio/Release $ wget http://martinwag.atwebpages.com/ESP32_radio/firmware.bin
+--2022-08-08 16:10:38--  http://martinwag.atwebpages.com/ESP32_radio/firmware.bin
+Resolving martinwag.atwebpages.com (martinwag.atwebpages.com)... 185.176.43.53
+Connecting to martinwag.atwebpages.com (martinwag.atwebpages.com)|185.176.43.53|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 937040 (915K) [application/octet-stream]
+Saving to: firmware.bin.1
+
+firmware.bin.1                     100%[================================================================>] 915,08K  3,88MB/s    in 0,2s    
+
+2022-08-08 16:10:38 (3,88 MB/s) - firmware.bin.1 saved [937040/937040]
+
+martin@mint ~/workspace/esp32_radio/ESP32-Radio/Release $ md5sum firmware.bin*
+c14b029a3c16b14e4aa896f9e22090a8  firmware.bin
+c14b029a3c16b14e4aa896f9e22090a8  firmware.bin.1
+\end{lstlisting}
+
 
 \section{Ausgabe esptool.py}
 
