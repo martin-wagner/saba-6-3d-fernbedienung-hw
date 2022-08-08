@@ -1,0 +1,25 @@
+"Source:","/home/martin/elektronik/radios/saba fernbedienung/cad/pcb/saba-fernbedienung-anschlussstecker/rev2-a/saba-fernbedienung-anschlussstecker.sch"
+"Date:","Mon 08 Aug 2022 17:44:44 CEST"
+"Tool:","Eeschema 5.1.12-84ad8e8a86~92~ubuntu20.04.1"
+"Generator:","/usr/share/kicad/plugins/bom_csv_grouped_by_value.py"
+"Component Count:","7"
+
+"Individual Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet"
+"","","J101","Conn_01x04","Connector_Generic:Conn_01x04","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","~"
+"","","J102","Conn_01x04","Connector_Generic:Conn_01x04","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","~"
+"","","J103","Conn_01x04","Connector_Generic:Conn_01x04","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","~"
+"","","J104","Conn_01x02","Connector_Generic:Conn_01x02","Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical","~"
+"","","J105","Conn_01x04","Connector_Generic:Conn_01x04","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","~"
+"","","J106","Conn_01x04","Connector_Generic:Conn_01x04","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","~"
+"","","X101","Stecker-6-3D","stecker:Stecker-6-3D","stecker:stecker-6-3d",""
+
+
+
+"Collated Components:"
+
+"Item","Qty","Reference(s)","Value","LibPart","Footprint","Datasheet"
+"1","5","J101, J102, J103, J105, J106","Conn_01x04","Connector_Generic:Conn_01x04","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","~"
+"2","1","J104","Conn_01x02","Connector_Generic:Conn_01x02","Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical","~"
+"3","1","X101","Stecker-6-3D","stecker:Stecker-6-3D","stecker:stecker-6-3d",""
