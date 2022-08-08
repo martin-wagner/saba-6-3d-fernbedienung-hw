@@ -9,9 +9,10 @@ Es kann direkt auf die Anschlussbuchse für die Fernbedienung aufgesteckt werden
 
 ![Radio](doku/latex/komplett.jpg)
 
-Das Webradio basiert auf dem ESP32-Radio Projekt von Ed Smallenburg: https://github.com/Edzelf/ESP32-Radio.
+Das Webradio basiert auf dem [ESP32-Radio Projekt von Ed Smallenburg](https://github.com/Edzelf/ESP32-Radio).
 
 [Hardware](https://github.com/martin-wagner/saba-6-3d-fernbedienung-hw)
+
 [Software](https://github.com/martin-wagner/ESP32-Radio)
 
 [Doku](doku/latex/doku.pdf)
