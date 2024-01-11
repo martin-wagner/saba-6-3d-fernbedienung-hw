@@ -18,7 +18,7 @@
 % Layout
 %
 \usepackage[textwidth=16cm,head=4cm,bottom=3cm,a4paper]{geometry}
-\usepackage{scrpage2}
+\usepackage{scrlayer-scrpage}
 \pagestyle{scrheadings}
 %\chead{}\ihead{}\ohead{}
 \cfoot{}\ifoot{\footnotesize \currfilepath}\ofoot{\footnotesize Seite \pagemark~von \pageref*{LastPage}} % pageref* -> kein klickbarer Link
@@ -588,39 +588,31 @@ Ein Firmwareupdate kann einfach durch erneutes Aufrufen des Programmierkomandos 
 
 \emph{\href{https://docs.espressif.com/projects/esptool/en/latest/esp32s3/esptool/index.html}{esptool.py Dokumentation}}. Die Kommandozeilenbefehle werden beim Compilieren / Hochladen durch die Arduino Umgebung ausgegeben.
 
-\textbf{M"oglichkeit 2: Arduino IDE}
+\textbf{M"oglichkeit 2: Kommandozeile, PlatformIO}
 
-Ich empfehle die Installation als Portable App (\url{https://docs.arduino.cc/software/ide-v1/tutorials/PortableIDE}). Diese Installation wird dann nur f"ur dieses eine Projekt verwendet.
-\begin{itemize}
-\item Kann einfach auf anderen Rechner kopiert werden
-\item Keine Probleme durch Updates der IDE / Bibliotheken / Toolchain.
-\end{itemize}
-
-Getestet mit Arduino V1.8.12 Linux.
+In 2024 einfachste M"oglichkeit zu compilieren. Auch hier wird eine funktionierende Pythoninstallation vorrausgesetzt.
 
 \begin{itemize}
-\item Arduino IDE herunterladen, entpacken
-\item Ordner \emph{portable} anlegen, wie in Anleitung beschrieben
-\item Anleitung von \emph{\href{https://docs.espressif.com/projects/arduino-esp32/en/latest/installing.html}{Espressif}} befolgen. Stable verwenden.
+\item Installieren nach \url{https://docs.platformio.org/en/latest/core/installation/methods/index.html}. Inklusive "`Install Shell Commands"'.
 \item Sourcecode von der in \ref{sec:sabawebradio}. "`Software"' angegebenen URL herunterladen.
-\item Datei "`ESP32-Radio.ino"' laden. Da die Arduino IDE nicht f"ur die Entwicklung verwendet wird ist diese Datei fast leer.
-\item Board "`DOIT ESP32 Devkit V1"' ausw"ahlen
-\item Bibliotheken hinzuf"ugen (PubSubClient, Ch376msc, TFT, SD, ... ohne Garantie auf Vollst"andigkeit) solange bis alle Abh"angigkeiten erf"ullt sind
-\item "`Upload"' dr"ucken
+\item Ins Download Verzeichnis wechseln
+\item Projekt vorbereiten:\\
+		\texttt{\$ pio project init --board esp32doit-devkit-v1}
+\item Projekt compilieren und "ubertragen:\\
+		\texttt{\$ pio run upload}
 \end{itemize}
 
 \textbf{M"oglichkeit 3: Eclipse IDE}
 
-...das verwende ich. Falls man ernsthaft etwas am Sourcecode "andern will empfehle ich ausdr"ucklich eine richtige IDE zu verwenden (Eclipse, VS-Code, ...).
+Falls man ernsthaft etwas am Sourcecode "andern will empfehle ich ausdr"ucklich eine richtige IDE zu verwenden (Eclipse, VS-Code, ...).
 
-Startpunkte:
 \begin{itemize}
-\item \url{https://duckduckgo.com/?q=eclipse+sloeber+esp32}
-\item \url{https://eclipse.baeyens.it}
-\item \url{https://www.youtube.com/watch?v=UuYy4YJhToo}
+\item Wie "`PlatformIO".
+\item Projekt vorbereiten:\\
+		\texttt{\$ pio project init  --ide eclipse --board esp32doit-devkit-v1}
+\item In Eclipse importieren nach \url{https://docs.platformio.org/en/latest/integration/ide/eclipse.html}. Verh"alt sich wie ein normales Eclipse Projekt.
 \end{itemize}
 
-Nach erfolgreicher Installation und Import des Projekts kann wie bei der Arduino IDE "`Upload"' gedr"uckt werden.
 
 \section{Bedienung} \label{sec:bedienung}
 
